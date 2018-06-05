@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        input {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        #iphone5s {
+            border: 1px solid red !important;
+            width: 320px;
+            height: 568px;
+            float: left;
+        }
+
+        #ipad {
+            border: 1px solid green !important;
+            width: 1280px;
+            height: 768px;
+        }
+
+        iframe {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <input type="text" id="url" placeholder="website"> <button onclick="loadingPage()">load</button>
+    <br> -->
+    <iframe id="iphone5s" src="index.html" onload="console.log(this)"></iframe>
+    <iframe id="ipad" src="index.html"></iframe>
+
+
+    <script>
+        function loadingPage() {
+            let src = document.getElementById('url').value
+            console.log(src)
+            document.getElementById('iphone5s').src = 'http://' + src
+            document.getElementById('ipad').src = 'http://' + src
+        }
+    </script>
+</body>
+
+</html>

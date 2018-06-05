@@ -1,0 +1,52 @@
+@media (max-width: 767px) {
+
+    /*    
+    banner
+    */
+    #banner {
+        height: 1253px;
+        background-image: url(../images/bgBanner.png);
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+
+
+    /*
+info
+*/
+    #info {
+        background-color: #414141;
+        padding: 44px 0px 0px
+    }
+    #info .col-md-1,
+    #info .col-md-3,
+    #info .col-md-4 {
+        margin-bottom: 50px;
+    }
+    #info .col-md-4:nth-child(3) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid #616161;
+        border-bottom: 1px solid #616161;
+        position: relative;
+        top: 0px
+    }
+
+    /*    
+    diferenciais
+    */
+    #diferenciais .col-md-4:nth-child(2) {
+        margin-bottom: -10px;
+    }
+    /*    
+    dia
+    */
+    #dia .col-md-8 {
+        background-image: none;
+        border: 2px solid #b3954b;
+        padding: 90px 30px 30px 30px
+    }
+}

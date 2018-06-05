@@ -1,0 +1,300 @@
+/*
+banner
+*/
+
+#banner h1 {
+    font-weight: 100;
+    line-height: 20px;
+}
+
+#banner h1:nth-child(3) {
+    color: #b3954b !important;
+    margin-top: 300px;
+}
+
+#banner h1:nth-child(4) {
+    color: white !important;
+    margin-bottom: 20px;
+}
+
+#banner {
+    height: 1253px;
+    background-image: url(../images/bgBanner.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    padding: 100px 0px;
+    text-align: center;
+}
+
+#logoTop {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#toggle {
+    position: fixed;
+    top: 70px;
+    right: 70px;
+    z-index: 1
+}
+
+#video iframe {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    top: -460px;
+    margin-bottom: -440px
+}
+
+#video img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/*
+aDomBernardo
+*/
+
+#aDomBernardo {
+    padding: 60px 0px !important;
+}
+
+#aDomBernardo .col-md-3:first-child {
+    padding: 0;
+    position: relative;
+}
+
+#aDomBernardo .col-md-3 img {
+    position: relative;
+    margin-bottom: -100px;
+}
+
+#aDomBernardo .col-md-3 {
+    text-align: center;
+}
+
+#aDomBernardo .col-md-6 {
+    padding-top: 30px;
+}
+
+#aDomBernardo .col-md-3 h1 {
+    color: #eeeeee;
+    font-size: 200px;
+    font-weight: lighter;
+}
+
+#aDomBernardo .col-md-3 h2 {
+    color: #b3954b;
+    font-size: 40px;
+    position: relative;
+    top: -145px;
+    margin-bottom: -40px;
+}
+
+#aDomBernardo button img {
+    position: relative;
+    top: -2px;
+    margin-right: 5px;
+}
+
+#aDomBernardo button {
+    color: #525b37;
+    text-transform: uppercase;
+    border: none;
+    font-size: 18px;
+    font-family: 'bodoni';
+}
+
+/*
+dia
+*/
+
+#dia {
+    background-image: url(../images/bgDia.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 60px 0px;
+    margin-top: 40px;
+}
+
+#dia .col-md-8 {
+    background-image: url(../images/moldura.png);
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 90px 30px
+}
+
+#dia button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 50px;
+    border: 2px solid #b3954b;
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    text-transform: uppercase;
+}
+
+#dia .col-md-4 {
+    text-align: center;
+    padding-top: 90px;
+}
+
+#dia p {
+    color: white
+}
+
+#dia h2 {
+    color: #b3954b
+}
+
+
+/*
+diferenciais
+*/
+
+#diferenciais .col-md-4 {
+    min-height: 400px;
+    text-align: center;
+    border: none !Important
+}
+
+#diferenciais .col-md-4:first-child {
+    background-color: #b3954b;
+    padding: 150px 0px
+}
+
+#diferenciais .col-md-4:nth-child(2) {
+    background-image: url(../images/difBg2.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-height: 509px;
+    padding: 190px 0px 0px;
+}
+
+#diferenciais .col-md-4 h4 {
+    margin-top: 30px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'din';
+}
+
+#diferenciais .col-md-4:last-child {
+    background-image: url(../images/difBg3.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-height: 509px;
+    padding: 190px 0px 0px;
+
+}
+
+#diferenciais .col-md-4:first-child h1 {
+    color: #a98f49;
+    font-size: 140px;
+}
+
+#diferenciais .col-md-4:first-child h2 {
+    color: white;
+    font-size: 50px;
+    position: relative;
+    top: -125px;
+    margin-bottom: -40px;
+}
+
+/*
+preCardapio
+*/
+
+#preCardapio h1 {
+    color: white;
+    text-align: center;
+    font-size: 70px;
+}
+
+#preCardapio {
+    background-image: url(../images/bgCardapio.png);
+    min-height: 530px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+    background-position: center 0;
+}
+
+/*
+cardapio
+*/
+
+#cardapio {
+    margin: 60px 0px;
+}
+
+#cardapio button {
+    background-color: #525a35;
+    border: none;
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'bodoni';
+    margin-top: 30px;
+    padding: 10px 30px;
+}
+
+/*
+galery
+*/
+
+#galery {
+    background-color: #fff;
+}
+
+#galery h1 {
+    color: #525a35;
+    font-size: 69px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* wpcf7 
+
+input,
+.wpcf7 input {
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    margin: 10px 0px !important;
+}
+
+textarea,
+.wpcf7 textarea {
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    margin: 10px 0px !important;
+}
+
+input[type=submit],
+.wpcf7 input[type=submit] {
+    background-color: #9cd3ff;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+}
+
+input[type=submit]:hover,
+.wpcf7 input[type=submit]:hover {
+    opacity: 0.7;
+}
