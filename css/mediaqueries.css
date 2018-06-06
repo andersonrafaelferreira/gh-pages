@@ -52,11 +52,7 @@ info
     /*    
     aDomBernardo
     */
-    #aDomBernardo .col-md-3:first-child,
-    #aDomBernardo .col-md-12:first-child {
-        padding: 0 !important
-    }
-    #aDomBernardo .col-md-3:first-child img {
-        margin-left: 0px;
+    #aDomBernardo .col-md-3 img {
+        left: -30px;
     }
 }
