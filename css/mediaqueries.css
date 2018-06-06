@@ -52,8 +52,9 @@ info
     /*    
     aDomBernardo
     */
-    #aDomBernardo .col-md-3:first-child {
-        padding-left: 0 !important
+    #aDomBernardo .col-md-3:first-child,
+    #aDomBernardo .col-md-12:first-child {
+        padding: 0 !important
     }
     #aDomBernardo .col-md-3:first-child img {
         margin-left: 0px;
