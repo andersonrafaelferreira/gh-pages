@@ -57,7 +57,7 @@ banner
 
 #banner {
     height: 1253px;
-    background-image: url(../images/bgBanner.png);
+    background-image: url(../images/bgBanner.jpg);
     background-repeat: no-repeat;
     -webkit-background-size: contain;
     background-size: contain;
@@ -151,7 +151,7 @@ dia
 */
 
 #dia {
-    background-image: url(../images/bgDia.png);
+    background-image: url(../images/bgDia.jpg);
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
@@ -210,7 +210,7 @@ diferenciais
 }
 
 #diferenciais .col-md-4:nth-child(2) {
-    background-image: url(../images/difBg2.png);
+    background-image: url(../images/difBg2.jpg);
     -webkit-background-size: cover;
     background-size: cover;
     min-height: 509px;
@@ -225,7 +225,7 @@ diferenciais
 }
 
 #diferenciais .col-md-4:last-child {
-    background-image: url(../images/difBg3.png);
+    background-image: url(../images/difBg3.jpg);
     -webkit-background-size: cover;
     background-size: cover;
     min-height: 509px;
@@ -257,7 +257,7 @@ preCardapio
 }
 
 #preCardapio {
-    background-image: url(../images/bgCardapio.png);
+    background-image: url(../images/bgCardapio.jpg);
     min-height: 530px;
     -webkit-background-size: cover;
     background-size: cover;
