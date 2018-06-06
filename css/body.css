@@ -143,7 +143,10 @@ aDomBernardo
     text-transform: uppercase;
     border: none;
     font-size: 18px;
+    letter-spacing: 5px;
+    font-weight: 100;
     font-family: 'bodoni';
+    margin-top: 10px;
     background-color: transparent !important
 }
 
