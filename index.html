@@ -41,7 +41,15 @@
     <section id="banner">
         <div class="container">
             <img src="images/logoTop.png" id="logoTop">
-            <img src="images/menuIcon.png" id="toggle">
+            <img src="images/menuIcon.png" id="toggle" onclick="toggle(this)">
+            <ul id="desktopMenu" style="display: none">
+                <li><a href="#aDomBernardo">A barbearia</a></li>
+                <li><a href="#diferenciais">Serviços</a></li>
+                <li><a href="#dia">Dia do noivo</a></li>
+                <li><a href="#preCardapio">Cardápio</a></li>
+                <li><a href="#gallery">Fotos</a></li>
+                <li><a href="#info">Contato</a></li>
+            </ul>
             <h1>Dom Bernardo</h1>
             <h1>O Lugar do Homem Moderno</h1>
             <img src="images/scissors.png" alt="">
@@ -147,15 +155,15 @@
 
     <div class="clear"></div>
 
-    <!-- galery -->
-    <section id="galery">
+    <!-- gallery -->
+    <section id="gallery">
         <div class="col-md-12">
             <h1>Galeria</h1>
         </div>
     </section>
 
     <div class="clear"></div>
-    <!-- galery END -->
+    <!-- gallery END -->
 
     <!-- info -->
     <section id="info">
@@ -201,6 +209,13 @@
 
     <!-- scripts -->
     <!-- <?php echo get_template_directory_uri(); ?> -->
+    <script>
+        const toggle = x => {
+            x.classList.toggle('applied');
+            document.getElementById('desktopMenu').classList.toggle('show');
+        }
+
+    </script>
 
     <!-- smooth scrolling -->
     <script src="plugins/smoothScrolling/smooth.jquery.min.js"></script>

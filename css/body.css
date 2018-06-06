@@ -1,3 +1,41 @@
+.show {
+    display: block
+}
+
+.applied {
+    opacity: .7
+}
+
+#desktopMenu li {
+    list-style: none;
+    margin-left: 0px;
+}
+
+#desktopMenu {
+    position: fixed;
+    top: 130px;
+    right: 90px;
+    background-color: rgba(255, 255, 255, .2);
+    padding: 20px;
+    z-index: 10000;
+}
+
+#desktopMenu a:hover,
+#desktopMenu a:active {
+    text-decoration: none;
+    color: #b3954b !important
+}
+
+#desktopMenu a {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'din';
+    float: left;
+    margin: 3px 0;
+    text-decoration: none;
+
+}
+
 /*
 banner
 */
@@ -7,12 +45,12 @@ banner
     line-height: 20px;
 }
 
-#banner h1:nth-child(3) {
+#banner h1:nth-child(4) {
     color: #b3954b !important;
     margin-top: 300px;
 }
 
-#banner h1:nth-child(4) {
+#banner h1:nth-child(5) {
     color: white !important;
     margin-bottom: 20px;
 }
@@ -251,14 +289,14 @@ cardapio
 }
 
 /*
-galery
+gallery
 */
 
-#galery {
+#gallery {
     background-color: #fff;
 }
 
-#galery h1 {
+#gallery h1 {
     color: #525a35;
     font-size: 69px;
     text-align: center;
