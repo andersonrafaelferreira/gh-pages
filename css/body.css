@@ -23,7 +23,8 @@
 #desktopMenu a:hover,
 #desktopMenu a:active {
     text-decoration: none;
-    color: #b3954b !important
+    color: #f1c56f !important;
+    text-shadow: 0px 5px 12px rgba(241, 197, 111, 0.81);
 }
 
 #desktopMenu a {
@@ -71,7 +72,7 @@ banner
     margin-right: auto;
 }
 
-#toggle {
+#toggledIcon {
     position: fixed;
     top: 70px;
     right: 70px;

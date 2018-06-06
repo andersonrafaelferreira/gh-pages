@@ -49,4 +49,13 @@ info
         border: 2px solid #b3954b;
         padding: 90px 30px 30px 30px
     }
+    /*    
+    aDomBernardo
+    */
+    #aDomBernardo .col-md-3:first-child {
+        padding-left: 0 !important
+    }
+    #aDomBernardo .col-md-3:first-child img {
+        margin-right: 0px;
+    }
 }
