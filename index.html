@@ -41,7 +41,7 @@
     <section id="banner">
         <div class="container">
             <img src="images/logoTop.png" id="logoTop">
-            <img src="images/menuIcon.png" id="toggle" onclick="toggle(this)">
+            <img src="images/menuIcon.png" id="toggle" onclick="toggled(this)">
             <ul id="desktopMenu" style="display: none">
                 <li><a href="#aDomBernardo">A barbearia</a></li>
                 <li><a href="#diferenciais">Serviços</a></li>
@@ -210,7 +210,7 @@
     <!-- scripts -->
     <!-- <?php echo get_template_directory_uri(); ?> -->
     <script>
-        function toggle(x) {
+        function toggled(x) {
             x.classList.toggle('applied');
             document.getElementById('desktopMenu').classList.toggle('show');
         }
