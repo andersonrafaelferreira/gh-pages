@@ -3,12 +3,46 @@
     /*    
     banner
     */
+    .leftBottom {
+        position: absolute;
+        bottom: 10px;
+        left: 10px
+    }
+
+    .leftTop {
+        position: absolute;
+        top: 10px;
+        left: 10px
+    }
+
+    .rightTop {
+        position: absolute;
+        top: 10px;
+        right: 10px
+    }
+
+    .rightBottom {
+        position: absolute;
+        bottom: 10px;
+        right: 10px
+    }
+
+    #innerBanner {
+        position: relative;
+        /*  is it necessary?  */
+        padding: 20px !important;
+        border: 2px solid #b3954b;
+        height: 100vh
+    }
+
     #banner {
-        height: 1253px;
-        background-image: url(../images/bgBanner.png);
+        height: 100%;
+        /*   position: relative; */
+        background-image: url(http://freela.tech/images/bgBannerNovo.jpg);
         background-repeat: no-repeat;
-        -webkit-background-size: cover;
         background-size: cover;
+        padding: 10px;
+        overflow: hidden;
     }
     #toggledIcon {
         position: fixed;

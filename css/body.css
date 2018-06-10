@@ -41,6 +41,50 @@
 banner
 */
 
+.leftBottom {
+    position: absolute;
+    bottom: 10px;
+    left: 10px
+}
+
+.leftTop {
+    position: absolute;
+    top: 10px;
+    left: 10px
+}
+
+.rightTop {
+    position: absolute;
+    top: 10px;
+    right: 10px
+}
+
+.rightBottom {
+    position: absolute;
+    bottom: 10px;
+    right: 10px
+}
+
+#innerBanner {
+    position: relative;
+    /*  is it necessary?  */
+    padding: 20px !important;
+    border: 2px solid #b3954b;
+    height: 130vh
+}
+
+#banner {
+    height: 100%;
+    /*   position: relative; */
+    background-image: url(http://freela.tech/images/bgBannerNovo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+
 #banner h1 {
     font-weight: 100;
     line-height: 20px;
@@ -54,16 +98,6 @@ banner
 #banner h1:nth-child(5) {
     color: white !important;
     margin-bottom: 20px;
-}
-
-#banner {
-    height: 1253px;
-    background-image: url(../images/bgBanner.jpg);
-    background-repeat: no-repeat;
-    -webkit-background-size: contain;
-    background-size: contain;
-    padding: 100px 0px;
-    text-align: center;
 }
 
 #logoTop {
