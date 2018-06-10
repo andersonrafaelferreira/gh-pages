@@ -3,6 +3,34 @@
         display: none;
     }
     /*    
+    desktopMenu
+    */
+    #desktopMenu {
+        position: fixed;
+        top: 120px;
+
+        right: 40px;
+        left: 80px;
+        /*        display: inline-block !important;
+        */
+        background-color: rgba(255, 255, 255, .2);
+        padding: 20px;
+        z-index: 10000;
+        text-align: center !important;
+    }
+    #desktopMenu li {
+        text-align: center;
+        float: none;
+        margin-top: 20px;
+    }
+    #desktopMenu a {
+        float: none;
+        font-size: 20px;
+        text-decoration: none;
+
+    }
+
+    /*    
     banner
     */
     .leftBottom {
@@ -56,7 +84,7 @@
     }
     #toggledIcon {
         position: fixed;
-        top: 70%;
+        top: 80%;
         left: 50%;
         transform: translateX(-50%);
         z-index: 1
