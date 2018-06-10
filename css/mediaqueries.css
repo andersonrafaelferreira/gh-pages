@@ -1,5 +1,7 @@
 @media (max-width: 767px) {
-
+    .noMobile {
+        display: none;
+    }
     /*    
     banner
     */
@@ -172,5 +174,14 @@ info
     */
     #aDomBernardo .col-md-3 img {
         left: -30px;
+    }
+    /*    
+    info
+    */
+    #info a {
+        font-size: 12px;
+    }
+    #info li {
+        font-size: 14px;
     }
 }
