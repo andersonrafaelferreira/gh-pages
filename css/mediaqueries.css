@@ -11,7 +11,7 @@
         left: 80px;
         /*        display: inline-block !important;
         */
-        background-color: rgba(255, 255, 255, .2);
+        background-color: rgba(0, 0, 0, .8);
         padding: 20px;
         z-index: 10000;
         text-align: center !important;
@@ -66,7 +66,7 @@
     #banner {
         height: 100%;
         /*   position: relative; */
-        background-image: url(http://freela.tech/images/bgBannerNovo.jpg);
+        background-image: url(../images/bgBannerNovoMobile.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         padding: 10px;
