@@ -50,6 +50,7 @@
                     <li><a href="#preCardapio">Cardápio</a></li>
                     <li><a href="#gallery">Fotos</a></li>
                     <li><a href="#info">Contato</a></li>
+                    <li><a><img src="images/close.png" onclick="toggleMobile(x)"></a></li>
                 </ul>
                 <h1>Dom Bernardo</h1>
                 <h1>O Lugar do Homem Moderno</h1>
@@ -243,6 +244,11 @@
             document.getElementById('desktopMenu').classList.toggle('show');
         }
 
+        function toggleMobile(x) {
+            document.getElementById('desktopMenu').classList.remove('show');
+
+        }
+
     </script>
 
     <!-- smooth scrolling -->
@@ -287,7 +293,7 @@
 
     </script>
 
-    <!-- headroom -->
+    <!-- headroom 
     <script src="plugins/headroom/headroom.min.js"></script>
     <script>
         // grab an element
