@@ -1,7 +1,5 @@
 @media (max-width: 767px) {
-    .noMobile {
-        display: none;
-    }
+
     /*    
     desktopMenu
     */
@@ -206,10 +204,26 @@ info
     /*    
     info
     */
-    #info a {
+    #info li:first-child a {
         font-size: 12px;
     }
     #info li {
         font-size: 14px;
     }
+
+    /* hacks */
+    #aDomBernardo p:nth-child(2) {
+        display: none !important;
+    }
+    #video img {
+        display: none !important;
+    }
+    #dia .col-md-4:nth-child(1) {
+        display: block;
+        margin: -30px 0px 30px;
+    }
+    #dia .col-md-4:nth-child(3) {
+        display: none !important;
+    }
+    /* hacks END */
 }
