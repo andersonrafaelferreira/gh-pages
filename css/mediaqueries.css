@@ -43,6 +43,7 @@
         background-size: cover;
         padding: 10px;
         overflow: hidden;
+        margin-bottom: 0px;
     }
     #banner h1:nth-child(5) {
         font-size: 20px
@@ -54,8 +55,12 @@
     #toggledIcon {
         position: fixed;
         top: 70%;
-        left: 45%;
+        left: 50%;
+        transform: translateX(-50%);
         z-index: 1
+    }
+    #video .container {
+        padding: 5px;
     }
     #video .col-md-10 {
         padding: 0px;
@@ -94,8 +99,43 @@ info
     /*    
     diferenciais
     */
+    #diferenciais .col-md-4 {
+        min-height: 200px;
+        text-align: center;
+        border: none !Important
+    }
+    #diferenciais .col-md-4:first-child {
+        background-color: #fff;
+        padding: 0px
+    }
+    #diferenciais .col-md-4:first-child h1 {
+        color: #efefec;
+        font-size: 140px;
+    }
+
+    #diferenciais .col-md-4:first-child h2 {
+        color: #a98f49;
+        font-size: 50px;
+        position: relative;
+        top: -125px;
+        margin-bottom: -40px;
+    }
+
     #diferenciais .col-md-4:nth-child(2) {
+        background-image: url(../images/difBg2.jpg);
+        -webkit-background-size: cover;
+        background-size: cover;
+        min-height: 300px;
+        padding: 100px 0px 0px;
         margin-bottom: -10px;
+    }
+    #diferenciais .col-md-4:last-child {
+        background-image: url(../images/difBg3.jpg);
+        -webkit-background-size: cover;
+        background-size: cover;
+        min-height: 300px;
+        padding: 100px 0px 0px;
+
     }
     /*    
     dia
