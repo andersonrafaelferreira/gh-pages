@@ -1,3 +1,21 @@
+/* hack */
+
+@media (min-width: 992px) {
+    #aDomBernardo .col-md-3 img {
+        float: left;
+    }
+}
+
+@media (min-width: 1281px) {
+    /*
+    #video {
+        margin-top: 160px;
+    }
+*/
+}
+
+/* hack */
+
 .show {
     display: block
 }
@@ -68,7 +86,7 @@ banner
 #innerBanner {
     position: relative;
     /*  is it necessary?  */
-    padding: 20px !important;
+    padding: 40px 20px !important;
     border: 2px solid #b3954b;
     height: 130vh
 }
@@ -76,7 +94,7 @@ banner
 #banner {
     height: 100%;
     /*   position: relative; */
-    background-image: url(http://freela.tech/images/bgBannerNovo.jpg);
+    background-image: url(../images/bgBannerNovo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 10px;
@@ -117,8 +135,8 @@ banner
     width: 100%;
     height: 400px;
     position: relative;
-    top: -460px;
-    margin-bottom: -440px
+    top: -220px;
+    margin-bottom: -200px
 }
 
 #video img {
@@ -198,12 +216,35 @@ dia
     margin-top: 40px;
 }
 
+/*
 #dia .col-md-8 {
     background-image: url(../images/moldura.png);
     -webkit-background-size: contain;
     background-size: contain;
     background-repeat: no-repeat;
-    padding: 90px 30px
+}
+*/
+
+#innerDia {
+    position: relative;
+    /*  is it necessary?  */
+    padding: 20px !important;
+    border: 2px solid #b3954b;
+    height: 300px
+}
+
+#dia .col-md-8 {
+    padding: 50px 0px
+}
+
+#dia .col-md-12 {
+    height: 100%;
+    /*   position: relative; */
+    background-color: transparent;
+    padding: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 30px 30px
 }
 
 #dia button {
@@ -211,7 +252,7 @@ dia
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    top: 50px;
+    top: -50px;
     border: 2px solid #b3954b;
     background-color: black;
     color: white;
@@ -221,7 +262,7 @@ dia
 
 #dia .col-md-4 {
     text-align: center;
-    padding-top: 90px;
+    padding-top: 70px;
 }
 
 #dia p {
