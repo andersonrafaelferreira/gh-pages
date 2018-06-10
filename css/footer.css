@@ -17,7 +17,11 @@ info
     margin-right: 10px;
 }
 
-#info .col-md-4:nth-child(3) {
+#info .col-md-4:nth-child(2) {
+    display: none;
+}
+
+#info .col-md-4:nth-child(4) {
     padding-top: 20px;
     padding-bottom: 20px;
     border-left: 1px solid #616161;
@@ -26,12 +30,16 @@ info
     top: -20px
 }
 
-#info .col-md-3:last-child .clear {
+#info .col-md-3:nth-child(5) .clear {
     text-align: center;
 }
 
-#info .col-md-3:last-child .clear img {
+#info .col-md-3:nth-child(5) .clear img {
     margin: 5px;
+}
+
+#info .col-md-1:last-child {
+    display: none;
 }
 
 #info a {

@@ -108,22 +108,36 @@ info
         background-color: #414141;
         padding: 44px 0px 0px
     }
+
     #info .col-md-1,
     #info .col-md-3,
     #info .col-md-4 {
         margin-bottom: 50px;
     }
-    #info .col-md-4:nth-child(3) {
-        padding-top: 20px;
-        padding-bottom: 20px;
-        border-left: none;
-        border-right: none;
-        border-top: 1px solid #616161;
-        border-bottom: 1px solid #616161;
-        position: relative;
-        top: 0px
+    #info .col-md-4:nth-child(4) {
+        display: none;
+    }
+    #info .col-md-4:nth-child(2) {
+        display: block;
+        margin-bottom: 40px !important;
+    }
+    #info .col-md-4:nth-child(2) li:nth-child(1) {
+        margin-left: 30px !important;
+    }
+    #iwatch {
+        margin-bottom: 20px !important;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
+    #info .col-md-1:first-child {
+        display: none;
+    }
+    #info .col-md-1:last-child {
+        display: block;
+        text-align: center;
+    }
     /*    
     diferenciais
     */
@@ -199,13 +213,57 @@ info
     aDomBernardo
     */
     #aDomBernardo .col-md-3 img {
-        left: -30px;
+        left: 0px;
+        float: left;
+        width: 50%;
     }
+    #aDomBernardo button img {
+        display: none;
+    }
+    #aDomBernardo button {
+        color: #b5b5b5;
+        padding: 15px 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid #b5b5b5;
+
+        margin-top: 40px;
+        margin-bottom: -40px;
+
+    }
+    /*
+preCardapio
+*/
+    #preCardapio {
+        background-image: url(../images/bgCardapio.jpg);
+        min-height: 330px;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 100px;
+        background-position: center 0;
+    }
+    /*
+gallery
+*/
+    #gallery {
+        background-color: #fff;
+        padding: 40px 0px 60px !important;
+    }
+
     /*    
     info
     */
-    #info li:first-child a {
-        font-size: 12px;
+    #info .container {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #info .col-md-4:nth-child(2) {
+        padding: 10px;
+        margin: 0px;
     }
     #info li {
         font-size: 14px;
