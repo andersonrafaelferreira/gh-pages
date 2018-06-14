@@ -7,9 +7,11 @@
 }
 
 @media (min-width: 1281px) {
-
-    #video {
-        margin-top: 160px;
+    #aDomBernardo .col-md-3:nth-child(2) {
+        padding-top: 100px !important;
+    }
+    #aDomBernardo .col-md-6 {
+        padding: 100px 100px 0px 0px !important;
     }
 
 }
@@ -41,6 +43,7 @@
     background-color: rgba(255, 255, 255, .2);
     padding: 20px;
     z-index: 10000;
+    text-align: center;
 }
 
 #desktopMenu a:hover,
@@ -97,33 +100,55 @@ banner
     /*  is it necessary?  */
     padding: 40px 20px !important;
     border: 2px solid #b3954b;
-    height: 130vh
+    /* height: 130vh */
+    height: 80vh !important
 }
 
 #banner {
     height: 100%;
     /*   position: relative; */
-    background-image: url(../images/bgBannerNovo.jpg);
+    background-image: url(../images/bgBannerTop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 10px;
-    overflow: hidden;
     text-align: center;
-    margin-bottom: -220px;
 }
 
+#bgVideo {
+    height: 20vh;
+    /*   position: relative; */
+    background-image: url(../images/bgBannerDown.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: -10vh !important;
+
+}
+
+#video iframe {
+    width: 100%;
+    height: 400px;
+}
+
+#video img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
 
 #banner h1 {
     font-weight: 100;
     line-height: 20px;
 }
 
-#banner h1:nth-child(4) {
+#banner h1:nth-child(2) {
     color: #b3954b !important;
-    margin-top: 300px;
+    margin-top: 30vh;
+    transform: translateY(-50%);
 }
 
-#banner h1:nth-child(5) {
+#banner h1:nth-child(3) {
     color: white !important;
     margin-bottom: 20px;
 }
@@ -141,21 +166,6 @@ banner
     z-index: 1
 }
 
-#video iframe {
-    width: 100%;
-    height: 400px;
-    position: relative;
-    /*
-    top: -220px;
-    margin-bottom: -200px
-*/
-}
-
-#video img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
 
 /*
 aDomBernardo
@@ -177,10 +187,11 @@ aDomBernardo
 
 #aDomBernardo .col-md-3 {
     text-align: center;
+    padding-top: 50px
 }
 
 #aDomBernardo .col-md-6 {
-    padding-top: 30px;
+    padding: 50px 50px 0px 0px;
 }
 
 #aDomBernardo .col-md-3 h1 {
@@ -399,7 +410,7 @@ gallery
     text-align: center;
 }
 
-/* wpcf7 
+/* wpcf7
 
 input,
 .wpcf7 input {

@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="plugins/owl.carousel/owl.theme.css">
     <link rel="stylesheet" href="plugins/owl.carousel/owl.carousel.css">
 
-    <!-- custom 4pme -->
+    <!-- custom freela.tech -->
 
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/body.css">
@@ -37,21 +37,25 @@
 
 <body>
 
+    <!-- menu -->
+    <img src="images/menuIcon.png" id="toggledIcon" onclick="toggled(this)">
+    <ul id="desktopMenu" style="display: none">
+        <li><a href="#aDomBernardo">A barbearia</a></li>
+        <li><a href="#diferenciais">Serviços</a></li>
+        <li><a href="#dia">Dia do noivo</a></li>
+        <li><a href="#preCardapio">Cardápio</a></li>
+        <li><a href="#gallery">Fotos</a></li>
+        <li><a href="#info">Contato</a></li>
+        <li><a><img src="images/close.png" onclick="toggleMobile(x)"></a></li>
+    </ul>
+    <!-- menu END -->
+
     <!-- banner -->
     <section id="banner">
         <div id="innerBanner">
             <div class="container">
                 <img src="images/logoTop.png" id="logoTop">
-                <img src="images/menuIcon.png" id="toggledIcon" onclick="toggled(this)">
-                <ul id="desktopMenu" style="display: none">
-                    <li><a href="#aDomBernardo">A barbearia</a></li>
-                    <li><a href="#diferenciais">Serviços</a></li>
-                    <li><a href="#dia">Dia do noivo</a></li>
-                    <li><a href="#preCardapio">Cardápio</a></li>
-                    <li><a href="#gallery">Fotos</a></li>
-                    <li><a href="#info">Contato</a></li>
-                    <li><a><img src="images/close.png" onclick="toggleMobile(x)"></a></li>
-                </ul>
+
                 <h1>Dom Bernardo</h1>
                 <h1>O Lugar do Homem Moderno</h1>
                 <img src="images/scissors.png" alt="">
@@ -63,6 +67,10 @@
         </div>
     </section>
     <!-- banner END -->
+
+    <div id="bgVideo">
+
+    </div>
 
     <section id="video">
         <div class="container">
@@ -244,7 +252,7 @@
             document.getElementById('desktopMenu').classList.toggle('show');
         }
 
-        function toggleMobile(x) {
+        function toggleMobile() {
             document.getElementById('desktopMenu').classList.remove('show');
 
         }
@@ -306,7 +314,7 @@
 
     </script>
 
-    <!-- owl carousel -->
+    <!-- owl carousel 
     <script src="plugins/owl.carousel/owl.carousel.min.js"></script>
 
     <script>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        #one {
+            width: 100%;
+            height: 80vh !important;
+            background-image: url(images/bgBannerTop.jpg);
+            background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            background-size: cover;
+        }
+
+        #two {
+            width: 100%;
+            height: 20vh !important;
+            background-image: url(images/bgBannerDown.jpg);
+            background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            background-size: cover;
+            margin-bottom: -10vh;
+        }
+
+        #video iframe {
+            width: 60%;
+            height: 400px;
+            position: relative;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            /*
+    top: -220px;
+    margin-bottom: -200px
+*/
+        }
+
+        #video img {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="one"></div>
+    <div id="two"></div>
+
+    <section id="video">
+        <div class="container">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <iframe src="https://www.youtube.com/embed/KhKNWg0rMOE" frameborder="0" allowfullscreen></iframe>
+                <img src="images/videoShadow.png">
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </section>
+
+</body>
+
+</html>
