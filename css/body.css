@@ -221,7 +221,8 @@ aDomBernardo
     color: #525b37;
     text-transform: uppercase;
     border: none;
-    font-size: 18px;
+    /*    font-size: 18px;*/
+    font-size: 12px;
     letter-spacing: 5px;
     font-weight: 100;
     font-family: 'bodoni';
