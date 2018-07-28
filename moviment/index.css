@@ -660,7 +660,8 @@ ideal
 }
 
 #ideal .row {
-    padding: 0px 80px
+    padding: 0px 80px;
+    margin-bottom: 20px;
 }
 
 #ideal .col-md-4 {
