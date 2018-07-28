@@ -648,6 +648,10 @@ carousel END
 ideal
 */
 
+#ideal {
+    margin-top: 60px;
+}
+
 #ideal h5 {
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
