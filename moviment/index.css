@@ -664,10 +664,46 @@ ideal
     margin-bottom: 20px;
 }
 
+#ideal .col-md-12 {
+    border-top: 2px solid #32cfb3;
+    margin: 40px 0px;
+    padding: 40px 0px;
+}
+
 #ideal .col-md-4 {
     text-align: center;
 }
 
+#ideal p {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    color: #494949;
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+#ideal .item {
+    margin: 20px 0px
+}
+
+#ideal .item p {
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px 0px;
+    color: #494949;
+    font-size: 16px;
+}
+
+#ideal .item img {
+    margin: 10px 0px
+}
+
+#ideal .item h4 {
+    font-size: 20px;
+    color: #3571a3;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 
 /*
 tudo
