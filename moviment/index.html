@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sua vida não para | Moviment</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- font awesome v +5  -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <!-- google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis:500,600|Open+Sans:400,600,700,700i|Roboto:300" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- h1 -->
+
+
+    <header>
+        <div class="bar-top">
+            <div class="container">
+                <ul class="top-contato">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#">contato</a></li>
+                    <li>|</li>
+                    <li><a href="#">Cadastre-se</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div id="main-navigation" class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-navigation">
+					<span class="sr-only"><?php _e( 'Toggle navigation', 'odin' ); ?></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+                    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+						<img src="https://linhamoviment.com.br/wp-content/themes/moviment/assets/images/logo-front-new.png" alt="">
+					</a>
+                </div>
+                <nav class="collapse navbar-collapse navbar-main-navigation" role="navigation">
+                    <!--                         <?php
+    wp_nav_menu(
+        array(
+            'theme_location' => 'main-menu',
+            'depth'          => 2,
+            'container'      => false,
+            'menu_class'     => 'nav navbar-nav navbar-right',
+            'fallback_cb'    => 'Odin_Bootstrap_Nav_Walker::fallback',
+            'walker'         => new Odin_Bootstrap_Nav_Walker()
+        )
+    );
+?> -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#">Incontinência urinária</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Produtos
+                                  <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Roupa íntima</a></li>
+                                <li><a href="#">Absorvente</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Compre agora</a></li>
+                        <li><a href="#">Dúvidas</a></li>
+                    </ul>
+                </nav>
+                <!-- .navbar-collapse -->
+            </div>
+            <!-- #main-navigation-->
+
+        </div>
+        <!-- .container-->
+    </header>
+    <!-- header END -->
+
+
+    <!-- carousel -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active" id="one">
+                <div class="container">
+                    <div class="col-md-6">
+                        <div class="title">
+                            <h1>Você sempre teve uma vida cheia de compromissos. E vai continuar assim.</h1>
+                            <img src="images/banner1.png" alt="" class="mobile">
+                            <p>Com Moviment, a marca de roupa íntima descartável da Bigfral, você sente segurança em todos os momentos.</p>
+                            <img src="images/banner1.png" alt="" class="desktop">
+                            <a href="#">
+                            <button>Saiba mais</button>
+                        </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item" id="two">
+                <div class="container">
+                    <div class="col-md-6">
+                        <div class="title">
+                            <h1>Você sempre teve uma vida cheia de compromissos. E vai continuar assim.</h1>
+                            <img src="images/banner1.png" alt="" class="mobile">
+                            <p>Com Moviment, a marca de roupa íntima descartável da Bigfral, você sente segurança em todos os momentos.</p>
+                            <img src="images/banner1.png" alt="" class="desktop">
+                            <a href="#">
+                            <button>Saiba mais</button>
+                        </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item" id="three">
+                <div class="container">
+                    <div class="col-md-6">
+                        <div class="title">
+                            <h1>Você sempre teve uma vida cheia de compromissos. E vai continuar assim.</h1>
+                            <img src="images/banner1.png" alt="" class="mobile">
+                            <p>Com Moviment, a marca de roupa íntima descartável da Bigfral, você sente segurança em todos os momentos.</p>
+                            <img src="images/banner1.png" alt="" class="desktop">
+                            <a href="#">
+                            <button>Saiba mais</button>
+                        </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- carousel END -->
+
+    <!-- tudo -->
+    <section id="tudo">
+        <div class="container">
+            <h4>Tudo o que você precisa saber <strong>sobre incontinência urinária</strong>.</h4>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+    <!-- tudo END -->
+
+    <!-- blogMobile -->
+    <section id="blogMobile" class="mobile">
+        <div class="post">
+            <div class="col-xs-4">
+                <img src="images/post1Mob.jpg" alt="">
+            </div>
+            <div class="col-xs-8">
+                <h4>Sinais que indicam a incontinência urinária</h4>
+                <a href="#"><button>Ler matéria</button></a>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="post">
+            <div class="col-xs-4">
+                <img src="images/post2Mob.jpg" alt="">
+            </div>
+            <div class="col-xs-8">
+                <h4>Sinais que indicam a incontinência urinária</h4>
+                <a href="#"><button>Ler matéria</button></a>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="post">
+            <div class="col-xs-4">
+                <img src="images/post3Mob.jpg" alt="">
+            </div>
+            <div class="col-xs-8">
+                <h4>Sinais que indicam a incontinência urinária</h4>
+                <a href="#"><button>Ler matéria</button></a>
+            </div>
+        </div>
+    </section>
+    <!-- blogMobile END -->
+
+    <!-- blog -->
+    <section id="blog" class="desktop">
+        <div class="col-md-12">
+            <div class="container">
+                <div class="col-md-6">
+                    <h4>Sinais que indicam a incontinência urinária</h4>
+                    <p>Agora é hora de manter a calma e de procurar descobrir a causa da incontinência urinária. Admitir que há algum problema é o passo mais importante. Não é normal...
+                    </p>
+                    <a href="#"><button>Ler matéria</button></a>
+                </div>
+                <div class="col-md-6"></div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="container">
+                <div class="col-md-6"></div>
+                <div class="col-md-6">
+                    <h4>Essas pessoas conseguiram superar a incontinência</h4>
+                    <p>É fato: existe um tabu em torno da incontinência urinária. Porém, cada vez mais pessoas estão dispostas a lidar com essa questão com naturalidade, procurar ajuda e levar...
+
+                    </p>
+                    <a href="#"><button>Ler matéria</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="container">
+                <div class="col-md-6">
+                    <h4>05 coisas que acontecem depois dos 40 e são normais</h4>
+                    <p>Hoje, graças à tecnologia e a um estilo de vida saudável, é possível suavizar a passagem dos anos e se manter ativo por muito tempo. Passar dos 40 significa que ainda tem... a</p>
+                    <a href="#"><button>Ler matéria</button></a>
+                </div>
+            </div>
+            <div class="col-md-6"></div>
+        </div>
+    </section>
+    <!-- blog END -->
+
+    <div class="clear"></div>
+
+    <div id="materias">
+        <a href=""><button>+ Matérias</button></a>
+    </div>
+
+
+    <div class="clear"></div>
+
+    <!-- absorvente -->
+    <section id="absorvente">
+        <div class="container">
+            <div class="col-md-6">
+                <h4>O absorvente desenvolvido para mulheres com escapes de urina.</h4>
+                <ul>
+                    <li><i class="fas fa-circle"></i><strong>Tecnologia Ultrasec®</strong> Máxima absorção mantendo a pele seca.</li>
+                    <li><i class="fas fa-circle"></i><strong>Odor Control  
+</strong> Neutraliza odores.</li>
+                </ul>
+                <img src="images/absorvente1.png" alt="" class="desktop mobile">
+                <a href="#"><button>Saiba mais</button></a>
+            </div>
+            <div class="col-md-6">
+                <img src="images/absorvente1.png" alt="" class="desktop">
+            </div>
+        </div>
+    </section>
+    <!-- absorvente END -->
+
+    <!-- roupa -->
+    <section id="roupa">
+        <div class="container">
+            <div class="col-md-6">
+                <p class="desktop">Roupa Íntima descartável para incontinência <br>
+                    <strong>moderada a intensa</strong>.
+                </p>
+                <h4 class="mobile">Viva com conforto e segurança.</h4>
+                <ul class="mobile">
+                    <li><i class="fas fa-circle"></i><strong>Tecnologia Ultrasec®</strong> Máxima absorção mantendo a pele seca.</li>
+                    <li><i class="fas fa-circle"></i>Ajuste mais anatômico.</li>
+                    <li><i class="fas fa-circle"></i>Barreira antivazamento.</li>
+                    <li><i class="fas fa-circle"></i>Máxima absorção.</li>
+                    <li><i class="fas fa-circle"></i>Neutralizador de odor.</li>
+                </ul>
+                <img src="images/roupa1.png" alt="">
+                <a href="#"><button>Saiba mais</button></a>
+            </div>
+            <div class="col-md-6">
+                <h4 class="desktop">Viva com conforto e segurança.</h4>
+                <ul class="desktop">
+                    <li><i class="fas fa-circle"></i><strong>Tecnologia Ultrasec®</strong> Máxima absorção mantendo a pele seca.</li>
+                    <li><i class="fas fa-circle"></i>Ajuste mais anatômico.</li>
+                    <li><i class="fas fa-circle"></i>Barreira antivazamento.</li>
+                    <li><i class="fas fa-circle"></i>Máxima absorção.</li>
+                    <li><i class="fas fa-circle"></i>Neutralizador de odor.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- roupa END -->
+
+    <div class="clear"></div>
+
+    <!-- queremos -->
+    <section id="queremos">
+        <div class="container">
+            <div class="col-md-12">
+                <h4>Queremos compartilhar mais informações sobre <br> <strong>incontinência urinária com você</strong></h4>
+                <p>Deixe seu e-mail e receba as novidades para sua vida continuar sempre ativa.</p>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="Nome">
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                        <button type="submit" class="btn btn-default">Cadastrar</button>
+
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </section>
+    <!-- queremos END -->
+
+
+
+    <!-- preFooter -->
+    <section id="preFooter">
+        <div class="container">
+            <div class="col-md-6">
+                <div class="col-md-4"></div>
+                <div class="col-md-8">
+                    <p>Moviment está disponível nas lojas físicas dos nossos parceiros ou para compra online de acordo com sua região.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <a href="#"><button>Compre aqui</button></a>
+            </div>
+        </div>
+    </section>
+    <!-- preFooter END-->
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="col-md-12 mobile">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+            </div>
+            <footer>
+                <div class="container">
+                    <nav>
+                        <a href="#">Incontinência uninária</a>
+                        <a href="#">Produtos</a>
+                        <a href="#">Compre agora</a>
+                        <a href="#">Dúvidas</a>
+                        <a href="#">Cadastre-se</a>
+                        <a href="#">Contato</a>
+                    </nav>
+
+                </div>
+            </footer>
+            <div class="col-md-12 desktop">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- footer END -->
