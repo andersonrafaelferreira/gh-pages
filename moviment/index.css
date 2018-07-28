@@ -645,6 +645,26 @@ carousel END
 */
 
 /*
+ideal
+*/
+
+#ideal h5 {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color: #3571a3;
+    text-align: center;
+}
+
+#ideal .row {
+    padding: 0px 80px
+}
+
+#ideal .col-md-4 {
+    text-align: center;
+}
+
+
+/*
 tudo
 */
 
