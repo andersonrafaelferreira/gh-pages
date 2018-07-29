@@ -160,11 +160,11 @@
     <!-- movimentMiss END -->
 
     <section id="hover" class="desktop">
-        <i class="fas fa-circle"></i>
-        <i class="fas fa-circle"></i>
-        <i class="fas fa-circle"></i>
-        <i class="fas fa-circle"></i>
-        <i class="fas fa-circle"></i>
+        <i class="fas fa-circle" onmouseover="dstq1()" onmouseout="out()"></i>
+        <i class="fas fa-circle" onmouseover="dstq2()" onmouseout="out()"></i>
+        <i class="fas fa-circle" onmouseover="dstq3()" onmouseout="out()"></i>
+        <i class="fas fa-circle" onmouseover="dstq4()" onmouseout="out()"></i>
+        <i class="fas fa-circle" onmouseover="dstq5()" onmouseout="out()"></i>
     </section>
 
     <div id="shadow">
@@ -291,6 +291,32 @@
                 itemsDesktopSmall: [979, 1]
             });
         });
+    </script>
+
+    <script>
+        function out() {
+            document.getElementById('hover').style.backgroundImage = 'url(http://freela.tech/moviment/images/hover/hover.png)';
+        }
+
+        function dstq1() {
+            document.getElementById('hover').style.backgroundImage = 'url(http://freela.tech/moviment/images/hover/hover1.png)';
+        }
+
+        function dstq2() {
+            document.getElementById('hover').style.backgroundImage = 'url(http://freela.tech/moviment/images/hover/hover2.png)';
+        }
+
+        function dstq3() {
+            document.getElementById('hover').style.backgroundImage = 'url(http://freela.tech/moviment/images/hover/hover3.png)';
+        }
+
+        function dstq4() {
+            document.getElementById('hover').style.backgroundImage = 'url(http://freela.tech/moviment/images/hover/hover4.png)';
+        }
+
+        function dstq5() {
+            document.getElementById('hover').style.backgroundImage = 'url(http://freela.tech/moviment/images/hover/hover5.png)';
+        }
     </script>
 
 </body>
