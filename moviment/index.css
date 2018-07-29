@@ -381,6 +381,7 @@ banner
     background-size: cover;
     /*    height: 591px;
     */
+    background-position: center;
     padding: 200px 0px
 }
 
