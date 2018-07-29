@@ -1382,7 +1382,7 @@ footer .col-md-5 {
 @media (max-width: 767px) {
 
     .desktop {
-        display: none;
+        display: none !important;
     }
 
     .mobile {
