@@ -825,42 +825,42 @@ hover
 
 #hover i:hover {
     color: #8a2b54;
-    opacity: .6;
+    opacity: 0;
 }
 
 #hover i:nth-child(1) {
     position: relative;
     margin-top: 121px;
     margin-left: 592px;
-    color: red !important;
+    /*    color: red !important;*/
 }
 
 #hover i:nth-child(2) {
     position: relative;
     margin-top: 77px !important;
     margin-left: 599px !important;
-    color: blue !important
+    /*    color: blue !important*/
 }
 
 #hover i:nth-child(3) {
     position: absolute;
     margin-top: 164px !important;
     margin-left: -185px !important;
-    color: green !important
+    /*    color: green !important*/
 }
 
 #hover i:nth-child(4) {
     position: absolute;
     margin-top: 300px !important;
     margin-left: -147px !important;
-    color: yellow !important
+    /*    color: yellow !important*/
 }
 
 #hover i:nth-child(5) {
     position: absolute;
     margin-top: 332px !important;
     margin-left: -267px !important;
-    color: pink !important
+    /*    color: pink !important*/
 }
 
 /*
