@@ -801,6 +801,79 @@ movimentMiss
     margin-bottom: 40px;
 }
 
+/*
+hover
+*/
+
+#hover {
+    background-image: url(http://freela.tech/moviment/images/missEffects.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 692px;
+    width: 1017px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    margin-bottom: 200px;
+}
+
+#hover i {
+    color: #8a2b54;
+    font-size: 20px;
+}
+
+#hover i:hover {
+    color: #8a2b54;
+    opacity: .6;
+}
+
+#hover i:nth-child(1) {
+    position: relative;
+    margin-top: 205px;
+    margin-left: 592px;
+    color: red !important;
+}
+
+#hover i:nth-child(2) {
+    position: relative;
+    margin-top: 77px !important;
+    margin-left: 599px !important;
+    color: blue !important
+}
+
+#hover i:nth-child(3) {
+    position: absolute;
+    margin-top: 164px !important;
+    margin-left: -185px !important;
+    color: green !important
+}
+
+#hover i:nth-child(4) {
+    position: absolute;
+    margin-top: 300px !important;
+    margin-left: -147px !important;
+    color: yellow !important
+}
+
+#hover i:nth-child(5) {
+    position: absolute;
+    margin-top: 332px !important;
+    margin-left: -267px !important;
+    color: pink !important
+}
+
+/*
+shadow
+*/
+
+#shadow .col-md-12 {
+    margin-top: 100px;
+    height: 50px;
+    -webkit-box-shadow: 0px 18px 54px -8px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 18px 54px -8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 18px 54px -8px rgba(0, 0, 0, 0.2);
+}
 
 /*
 opcoes
@@ -834,6 +907,9 @@ opcoes
 #opcoes {
     text-align: center;
     margin-bottom: 40px;
+    position: relative;
+    top: -200px;
+    margin-bottom: -120px;
 }
 
 /*
@@ -1454,6 +1530,15 @@ footer .col-md-5 {
     }
     #ideal h5 {
         margin-top: 30px;
+    }
+    /*    
+    movimentMiss
+    */
+    #movimentMiss h5 {
+        margin-top: 30px;
+    }
+    #roxo .item {
+        text-align: center;
     }
     /*    
     preFooter
