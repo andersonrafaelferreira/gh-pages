@@ -40,7 +40,7 @@ p {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 26px;
-    color: #333;
+    color: #494949;
 }
 
 a:hover {
@@ -399,10 +399,10 @@ banner
 
 
 /*
-bannerMiss
+miss
 */
 
-#bannerMiss {
+#miss {
     margin-top: -104px;
     background-image: url(images/bgBannerMiss.png);
     background-repeat: no-repeat;
@@ -414,11 +414,11 @@ bannerMiss
     padding: 200px 0px
 }
 
-#bannerMiss .col-md-6 {
+#miss .col-md-6 {
     text-align: center;
 }
 
-#bannerMiss h3 {
+#miss h3 {
     color: white;
     font-size: 30px;
     font-family: 'Dosis', sans-serif;
@@ -759,6 +759,40 @@ ideal
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     margin-bottom: 20px;
+}
+
+/*
+opcoes
+*/
+
+#opcoes h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-size: 17px;
+}
+
+#opcoes .col-md-4:first-child h5 {
+    color: #ab004d !important
+}
+
+#opcoes .col-md-4:nth-child(2) h5 {
+    color: #005f37 !important
+}
+
+#opcoes .col-md-4:last-child h5 {
+    color: #005f37 !important
+}
+
+#opcoes p {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-size: 17px;
+    color: #494949
+}
+
+#opcoes {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 /*
