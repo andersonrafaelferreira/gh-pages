@@ -18,7 +18,7 @@ html {
 }
 
 body {
-    background-color: transparent!important;
+    background-color: transparent !important;
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 0px;
 }
@@ -405,9 +405,11 @@ portfolio
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    height: 672px;
+    /*    height: 672px;
+    */
     padding-top: 140px;
     text-align: center;
+    padding-bottom: 80px;
 }
 
 #portfolio .row {
@@ -1128,7 +1130,7 @@ footer {
     background-color: #0a4678;
     width: 100%;
     overflow: hidden;
-    padding: 15px 0px 30px!important
+    padding: 15px 0px 30px !important
 }
 
 footer a {
