@@ -60,7 +60,7 @@ button:hover {
 }
 
 .mobile {
-    display: none;
+    display: none !important;
 }
 
 /*
@@ -713,6 +713,7 @@ ideal
     font-family: 'Open Sans', sans-serif;
     color: #3571a3;
     text-align: center;
+    font-weight: bold;
 }
 
 #ideal .row {
@@ -760,6 +761,46 @@ ideal
     font-weight: bold;
     margin-bottom: 20px;
 }
+
+/*
+movimentMiss
+*/
+
+#movimentMiss {
+    margin-top: 60px;
+}
+
+#movimentMiss h5 {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color: #980d50;
+    text-align: center;
+    font-weight: bold;
+}
+
+#movimentMiss .row {
+    padding: 0px 80px;
+    margin-bottom: 20px;
+}
+
+#movimentMiss .col-md-12 {
+    border-top: 2px solid #32cfb3;
+    margin: 40px 0px;
+    padding: 40px 0px;
+}
+
+#movimentMiss .col-md-4 {
+    text-align: center;
+}
+
+#movimentMiss p {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    color: #494949;
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
 
 /*
 opcoes
@@ -1304,10 +1345,10 @@ footer .col-md-5 {
         width: 260px
     }
 
+    /*
     .social-top {
         display: none;
-    }
-
+    }*/
     /*    
     roupa
     */
@@ -1459,7 +1500,9 @@ footer .col-md-5 {
     footer nav a:last-child {
         border-bottom: none;
     }
+    /*
     footer .mobile img {
         width: 36px
     }
+*/
 }
