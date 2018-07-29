@@ -1219,7 +1219,7 @@ footer .col-md-5 {
     }
 
     .mobile {
-        display: block;
+        display: block !important;
     }
 
     /*
