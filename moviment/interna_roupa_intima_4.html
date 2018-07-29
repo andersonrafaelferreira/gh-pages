@@ -23,6 +23,10 @@
     <!-- google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Dosis:500,600|Open+Sans:400,600,700,700i|Roboto:300" rel="stylesheet">
 
+    <!-- owl -->
+    <link rel="stylesheet" href="plugins/owl.theme.css">
+    <link rel="stylesheet" href="plugins/owl.carousel.css">
+
     <link rel="stylesheet" href="index.css">
 </head>
 
@@ -107,8 +111,22 @@
     <!-- ideal -->
     <section id="ideal">
         <div class="container">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
+            <div id="rotativo">
+                <div class="item">
+                    <img src="images/rotativo/image_p1.png" alt="">
+                    <h5>Ideal para usuários que possuem vida ativa</h5>
+                </div>
+                <div class="item">
+                    <img src="images/rotativo/image_p2.png" alt="">
+                    <h5>Conforto e segurança para você fazer tudo que tem vontade</h5>
+                </div>
+                <div class="item">
+                    <img src="images/rotativo/image_p3.png" alt="">
+                    <h5>Praticidade e descrição no dia-a-dia</h5>
+                </div>
+            </div>
+            <div class="col-md-1 desktop"></div>
+            <div class="col-md-10 desktop">
                 <div class="row">
                     <img src="images/image_total.png" alt="">
                 </div>
@@ -126,7 +144,7 @@
                     </h5>
                 </div>
             </div>
-            <div class="col-md-1"></div>
+            <div class="col-md-1 desktop"></div>
             <div class="col-md-12">
                 <div class="col-md-5">
                     <img src="images/r_feminina.png" alt="">
@@ -243,3 +261,26 @@
         </div>
     </footer>
     <!-- footer END -->
+    <script src="plugins/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#rotativo").owlCarousel({
+                autoPlay: 3000, //Set AutoPlay to 3 seconds
+                items: 3,
+                itemsDesktop: [1199, 3],
+                itemsDesktopSmall: [979, 1]
+            });
+
+            $("#owl-why").owlCarousel({
+                autoPlay: 3000, //Set AutoPlay to 3 seconds
+                items: 2,
+                itemsDesktop: [1199, 2],
+                itemsDesktopSmall: [979, 1]
+            });
+
+        });
+    </script>
+
+</body>
+</html>

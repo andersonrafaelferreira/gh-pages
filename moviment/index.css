@@ -423,10 +423,6 @@ portfolio
     font-style: italic;
 }
 
-#portfolio .col-md-4 {
-    margin-bottom: 40px;
-}
-
 #portfolio .col-md-4 img {
     margin-left: -40px;
     margin-bottom: 20px;
@@ -677,7 +673,7 @@ ideal
     background-color: #eeeeee;
     padding: 10px 40px;
     font-size: 17px;
-    color: 494949;
+    color: #494949;
     border-radius: 20px
 }
 
@@ -1308,7 +1304,22 @@ footer .col-md-5 {
         margin-left: auto;
         margin-right: auto;
     }
-
+    /*
+    portfolio
+    */
+    #portfolio .col-md-4 {
+        margin-bottom: 40px;
+    }
+    /*
+    ideal
+    */
+    #ideal .warning {
+        margin: 40px 20px 80px;
+        padding: 20px;
+    }
+    #ideal h5 {
+        margin-top: 30px;
+    }
     /*    
     preFooter
     */
