@@ -806,7 +806,7 @@ hover
 */
 
 #hover {
-    background-image: url(http://freela.tech/moviment/images/hover/hover.png);
+    background-image: url(../images/hover/hover.png);
     background-repeat: no-repeat;
     background-size: contain;
     height: 692px;
@@ -830,7 +830,7 @@ hover
 
 #hover i:nth-child(1) {
     position: relative;
-    margin-top: 205px;
+    margin-top: 121px;
     margin-left: 592px;
     color: red !important;
 }
