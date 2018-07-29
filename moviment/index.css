@@ -399,6 +399,35 @@ banner
 
 
 /*
+bannerMiss
+*/
+
+#bannerMiss {
+    margin-top: -104px;
+    background-image: url(images/bgBannerMiss.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    /*    height: 591px;
+    */
+    background-position: center;
+    padding: 200px 0px
+}
+
+#bannerMiss .col-md-6 {
+    text-align: center;
+}
+
+#bannerMiss h3 {
+    color: white;
+    font-size: 30px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+
+/*
 portfolio
 */
 
