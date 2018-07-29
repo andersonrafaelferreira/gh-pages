@@ -375,12 +375,13 @@ banner
 
 #banner {
     margin-top: -100px;
-    background-image: url(images/bgRoupaIntima.png);
+    background-image: url(images/bgRoupaIntima_1920.png);
     background-repeat: no-repeat;
-    -webkit-background-size: contain;
-    background-size: contain;
-    height: 591px;
-    padding: 200px 0px 0px
+    -webkit-background-size: cover;
+    background-size: cover;
+    /*    height: 591px;
+    */
+    padding: 200px 0px
 }
 
 #banner .col-md-6 {
@@ -643,15 +644,15 @@ carousel
         background-repeat: no-repeat;
     }
     #one {
-        background-image: url(images/banner.png);
+        background-image: url(images/bgBannerMobile.png);
     }
 
     #two {
-        background-image: url(images/banner.png);
+        background-image: url(images/bgBannerMobile.png);
     }
 
     #three {
-        background-image: url(images/banner.png);
+        background-image: url(images/bgBannerMobile.png);
     }
 
 }
@@ -1202,12 +1203,14 @@ footer .col-md-5 {
     #blogMobile {
         background-color: #fff;
     }
-    .post .col-xs-4 {
+    .post .col-xs-4,
+    .post .col-xs-5,
+    .post .col-xs-7 {
         padding-left: 0px;
         margin-left: 0px;
     }
     .post {
-        margin: 20px 0px !important;
+        margin: 6px 0px !important;
         background-color: #f7f8fa;
         overflow: hidden
     }
@@ -1226,7 +1229,7 @@ footer .col-md-5 {
     }
     .post h4 {
         margin-top: 20px;
-        font-size: 14px;
+        font-size: 18px;
         font-family: 'Open Sans', sans-serif;
         font-weight: bold;
         color: #3571a3;
@@ -1245,9 +1248,10 @@ footer .col-md-5 {
     roupa
     */
     #roupa {
-
+        background-image: url(images/bgVivaMobile.png);
         height: 800px;
         padding-top: 40px;
+        margin-top: -30px;
     }
     #roupa .col-md-6 {
         padding: 0px;
@@ -1255,6 +1259,7 @@ footer .col-md-5 {
     #roupa h4 {
         margin-top: 80px;
         margin-left: 20px;
+        font-size: 20px;
     }
     #roupa ul {
         margin-left: -20px;
@@ -1272,13 +1277,15 @@ footer .col-md-5 {
         margin-top: 40px !important;
     }
     #absorvente h4 {
-        margin-top: 20px;
+        margin-top: 40px;
         margin-left: 20px;
+        font-size: 20px;
     }
     #absorvente ul {
         margin-left: -20px;
     }
     #absorvente {
+        background-image: url(images/bgAbsorventeMobile.png);
         height: 660px
     }
     #absorvente .col-md-6 {
@@ -1287,9 +1294,32 @@ footer .col-md-5 {
     #absorvente button {
         margin-top: 10px;
     }
+    /*
+    materias
+    */
+    #materias button {
+        background-color: #fff;
+        color: #32c9b6;
+        border: 2px solid #32c9b6;
+    }
+    /*    
+    tudo
+    */
+    #tudo h4 {
+        padding: 0px 20px;
+        font-size: 18px;
+    }
+
+    #tudo h4 strong {
+        font-size: 20px;
+    }
     /*    
     queremos
     */
+    #queremos {
+        background-color: #fff;
+    }
+
     #queremos h4 {
         margin-bottom: 40px;
     }
