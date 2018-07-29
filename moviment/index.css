@@ -846,36 +846,36 @@ hover
 
 #hover i:nth-child(1) {
     position: relative;
-    margin-top: 121px;
+    margin-top: 119px;
     margin-left: 590px;
-    /*    color: red !important;*/
+    /*        color: red !important;*/
 }
 
 #hover i:nth-child(2) {
     position: relative;
     margin-top: 77px !important;
-    margin-left: 599px !important;
+    margin-left: 597px !important;
     /*    color: blue !important*/
 }
 
 #hover i:nth-child(3) {
     position: absolute;
     margin-top: 164px !important;
-    margin-left: -185px !important;
+    margin-left: -187px !important;
     /*    color: green !important*/
 }
 
 #hover i:nth-child(4) {
     position: absolute;
-    margin-top: 300px !important;
-    margin-left: -147px !important;
+    margin-top: 302px !important;
+    margin-left: -149px !important;
     /*    color: yellow !important*/
 }
 
 #hover i:nth-child(5) {
     position: absolute;
-    margin-top: 332px !important;
-    margin-left: -267px !important;
+    margin-top: 335px !important;
+    margin-left: -270px !important;
     /*    color: pink !important*/
 }
 
