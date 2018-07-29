@@ -1365,7 +1365,7 @@ footer .col-md-5 {
     footer nav a:last-child {
         border-bottom: none;
     }
-    footer .col-md-12 .mobile img {
+    footer .mobile img {
         width: 36px
     }
 }
