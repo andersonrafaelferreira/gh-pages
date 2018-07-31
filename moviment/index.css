@@ -380,12 +380,13 @@ banner
 
 #banner {
     margin-top: -104px;
-    background-image: url(images/bgRoupaIntima_1920.png);
+    background-image: url(images/bannerMissIntima.jpg);
+    /*    background-image: url(images/bgRoupaIntima_1920.png);*/
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    /*    height: 591px;
-    */
+    height: 591px;
+
     background-position: center;
     padding: 200px 0px
 }
@@ -435,6 +436,12 @@ miss
 /*
 portfolio
 */
+
+.bullets {
+    position: relative;
+    top: 337px;
+    z-index: 0;
+}
 
 #portfolio {
     background-image: url(images/bgPortfolio.png);
