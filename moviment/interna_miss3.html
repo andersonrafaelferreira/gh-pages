@@ -306,14 +306,13 @@
     </script>
 
     <script>
-        window.onload = function() {
-            document.getElementById('hover').style.backgroundImage = 'url(images/hover/hover1.jpg)';
-            document.getElementById('hover').style.backgroundImage = 'url(images/hover/hover2.jpg)';
-            document.getElementById('hover').style.backgroundImage = 'url(images/hover/hover3.jpg)';
-            document.getElementById('hover').style.backgroundImage = 'url(images/hover/hover4.jpg)';
-            document.getElementById('hover').style.backgroundImage = 'url(images/hover/hover5.jpg)';
-            document.getElementById('hover').style.backgroundImage = 'url(images/hover/hover.jpg)';
-        }
+        document.getElementById('hover').style.backgroundImage = 'url(images/hover/hover1.jpg)';
+        document.getElementById('hover').style.backgroundImage = 'url(images/hover/hover2.jpg)';
+        document.getElementById('hover').style.backgroundImage = 'url(images/hover/hover3.jpg)';
+        document.getElementById('hover').style.backgroundImage = 'url(images/hover/hover4.jpg)';
+        document.getElementById('hover').style.backgroundImage = 'url(images/hover/hover5.jpg)';
+        document.getElementById('hover').style.backgroundImage = 'url(images/hover/hover.jpg)';
+        console.log('images loaded');
 
         function out() {
             document.getElementById('hover').style.backgroundImage = 'url(images/hover/hover.jpg)';
