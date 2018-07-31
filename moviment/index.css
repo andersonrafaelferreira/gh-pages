@@ -191,6 +191,11 @@ header {
 }
 */
 
+.bar-top img {
+    position: relative;
+    margin-top: -8px;
+}
+
 .bar-top {
     padding: 10px;
     /*    background-color: #e43c20;*/
@@ -1092,6 +1097,9 @@ absorvente
     list-style: none;
     /*    margin-left: 40px;
     */
+    font-family: 'Open Sans',
+    sans-serif;
+    font-weight: normal;
     font-size: 18px;
     color: white;
 }
@@ -1182,6 +1190,8 @@ roupa
 }
 
 #roupa ul li {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
     text-align: left !important;
     list-style: none;
     font-size: 18px;
