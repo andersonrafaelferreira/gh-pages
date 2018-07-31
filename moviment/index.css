@@ -705,7 +705,8 @@ ideal
     padding: 10px 40px;
     font-size: 17px;
     color: #494949;
-    border-radius: 20px
+    border-radius: 20px;
+    text-align: center;
 }
 
 #ideal h5 {
@@ -748,6 +749,7 @@ ideal
     margin: 20px 0px;
     color: #494949;
     font-size: 16px;
+    font-style: normal;
 }
 
 #ideal .item img {
@@ -932,9 +934,14 @@ opcoes
 tudo
 */
 
+#tudo i {
+    font-size: 2em;
+    margin-top: 10px;
+}
+
 #tudo {
     text-align: center;
-    margin-top: -140px;
+    margin-top: -60px;
 }
 
 #tudo h4 {
@@ -954,7 +961,7 @@ materias
 */
 
 #materias button {
-    margin: 40px 0px;
+    margin: 50px 0px 0px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -1048,6 +1055,16 @@ blog
 absorvente
 */
 
+#absorvente {
+    padding: 40px 0;
+    /*    background-image: url(images/bgRosa.png);*/
+    background-image: url(images/bgRosaTeste.png);
+    */ background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    /*    height: 501px;*/
+}
+
 #absorvente .col-md-6 img {
     margin: 0px 0px 0px
 }
@@ -1093,14 +1110,6 @@ absorvente
     margin-left: 40px;
 }
 
-#absorvente {
-    padding: 40px 0;
-    background-image: url(images/bgRosa.png);
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    height: 501px;
-}
 
 #absorvente button {
     color: #b2487b;
@@ -1135,12 +1144,15 @@ roupa
 */
 
 #roupa {
-    padding: 40px 0;
-    background-image: url(images/bgRoupa.png);
+    margin-top: -100px;
+    padding: 40px 0 70px;
+    background-image: url(images/bgVerdeTeste.png);
+    /*    background-image: url(images/bgRoupa.png);*/
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    height: 690px;
+    /*    height: 690px;
+    */
 }
 
 
@@ -1223,8 +1235,9 @@ queremos
 }
 
 #queremos {
-    padding: 40px 0px;
-    background-color: #ededed;
+    padding: 40px 0px 50px;
+    /*    background-color: #ededed;
+    */
 }
 
 #queremos .col-md-12 {
@@ -1303,9 +1316,13 @@ queremos
 }
 
 #preFooter {
-    background-color: #00d0ba;
+    background-color: #00cfb9;
     padding: 40px 0px
 }
+
+/*
+footer
+*/
 
 footer .col-md-12 {
     text-align: center;
@@ -1325,7 +1342,7 @@ footer nav {
 }
 
 footer {
-    background-color: #0a4678;
+    background-color: #0a4778;
     width: 100%;
     overflow: hidden;
     padding: 15px 0px 30px !important
@@ -1361,9 +1378,9 @@ footer .col-md-7 a:first-child img {
     padding-right: 20px;
 }
 
-footer p img {
+footer img {
     position: relative;
-    top: -4px
+    width: 23px
 }
 
 footer p {
@@ -1472,6 +1489,11 @@ footer .col-md-5 {
     /*    
     absorvente
     */
+    #absorvente {
+        background-image: url(images/bgAbsorventeMobile.png);
+        height: 660px;
+        margin-top: 40px;
+    }
     #absorvente img {
         margin-top: 40px !important;
     }
@@ -1483,10 +1505,7 @@ footer .col-md-5 {
     #absorvente ul {
         margin-left: -20px;
     }
-    #absorvente {
-        background-image: url(images/bgAbsorventeMobile.png);
-        height: 660px
-    }
+
     #absorvente .col-md-6 {
         padding: 0px;
     }
@@ -1603,9 +1622,9 @@ footer .col-md-5 {
     footer nav a:last-child {
         border-bottom: none;
     }
-    /*
+
     footer .mobile img {
-        width: 36px
+        width: 23px
     }
-*/
+
 }
