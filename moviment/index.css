@@ -776,7 +776,7 @@ movimentMiss
 */
 
 #movimentMiss {
-    margin-top: 60px;
+    margin-top: -30px;
 }
 
 #movimentMiss h5 {
@@ -785,6 +785,11 @@ movimentMiss
     color: #980d50;
     text-align: center;
     font-weight: bold;
+}
+
+#movimentMiss .row {
+    padding: 0px 80px;
+    margin-bottom: 20px;
 }
 
 #movimentMiss .row {
@@ -803,10 +808,16 @@ movimentMiss
 }
 
 #movimentMiss p {
-    font-family: 'Open Sans', sans-serif;
     font-style: italic;
+    font-size: 20px;
+}
+
+#movimentMiss p strong {
+    font-family: 'Open Sans', sans-serif !important;
+    font-style: italic;
+    font-weight: bold !important;
     color: #494949;
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 40px;
 }
 
@@ -831,7 +842,7 @@ hover
 */
 
 #hover {
-    background-image: url(images/hover/hover.png);
+    background-image: url(images/hover/hover.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     height: 692px;
@@ -840,7 +851,6 @@ hover
     margin-right: auto;
     display: block;
     position: relative;
-    margin-bottom: 200px;
 }
 
 #hover i {
@@ -934,7 +944,7 @@ opcoes
     margin-bottom: 40px;
     position: relative;
     top: -200px;
-    margin-bottom: -120px;
+    margin-bottom: -150px;
 }
 
 /*
