@@ -580,6 +580,8 @@ carousel
 }
 
 #myCarousel button {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500px;
     font-size: 18px;
     border-radius: 20px;
     border: none;
@@ -1112,6 +1114,9 @@ absorvente
 
 
 #absorvente button {
+    font-family: 'Dosis',
+    sans-serif;
+    font-weight: 500px;
     color: #b2487b;
     font-size: 18px;
     background-color: white;
@@ -1199,6 +1204,8 @@ roupa
 }
 
 #roupa button {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500px;
     color: #1a509a;
     font-size: 18px;
     background-color: white;
@@ -1469,7 +1476,7 @@ footer .col-md-5 {
         height: 730px;
         padding-top: 40px;
         /*        margin-top: -30px;*/
-        margin-top: -80px;
+        margin-top: -50px;
     }
     #roupa .col-md-6 {
         padding: 0px;
@@ -1523,8 +1530,12 @@ footer .col-md-5 {
         border: 2px solid #32c9b6;
     }
     /*    
-    tudo
+    tudo mobile
     */
+    #tudo {
+        margin-top: -100px;
+        margin-bottom: 40px;
+    }
     #tudo h4 {
         padding: 0px 20px;
         font-size: 18px;
