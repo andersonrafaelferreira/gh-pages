@@ -494,6 +494,10 @@ portfolio
     margin-top: 30px;
 }
 
+#portfolio button:hover {
+    opacity: 1;
+}
+
 #portfolio h5 {
     color: white;
     font-family: 'Open Sans', sans-serif;
