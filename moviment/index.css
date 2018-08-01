@@ -378,17 +378,31 @@ input[type=submit]:hover,
 banner
 */
 
+/*  
 #banner {
     margin-top: -104px;
-    /*    background-image: url(images/bannerMissIntima.jpg);*/
+   background-image: url(images/bannerMissIntima.jpg);
     background-image: url(images/bannerTESTE.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover !important;
+    background-size: cover !important;
+    height: 591px;
+    
+    background-position: center;
+    padding: 200px 0px 0px
+}
+*/
+
+#banner {
+    margin-top: -105px;
+    background-image: url(images/bannerMissIntima1440x773.jpg);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    height: 591px;
-
+    /*    height: 591px;
+    */
     background-position: center;
-    padding: 200px 0px 0px
+    padding: 200px 0px
 }
 
 #banner .col-md-6 {
