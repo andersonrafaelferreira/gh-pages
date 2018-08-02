@@ -395,14 +395,14 @@ banner
 
 #banner {
     margin-top: -105px;
-    background-image: url(images/bannerMissIntima1440x773.jpg);
+    background-image: url(images/bannerMissIntima.jpg);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     /*    height: 591px;
     */
     background-position: center;
-    padding: 200px 0px
+    padding: 200px 0px;
 }
 
 #banner .col-md-6 {
@@ -447,9 +447,7 @@ miss
 }
 
 
-/*
-portfolio
-*/
+/* portfolio site */
 
 .bullets {
     position: relative;
@@ -470,7 +468,7 @@ portfolio
 }
 
 #portfolio .row {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 #portfolio h4 {
@@ -518,6 +516,7 @@ portfolio
     font-size: 17px;
     font-style: italic;
 }
+
 
 /*
 carousel
@@ -728,7 +727,8 @@ ideal
 */
 
 #ideal {
-    margin-top: 60px;
+    margin-top: -60px;
+    margin-bottom: -40px;
 }
 
 #ideal .warning {
@@ -764,21 +764,25 @@ ideal
     text-align: center;
 }
 
+#ideal .col-md-7 {
+    padding-top: 40px;
+}
+
 #ideal p {
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
     color: #494949;
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 40px;
 }
 
-#ideal .item {
-    margin: 20px 0px
+#ideal .col-md-7 .item {
+    margin: 20px 0px 0px;
 }
 
 #ideal .item p {
     font-family: 'Open Sans', sans-serif;
-    margin: 20px 0px;
+    margin: 0px;
     color: #494949;
     font-size: 16px;
     font-style: normal;
@@ -793,7 +797,7 @@ ideal
     color: #3571a3;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 /*
