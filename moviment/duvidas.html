@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dúvidas | Moviment</title>
+
+    <!-- comment -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- font awesome v +5  -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <!-- google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis:500,600|Open+Sans:400,400i,600,700,700i|Roboto:300" rel="stylesheet">
+
+    <!-- owl -->
+    <link rel="stylesheet" href="plugins/owl.theme.css">
+    <link rel="stylesheet" href="plugins/owl.carousel.css">
+
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        .ac-container img {
+            max-width: 100%;
+        }
+
+        .ac-container {
+            width: 100%;
+            margin: 10px auto 30px auto;
+            text-align: left;
+        }
+
+        .ac-container label {
+            font-family: 'Open Sans', sans-serif;
+            color: #3571a3;
+            font-style: italic !important;
+            font-size: 18px;
+            padding: 5px 0px;
+            position: relative;
+            z-index: 20;
+            display: block;
+            cursor: pointer;
+            border-top: 2px solid #39daba;
+            background: white;
+            margin-bottom: 50px;
+        }
+
+        .ac-container label:hover {
+            background: white;
+            /*  transitions  */
+            opacity: 0.8;
+            -moz-transition: 0.5s linear;
+            -webkit-transition: 0.5s linear;
+            -ms-transition: 0.5s linear;
+        }
+
+        .ac-container input:checked+label,
+        .ac-container input:checked+label:hover {
+            background: white;
+            /*  bgColor Label */
+            color: #494949;
+            /*  transitions  */
+            -moz-transition: 0.5s linear;
+            -webkit-transition: 0.5s linear;
+            -ms-transition: 0.5s linear;
+            opacity: 1.0;
+        }
+
+        .ac-container label:hover:after,
+        .ac-container input:checked+label:hover:after {
+            content: '';
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            right: 0px;
+            top: 7px;
+            background: transparent url(images/downArrow.png) no-repeat center center;
+        }
+
+        .ac-container input:checked+label:hover:after {
+            background-image: url(images/upArrow.png);
+        }
+
+        .ac-container input {
+            display: none;
+        }
+
+        .ac-container article {
+            /*            background: rgba(255, 255, 255, 0.5);*/
+            margin-top: -1px;
+            overflow: hidden;
+            height: 0px;
+            position: relative;
+            z-index: 10;
+            -webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+            -moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+            -o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+            -ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+            transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+        }
+
+        .ac-container article p {
+            font-family: 'Open Sans', sans-serif;
+
+            color: #494949 !important;
+        }
+
+        .ac-container input:checked~article {
+            -webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+            -moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+            -o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+            -ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+            transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+            /*  custom  */
+            padding: 50px 0px 30px;
+            text-align: justify;
+            border-bottom: 1px solid #d2d2d2;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 10px -6px gray;
+        }
+
+        .ac-container input:checked~article.ac-small {
+            height: auto;
+        }
+
+        .ac-container input:checked~article.ac-medium {
+            min-height: 300px;
+        }
+
+        .ac-container input:checked~article.ac-large {
+            min-height: 300px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- h1 -->
+
+    <header>
+        <div class="bar-top">
+            <div class="container">
+                <ul class="top-contato">
+                    <li><a href="#"><img src="images/facebookTopo.png" alt=""></a></li>
+                    <li><a href="#">contato</a></li>
+                    <li>|</li>
+                    <li><a href="#">Cadastre-se</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div id="main-navigation" class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-navigation">
+					<span class="sr-only"><?php _e( 'Toggle navigation', 'odin' ); ?></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+                    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+						<img src="https://linhamoviment.com.br/wp-content/themes/moviment/assets/images/logo-front-new.png" alt="">
+					</a>
+                </div>
+                <nav class="collapse navbar-collapse navbar-main-navigation" role="navigation">
+                    <!--                         <?php
+    wp_nav_menu(
+        array(
+            'theme_location' => 'main-menu',
+            'depth'          => 2,
+            'container'      => false,
+            'menu_class'     => 'nav navbar-nav navbar-right',
+            'fallback_cb'    => 'Odin_Bootstrap_Nav_Walker::fallback',
+            'walker'         => new Odin_Bootstrap_Nav_Walker()
+        )
+    );
+?> -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#">Incontinência urinária</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Produtos
+                                  <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Roupa íntima</a></li>
+                                <li><a href="#">Absorvente</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Compre agora</a></li>
+                        <li><a href="#">Dúvidas</a></li>
+                    </ul>
+                </nav>
+                <!-- .navbar-collapse -->
+            </div>
+            <!-- #main-navigation-->
+
+        </div>
+        <!-- .container-->
+    </header>
+    <!-- header END -->
+
+    <!-- bannerDuvidas -->
+    <section id="bannerDuvidas">
+        <div class="container">
+            <div class="col-md-5">
+                <h2>Tire aqui suas dúvidas</h2>
+                <p>Tire todas as dúvidas sobre a Incontinência Urinária aqui ou nos envie um email sobre quaisquer outras questões.</p>
+            </div>
+            <div class="col-md-7"></div>
+        </div>
+    </section>
+    <!-- bannerDuvidas END -->
+
+
+    <section id="duvidas">
+        <div class="container">
+            <section class="ac-container">
+
+                <!-- item1 -->
+                <div>
+                    <input id="ac-1" name="accordion-1" type="checkbox" />
+                    <label for="ac-1">Praticar esporte pode causar incontinência urinária?</label>
+                    <article class="ac-small">
+                        <p>Sim, a prática de esporte (principalmente os esportes de alto impacto) pode causar a perda involuntária da urina. Para se prevenir, o esportista deve fazer exercícios de fortalecimento de assoalho pélvico e afastar a incontinência urinária.</p>
+                    </article>
+                </div>
+
+                <!-- item2 -->
+                <div>
+                    <input id="ac-2" name="accordion-2" type="checkbox" />
+                    <label for="ac-2">Não pratico mais esporte, pois não consigo mais segurar minha vontade de urinar, existe alguma solução.</label>
+                    <article class="ac-small">
+                        <p>Sim, a prática de esporte (principalmente os esportes de alto impacto) pode causar a perda involuntária da urina. Para se prevenir, o esportista deve fazer exercícios de fortalecimento de assoalho pélvico e afastar a incontinência urinária.</p>
+                    </article>
+                </div>
+
+                <!-- item3 -->
+                <div>
+                    <input id="ac-3" name="accordion-3" type="checkbox" />
+                    <label for="ac-3">Após a cirurgia da próstata terei incontinência urinária?</label>
+                    <article class="ac-small">
+                        <p>Sim, a prática de esporte (principalmente os esportes de alto impacto) pode causar a perda involuntária da urina. Para se prevenir, o esportista deve fazer exercícios de fortalecimento de assoalho pélvico e afastar a incontinência urinária.</p>
+                    </article>
+                </div>
+
+                <!-- item4 -->
+                <div>
+                    <input id="ac-4" name="accordion-4" type="checkbox" />
+                    <label for="ac-4">A incontinência urinária é comum no sexo masculino?</label>
+                    <article class="ac-small">
+                        <p>Sim, a prática de esporte (principalmente os esportes de alto impacto) pode causar a perda involuntária da urina. Para se prevenir, o esportista deve fazer exercícios de fortalecimento de assoalho pélvico e afastar a incontinência urinária.</p>
+                    </article>
+                </div>
+
+                <!-- item5 -->
+                <div>
+                    <input id="ac-5" name="accordion-5" type="checkbox" />
+                    <label for="ac-5">Tive incontinência urinária durante a gestação e depois do parto. Terei incontinência para sempre?</label>
+                    <article class="ac-small">
+                        <p>Sim, a prática de esporte (principalmente os esportes de alto impacto) pode causar a perda involuntária da urina. Para se prevenir, o esportista deve fazer exercícios de fortalecimento de assoalho pélvico e afastar a incontinência urinária.</p>
+                    </article>
+                </div>
+
+                <!-- item6 -->
+                <div>
+                    <input id="ac-6" name="accordion-6" type="checkbox" />
+                    <label for="ac-6">O absorvente para a menstruação pode ser utilizado para incontinência urinária?</label>
+                    <article class="ac-small">
+                        <p>Sim, a prática de esporte (principalmente os esportes de alto impacto) pode causar a perda involuntária da urina. Para se prevenir, o esportista deve fazer exercícios de fortalecimento de assoalho pélvico e afastar a incontinência urinária.</p>
+                    </article>
+                </div>
+
+                <!-- item7 -->
+                <div>
+                    <input id="ac74" name="accordion-7" type="checkbox" />
+                    <label for="ac-7">A idade influencia no nível de incontinência urinária?</label>
+                    <article class="ac-small">
+                        <p>Sim, a prática de esporte (principalmente os esportes de alto impacto) pode causar a perda involuntária da urina. Para se prevenir, o esportista deve fazer exercícios de fortalecimento de assoalho pélvico e afastar a incontinência urinária.</p>
+                    </article>
+                </div>
+
+
+            </section>
+        </div>
+    </section>
+
+
+    <section id="naoEncontrou">
+        <div class="container">
+            <h3>Não encontrou o que procurava? <strong>Entre em contato conosco</strong></h3>
+            <a href="#"><button>Contato</button></a>
+        </div>
+    </section>
+
+    <!-- porfolio
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <h4>Conheça nosso portfólio completo</h4>
+            </div>
+            <img src="images/bullets.png" class="bullets">
+            <div class="col-md-4">
+                <div class="item">
+                    <img src="images/port1.png" alt="">
+                    <h5>Absorvente Miss</h5>
+                    <a href="#"><button>Incontinência leve</button></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item">
+                    <img src="images/port2.png" alt="">
+                    <h5>Linha Feminina</h5>
+                    <a href="#"><button>Incontinência moderada a intensa</button></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item">
+                    <img src="images/port3.png" alt="">
+                    <h5>Linha Feminina</h5>
+                    <a href="#"><button>Incontinência moderada a intensa</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- porfolio END -->
+
+    <div class="clear"></div>
+
+    <!-- preFooter -->
+    <section id="preFooter">
+        <div class="container">
+            <div class="col-md-6">
+                <div class="col-md-4"></div>
+                <div class="col-md-8">
+                    <p>Moviment está disponível nas lojas físicas dos nossos parceiros ou para compra online de acordo com sua região.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <a href="#"><button>Compre aqui</button></a>
+            </div>
+        </div>
+    </section>
+    <!-- preFooter END-->
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="col-md-12 mobile">
+                <a href="#">
+                <img src="images/facebook_icon.png" alt="">
+                </a>
+            </div>
+            <footer>
+                <div class="container">
+                    <nav>
+                        <a href="#">Incontinência uninária</a>
+                        <a href="#">Produtos</a>
+                        <a href="#">Compre agora</a>
+                        <a href="#">Dúvidas</a>
+                        <a href="#">Cadastre-se</a>
+                        <a href="#">Contato</a>
+                    </nav>
+
+                </div>
+            </footer>
+            <div class="col-md-12 desktop">
+                <a href="#">
+                <img src="images/facebook_icon.png" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- footer END -->
+
+
+</body>
+
+</html>

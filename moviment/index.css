@@ -417,6 +417,216 @@ banner
     margin-bottom: 30px;
 }
 
+/*
+blogBanner
+*/
+
+#blogBanner h2 {
+    color: white;
+    font-size: 35px !important;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    line-height: 50px;
+}
+
+#blogBanner p {
+    color: white;
+    font-size: 18px;
+    margin: 30px 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#blogBanner {
+    margin-top: -105px;
+    background-image: url(images/bgPageBlog.png);
+    background-color: #f8f8f8;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 841px;
+    background-position: center;
+    padding: 300px 0px 100px
+}
+
+/*
+post
+*/
+
+#post {
+    margin-top: -105px;
+    background-image: url(images/bgBannerPost.jpg);
+    background-color: #f8f8f8;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 941px;
+    background-position: center;
+    padding: 200px 0px 100px;
+    color: white
+}
+
+
+#relatedPosts .row {
+    padding: 0px 0px 20px;
+
+}
+
+#relatedPosts .row h3 {
+    padding: 0px 0px 20px;
+    color: #00cfb9;
+    font-size: 24px;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#relatedPosts {
+    padding: 40px 0px 80px;
+    background-color: #eaeeee;
+}
+
+#relatedPosts .item h4 {
+    font-size: 19px;
+    color: #3571a3;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#relatedPosts .item {
+    text-align: center;
+}
+
+#relatedPosts .item img {
+    margin-bottom: 20px;
+}
+
+/*
+singlePage
+*/
+
+#singlePage h3 {
+    font-size: 39px;
+    color: #0a4778;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+/*
+blogueando
+*/
+
+#blogueando {
+    padding: 0px 0px 50px;
+    background-color: #f8f8f8;
+    -webkit-box-shadow: 0px 18px 54px -8px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 18px 54px -8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 18px 54px -8px rgba(0, 0, 0, 0.2);
+}
+
+#blogueando p {
+    font-size: 15px;
+}
+
+#blogueando img {
+    margin-bottom: 20px;
+}
+
+#blogueando h4 {
+    color: #3571a3;
+    font-size: 20px !important;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#blogueando .item {
+    background-color: transparent !important;
+    margin-bottom: 40px;
+}
+
+#blogueando .item .blogo {
+    padding: 20px;
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 60px;
+}
+
+#blogueando button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 2px solid #32c9b6;
+    color: #32c9b6;
+    border-radius: 10px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: -24px;
+}
+
+#verMais {
+    padding: 50px 0px;
+}
+
+#verMais button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 7px 30px;
+    background-color: #32c9b6;
+    text-transform: uppercase;
+    border: 2px solid #32c9b6;
+    color: #fff;
+    border-radius: 10px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/*
+bannerDuvidas
+*/
+
+#bannerDuvidas h2 {
+    color: white;
+    font-size: 35px !important;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+}
+
+#bannerDuvidas p {
+    color: white;
+    font-size: 18px;
+    margin: 30px 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#bannerDuvidas {
+    margin-top: -105px;
+    background-image: url(images/bgBannerDuvidas.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 841px;
+    background-position: center;
+    padding: 300px 0px 100px
+}
+
+/*
+duvidas
+
+*/
+
+#duvidas {
+    -webkit-box-shadow: 0px 18px 54px -8px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 18px 54px -8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 18px 54px -8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+}
 
 /*
 miss
@@ -468,7 +678,8 @@ miss
 }
 
 #portfolio .row {
-    margin-bottom: 30px;
+    margin-bottom: -20px;
+    /*    margin-bottom: 30px;*/
 }
 
 #portfolio h4 {
@@ -821,11 +1032,6 @@ movimentMiss
     margin-bottom: 20px;
 }
 
-#movimentMiss .row {
-    padding: 0px 80px;
-    margin-bottom: 20px;
-}
-
 #movimentMiss .col-md-12 {
     border-top: 2px solid #980d50;
     margin: 40px 0px 0px;
@@ -851,6 +1057,41 @@ movimentMiss
 }
 
 /*
+naoEncontrou
+*/
+
+#naoEncontrou h3 {
+    font-family: 'Open Sans', sans-serif !important;
+    color: #494949;
+    font-size: 23px;
+    text-align: center;
+}
+
+#naoEncontrou h3 strong {
+    font-family: 'Open Sans', sans-serif !important;
+    color: #494949;
+    font-size: 23px;
+    text-align: center;
+}
+
+#naoEncontrou button {
+    margin: 30px 0px 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #32c9b6;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/*
 passe
 */
 
@@ -864,6 +1105,15 @@ passe
 
 #passe p strong {
     font-weight: bold !important
+}
+
+/*
+imgAbsorvente
+*/
+
+#imgAbsorvente {
+    padding-bottom: 100px;
+    margin-top: -240px;
 }
 
 /*
@@ -1452,8 +1702,53 @@ footer .col-md-5 {
 
 /* ##################################### media queries */
 
-@media (max-width: 767px) {
+@media (min-width: 1440px) {
+    #bannerDuvidas {
+        min-height: 900px
+    }
+    #duvidas {
+        margin-top: 50px;
+    }
+}
 
+/*
+mobile
+*/
+
+@media (max-width: 767px) {
+    /*
+    banner
+    */
+    #banner {
+        margin-top: -105px;
+        background-image: url(images/bgRoupaIntimaMobile.png);
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        /* height: 591px; */
+        background-position: center;
+        padding: 130px 0px 60px;
+        margin-bottom: 80px;
+    }
+    #banner img {
+        margin-top: 40px;
+    }
+    /*   
+    movimentMiss
+    */
+    #movimentMiss .row {
+        padding: 0px 40px;
+        margin-bottom: 60px;
+    }
+    /*
+shadow
+*/
+    #shadow .col-md-12 {
+        top: -120px !important;
+    }
+    .bullets {
+        display: none;
+    }
     .desktop {
         display: none !important;
     }
@@ -1594,6 +1889,21 @@ footer .col-md-5 {
         font-size: 20px;
     }
     /*    
+    miss
+    */
+    #miss {
+        background-image: url(images/bgInternaMobile.png);
+        height: 550px;
+        padding: 120px 0px 0px !important;
+        margin-bottom: 60px;
+    }
+    #miss img {
+        margin-top: 40px;
+    }
+    #miss h3 {
+        text-align: left
+    }
+    /*    
     queremos
     */
     #queremos {
@@ -1633,6 +1943,12 @@ footer .col-md-5 {
     /*
     ideal
     */
+    #ideal .col-md-5 {
+        margin-top: 60px;
+    }
+    #ideal .col-md-12 {
+        margin: 40px 0px 0px;
+    }
     #ideal .warning {
         margin: 40px 20px 80px;
         padding: 20px;
