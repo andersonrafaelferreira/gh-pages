@@ -1730,6 +1730,9 @@ mobile
         padding: 130px 0px 60px;
         margin-bottom: 80px;
     }
+    #banner .col-md-6 {
+        text-align: left;
+    }
     #banner img {
         margin-top: 40px;
     }
