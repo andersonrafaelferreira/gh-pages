@@ -524,7 +524,7 @@ post
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    height: 941px;
+    height: 641px;
     padding: 200px 0px 100px;
     color: white
 }
@@ -597,7 +597,7 @@ singlePage
 
 #singlePage {
     padding-bottom: 60px;
-    margin-top: -140px;
+    margin-top: 40px;
 }
 
 #singlePage img {
@@ -1851,6 +1851,16 @@ footer .col-md-5 {
         padding-bottom: 60px;
         margin-top: 50px;
     }
+    #singlePost {
+        margin-top: -112px;
+        background-image: url(images/bgCurvePost.png);
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        height: 941px;
+        padding: 200px 0px 100px;
+        color: white
+    }
 }
 
 /*
@@ -1858,6 +1868,22 @@ mobile
 */
 
 @media (max-width: 767px) {
+
+    #singlePage {
+        padding-bottom: 60px;
+        margin-top: 150px;
+    }
+    #singlePost {
+        margin-top: -112px;
+        background-image: url(images/bgCurvePost.png);
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        height: 590px;
+        padding: 200px 0px 100px;
+        color: white
+    }
+
     /*
     relatedPosts
     */
