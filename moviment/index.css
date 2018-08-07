@@ -554,6 +554,24 @@ post
 
 #relatedPosts .item img {
     margin-bottom: 20px;
+    border: 2px solid transparent;
+    -webkit-box-shadow: 0px 0px 57px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 57px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 57px -9px rgba(0, 0, 0, 0.75);
+}
+
+/*
+#relatedPosts .item:before img {
+    content: "\f111";
+    font-size: 5px;
+}
+*/
+#relatedPosts .item img:hover {
+    background-color: #0a4778;
+    border: 2px solid #0a4778;
+    z-index: 1000000000;
+    position: relative;
+    opacity: .5;
 }
 
 /*
