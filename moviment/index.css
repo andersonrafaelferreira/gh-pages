@@ -291,7 +291,7 @@ header {
 }
 
 .top-contato li:nth-child(3) {
-    border-right: 1px solid white;
+    border-right: 1px solid #0862a9;
     color: transparent;
     position: relative;
     top: 2px
