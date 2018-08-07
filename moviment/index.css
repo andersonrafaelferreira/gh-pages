@@ -687,7 +687,7 @@ bannerDuvidas
 }
 
 #bannerDuvidas {
-    margin-top: -105px;
+    margin-top: -111px;
     background-image: url(images/bgBannerDuvidas.png);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -1821,6 +1821,12 @@ mobile
     #blogBanner {
         margin-top: -111px;
         padding: 140px 0px 100px
+    }
+    #singlePost {
+        margin-top: -111px;
+        padding: 140px 0px 0px;
+        background-position: center;
+        margin-bottom: -100px;
     }
     /*    
     carousel 
