@@ -481,6 +481,7 @@ blogBanner
 #blogBanner h2 {
     color: white;
     font-size: 35px !important;
+    font-weight: bold;
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
     line-height: 50px;
@@ -494,7 +495,7 @@ blogBanner
 }
 
 #blogBanner {
-    margin-top: -105px;
+    margin-top: -111px;
     background-image: url(images/bgPageBlog.png);
     background-color: #f8f8f8;
     background-repeat: no-repeat;
@@ -1814,6 +1815,13 @@ mobile
 */
 
 @media (max-width: 767px) {
+    /*    
+    blogBanner
+    */
+    #blogBanner {
+        margin-top: -111px;
+        padding: 140px 0px 100px
+    }
     /*    
     carousel 
     */
