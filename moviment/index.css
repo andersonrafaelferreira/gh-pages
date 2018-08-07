@@ -1852,6 +1852,13 @@ mobile
 */
 
 @media (max-width: 767px) {
+    /*
+    relatedPosts
+    */
+    #relatedPosts .row {
+        padding: 20px;
+
+    }
     /*    
     blogBanner
     */
