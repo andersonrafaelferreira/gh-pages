@@ -509,19 +509,23 @@ blogBanner
 post
 */
 
-#post {
-    margin-top: -105px;
+#singlePost {
+    margin-top: -112px;
     background-image: url(images/bgBannerPost.jpg);
-    background-color: #f8f8f8;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     height: 941px;
-    background-position: center;
     padding: 200px 0px 100px;
     color: white
 }
 
+#singlePost h2 {
+    font-size: 35px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
 
 #relatedPosts .row {
     padding: 0px 0px 20px;
@@ -1921,6 +1925,7 @@ shadow
     #blogMobile {
         background-color: #fff;
     }
+
     .post .col-xs-4,
     .post .col-xs-5,
     .post .col-xs-7 {
