@@ -63,6 +63,43 @@ button:hover {
     display: none !important;
 }
 
+.navbar-right .dropdown-menu {
+    right: inherit !important;
+    left: auto;
+}
+
+/* 
+hamburger menu
+*/
+
+.toggled {
+    color: #494949 !important
+}
+
+.toggled span:nth-child(2) {
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    /* Safari 3-8 */
+    transform: rotate(45deg);
+    top: 6px;
+    position: relative;
+}
+
+.toggled span:nth-child(3) {
+    visibility: hidden
+}
+
+.toggled span:nth-child(4) {
+    -ms-transform: rotate(-45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-45deg);
+    /* Safari 3-8 */
+    transform: rotate(-45deg);
+    top: -6px;
+    position: relative;
+}
+
 /*
 carousel buttons
 */
@@ -89,13 +126,21 @@ carousel buttons
 ================================= header4
 */
 
+.dropdown-menu li a {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #494949;
+    font-family: 'Roboto', sans-serif;
+
+}
+
 .dropdown-menu li a:hover {
     background-color: transparent;
 }
 
 .dropdown-menu {
     border-top-left-radius: 0px !important;
-    border-bottom-right-radius: 0px !important
+    border-bottom-right-radius: 0px !important;
 }
 
 header {
@@ -115,7 +160,7 @@ header {
 .navbar ul {
     background-color: white;
     border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px
+    border-bottom-right-radius: 20px;
 }
 
 .navbar {
@@ -208,6 +253,7 @@ header {
 .bar-top li a {
     color: white;
     text-decoration: none;
+    font-size: 14px;
 }
 
 .bar-top li {
@@ -230,6 +276,17 @@ header {
 
 .social-top i {
     margin-left: 10px;
+}
+
+.top-contato li img {
+    width: 30px
+}
+
+.top-contato li:nth-child(3) {
+    border-right: 1px solid white;
+    color: transparent;
+    position: relative;
+    top: 2px
 }
 
 /* .bar-top .col-md-2{
@@ -736,7 +793,7 @@ carousel
 #myCarousel {
     /*    margin-top: -60px; */
     position: relative;
-    top: -100px;
+    top: -108px;
     z-index: 1;
 }
 
@@ -875,13 +932,13 @@ carousel
 
     #myCarousel .item {
         /*    height: 100vh;*/
-        height: 900px
+        height: 850px
     }
 
     .carousel {
         width: 100%;
         /*    height: 100vh;*/
-        height: 900px
+        height: 850px
     }
 
     /*
@@ -1231,17 +1288,19 @@ tudo
 */
 
 #tudo i {
+    display: none;
     font-size: 2em;
     margin-top: 10px;
 }
 
 #tudo {
     text-align: center;
-    margin-top: -60px;
+    margin-top: -100px !important;
+    margin-bottom: 0px;
 }
 
 #tudo h4 {
-    font-size: 23px;
+    font-size: 30px;
     color: #494949;
     font-family: 'Open Sans', sans-serif;
 }
@@ -1249,7 +1308,7 @@ tudo
 #tudo h4 strong {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 /*
@@ -1373,6 +1432,11 @@ absorvente
     padding: 0px 0px
 }
 
+#absorvente ul {
+    margin-left: -20px;
+    padding-right: 20px;
+}
+
 #absorvente ul li i {
     color: #93315b;
     font-size: 10px;
@@ -1389,13 +1453,16 @@ absorvente
     font-family: 'Open Sans',
     sans-serif;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 24px;
     color: white;
+    margin-bottom: 20px;
 }
 
 #absorvente ul li strong {
+    font-family: 'Open Sans',
+    sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 26px;
 }
 
 #absorvente h4 {
@@ -1403,10 +1470,10 @@ absorvente
     font-weight: bold;
     font-style: italic;
     color: white;
-    margin-top: 120px;
-    font-size: 28px;
+    margin-top: 80px;
+    font-size: 38px;
     margin-bottom: 48px;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 
@@ -1419,9 +1486,10 @@ absorvente
     background-color: white;
     border: none;
     border-radius: 10px;
-    padding: 10px 33px;
+    /*    padding: 10px 33px;*/
+    padding: 10px 20px;
     text-transform: uppercase;
-    margin-top: 70px;
+    margin-top: 40px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -1483,13 +1551,16 @@ roupa
     font-weight: normal;
     text-align: left !important;
     list-style: none;
-    font-size: 18px;
+    font-size: 24px;
     color: white;
+    margin-bottom: 20px;
 }
 
 #roupa ul li strong {
+    font-family: 'Open Sans', sans-serif;
+
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 #roupa h4 {
@@ -1498,7 +1569,7 @@ roupa
     font-style: italic;
     color: white;
     margin-top: 120px;
-    font-size: 28px;
+    font-size: 38px;
     margin-bottom: 40px;
 }
 
@@ -1510,7 +1581,8 @@ roupa
     background-color: white;
     border: none;
     border-radius: 10px;
-    padding: 10px 36px;
+    /*    padding: 10px 36px;*/
+    padding: 10px 20px;
     text-transform: uppercase;
     display: block;
     margin-left: auto;
@@ -1520,14 +1592,17 @@ roupa
 
 #roupa p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 17px;
+    font-size: 35px;
+    line-height: 40px;
     color: white;
     text-align: center;
 
 }
 
 #roupa p strong {
-    font-size: 19px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+    line-height: 40px;
     color: white;
     font-weight: bold;
 }
@@ -1716,6 +1791,60 @@ mobile
 */
 
 @media (max-width: 767px) {
+    /*    
+    carousel 
+    */
+    .title h1 {
+        font-weight: bold;
+        font-size: 24px;
+    }
+    .title p {
+        font-size: 18px;
+    }
+    /*    
+    */
+    .toggled {
+        background-color: lightblue;
+    }
+
+    .navbar ul {
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        background-color: #fff;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu {
+        background-color: lightblue;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        color: #494949 !important;
+        text-transform: uppercase;
+        font-size: 20px;
+        padding-bottom: 14px;
+    }
+
+    .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        height: 110vh;
+        border-color: transparent;
+        /*        background-color: #32a1d9;*/
+        text-align: center;
+    }
+
+    .navbar-collapse a {
+        margin-top: 10px;
+    }
+    /*
+    navbar-default
+    */
+    .navbar-default .navbar-nav > li > a {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
     /*
     banner
     */
@@ -1727,8 +1856,8 @@ mobile
         background-size: cover;
         /* height: 591px; */
         background-position: center;
-        padding: 130px 0px 60px;
-        margin-bottom: 80px;
+        padding: 130px 0px 0px;
+        margin-bottom: 0px;
     }
     #banner .col-md-6 {
         text-align: left;
@@ -1820,21 +1949,26 @@ shadow
     #roupa {
         background-image: url(images/bgVivaMobile.png);
         /*        height: 800px;*/
-        height: 730px;
+        /*        height: 730px;*/
         padding-top: 40px;
         /*        margin-top: -30px;*/
         margin-top: -50px;
+        padding-bottom: 90px;
     }
     #roupa .col-md-6 {
         padding: 0px;
     }
     #roupa h4 {
         margin-top: 50px;
-        margin-left: 20px;
-        font-size: 20px;
+        margin-left: 10px;
+        font-size: 25px;
     }
     #roupa ul {
         margin-left: -20px;
+    }
+    #roupa li {
+        margin-left: -10px;
+        margin-bottom: 20px;
     }
     #roupa .col-md-6:last-child {
         padding-left: 20px;
@@ -1855,11 +1989,19 @@ shadow
     }
     #absorvente h4 {
         margin-top: 40px;
-        margin-left: 20px;
-        font-size: 20px;
+        margin-left: 10px;
+        font-size: 24px;
     }
     #absorvente ul {
         margin-left: -20px;
+    }
+    #absorvente li {
+        margin-left: -10px;
+        margin-bottom: 20px;
+    }
+    .fa-circle:before {
+        content: "\f111";
+        font-size: 5px;
     }
 
     #absorvente .col-md-6 {
@@ -1880,12 +2022,12 @@ shadow
     tudo mobile
     */
     #tudo {
-        margin-top: -100px;
+        margin-top: -130px !important;
         margin-bottom: 40px;
     }
     #tudo h4 {
         padding: 0px 20px;
-        font-size: 18px;
+        font-size: 22px;
     }
 
     #tudo h4 strong {

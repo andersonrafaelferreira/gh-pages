@@ -32,10 +32,10 @@
 
 
     <header>
-        <div class="bar-top">
+        <div class="bar-top desktop">
             <div class="container">
                 <ul class="top-contato">
-                    <li><a href="#"><img src="images/facebookTopo.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/facebook_icon.png" alt=""></a></li>
                     <li><a href="#">contato</a></li>
                     <li>|</li>
                     <li><a href="#">Cadastre-se</a></li>
@@ -46,12 +46,15 @@
         <div id="main-navigation" class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-navigation">
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-navigation" onclick="toggleMenu()">
 					<span class="sr-only"><?php _e( 'Toggle navigation', 'odin' ); ?></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
+
+
                     <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 						<img src="https://linhamoviment.com.br/wp-content/themes/moviment/assets/images/logo-front-new.png" alt="">
 					</a>
@@ -81,6 +84,9 @@
                         </li>
                         <li><a href="#">Compre agora</a></li>
                         <li><a href="#">Dúvidas</a></li>
+                        <li class="mobile"><a href="#">Cadastre-se</a></li>
+                        <li class="mobile"><a href="#">Contato</a></li>
+                        <li class="mobile"><a href="#"><img src="images/facebook_icon_mobile.jpg" alt=""></a></li>
                     </ul>
                 </nav>
                 <!-- .navbar-collapse -->
@@ -265,11 +271,11 @@
                     <li><i class="fas fa-circle"></i><strong>Odor Control  
 </strong> Neutraliza odores.</li>
                 </ul>
-                <img src="images/absorvente1.png" alt="" class="desktop mobile">
+                <img src="images/absorvente2.png" alt="" class="desktop mobile">
                 <a href="#"><button>Saiba mais</button></a>
             </div>
             <div class="col-md-6">
-                <img src="images/absorvente1.png" alt="" class="desktop">
+                <img src="images/absorvente2.png" alt="" class="desktop">
             </div>
         </div>
     </section>
@@ -279,7 +285,7 @@
     <section id="roupa">
         <div class="container">
             <div class="col-md-6">
-                <p class="desktop">Roupa Íntima descartável para incontinência <br>
+                <p class="desktop">Roupa Íntima descartável para incontinência
                     <strong>moderada a intensa</strong>.
                 </p>
                 <h4 class="mobile">Viva com conforto e segurança.</h4>
@@ -290,7 +296,7 @@
                     <li><i class="fas fa-circle"></i>Máxima absorção.</li>
                     <li><i class="fas fa-circle"></i>Neutralizador de odor.</li>
                 </ul>
-                <img src="images/roupa1.png" alt="">
+                <img src="images/roupa2.png" alt="">
                 <a href="#"><button>Saiba mais</button></a>
             </div>
             <div class="col-md-6">
@@ -379,6 +385,9 @@
         </div>
     </footer>
     <!-- footer END -->
+
+    <script src="index.js"></script>
+
 </body>
 
 </html>
