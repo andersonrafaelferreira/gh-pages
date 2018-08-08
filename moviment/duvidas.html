@@ -76,6 +76,18 @@
             opacity: 1.0;
         }
 
+        .ac-container label:after,
+        .ac-container input:checked+label:after {
+            content: '';
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            right: 0px;
+            top: 7px;
+            background: transparent url(images/downArrow.png) no-repeat center center;
+        }
+
+        /*
         .ac-container label:hover:after,
         .ac-container input:checked+label:hover:after {
             content: '';
@@ -86,10 +98,17 @@
             top: 7px;
             background: transparent url(images/downArrow.png) no-repeat center center;
         }
+*/
 
+        .ac-container input:checked+label:after {
+            background-image: url(images/upArrow.png);
+        }
+
+        /*
         .ac-container input:checked+label:hover:after {
             background-image: url(images/upArrow.png);
         }
+*/
 
         .ac-container input {
             display: none;

@@ -262,7 +262,9 @@ header {
 .bar-top li a {
     color: white;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 13.25px;
+    font-family: 'Roboto', sans-serif;
+    /* no layout está 13.25px */
 }
 
 .bar-top li {
@@ -893,13 +895,15 @@ carousel
 
 #myCarousel .item {
     /*    height: 100vh;*/
-    height: 996px
+    /* era 996px */
+    height: 896px
 }
 
 .carousel {
     width: 100%;
     /*    height: 100vh;*/
-    height: 996px
+    /* era 996px */
+    height: 896px
 }
 
 .carousel-inner > .item > img {
@@ -907,7 +911,7 @@ carousel
 }
 
 .title img {
-    margin: 30px 0px;
+    margin: 60px 0px;
 }
 
 .title {
@@ -946,7 +950,8 @@ carousel
     background-color: white;
     text-transform: uppercase;
     margin: 0 auto;
-    margin-top: 30px;
+    /*    margin-top: 30px;
+    */
     letter-spacing: 1px;
 }
 
@@ -1530,7 +1535,9 @@ absorvente
     font-style: italic;
     color: white;
     margin-top: 80px;
-    font-size: 38px;
+    /* 27.48px layout */
+    font-size: 30px;
+    /*    font-size: 38px;*/
     margin-bottom: 48px;
     margin-left: 20px;
 }
@@ -1610,16 +1617,16 @@ roupa
     font-weight: normal;
     text-align: left !important;
     list-style: none;
-    font-size: 24px;
+    font-size: 20px;
+    /* no layout tava 18px */
     color: white;
     margin-bottom: 20px;
 }
 
 #roupa ul li strong {
     font-family: 'Open Sans', sans-serif;
-
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 #roupa h4 {
@@ -1628,7 +1635,9 @@ roupa
     font-style: italic;
     color: white;
     margin-top: 120px;
-    font-size: 38px;
+    /* 27.48px layout */
+    font-size: 30px;
+    /* estava 38px */
     margin-bottom: 40px;
 }
 
@@ -1651,7 +1660,8 @@ roupa
 
 #roupa p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 35px;
+    font-size: 26px;
+    /* estava o cliente pediu 35px */
     line-height: 40px;
     color: white;
     text-align: center;
@@ -1660,7 +1670,7 @@ roupa
 
 #roupa p strong {
     font-family: 'Open Sans', sans-serif;
-    font-size: 35px;
+    font-size: 26px;
     line-height: 40px;
     color: white;
     font-weight: bold;
@@ -1701,9 +1711,10 @@ queremos
 }
 
 #queremos p {
-    color: 4a4a4a;
+    color: #4a4a4a;
     font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
+    font-size: 17px;
+    /* era 15px */
 }
 
 #queremos input {
@@ -1862,6 +1873,18 @@ footer .col-md-5 {
         padding: 200px 0px 100px;
         color: white
     }
+    #myCarousel .item {
+        /*    height: 100vh;*/
+        /* era 996px */
+        height: 1106px
+    }
+
+    .carousel {
+        width: 100%;
+        /*    height: 100vh;*/
+        /* era 996px */
+        height: 1106px
+    }
 }
 
 /*
@@ -1918,12 +1941,11 @@ mobile
     /* 
     togged
     */
-/*
+    /*
     .nav .navbar-right {
         display: none
     }
 */
-
     .toggled {
         background-color: lightblue;
     }
@@ -2110,7 +2132,7 @@ shadow
         margin-top: 40px;
     }
     #absorvente img {
-        margin-top: 40px !important;
+        margin-top: 0px !important;
     }
     #absorvente h4 {
         margin-top: 40px;
@@ -2189,7 +2211,7 @@ shadow
     }
     #queremos p {
         line-height: 20px;
-        color: 4a4a4a;
+        color: #4a4a4a;
     }
     #queremos input {
         width: 100% !important;
