@@ -144,6 +144,7 @@ carousel buttons
 
 .dropdown-menu li a:hover {
     background-color: transparent;
+    font-weight: bold;
 }
 
 .dropdown-menu {
@@ -217,6 +218,7 @@ header {
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
     color: #494949 !important;
+    font-weight: bold;
     background-color: transparent !important;
 }
 
@@ -462,7 +464,7 @@ banner
 */
 
 #banner {
-    margin-top: -105px;
+    margin-top: -106px;
     background-image: url(images/bannerMissIntima.jpg);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -1962,6 +1964,9 @@ mobile
         padding-top: 10px;
     }
 
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+        font-weight: bold !important;
+    }
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
         color: #777;
         text-align: center;
@@ -1971,6 +1976,7 @@ mobile
         font-size: 20px;
         padding-bottom: 14px;
     }
+
 
     .navbar-default .navbar-collapse,
     .navbar-default .navbar-form {

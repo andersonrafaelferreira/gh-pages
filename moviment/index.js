@@ -4,9 +4,9 @@ $(document).ready(function () {
 
         $('ul.nav li.dropdown').hover(function () {
 
-            $(this).find('.dropdown-menu').stop(true, true).delay(0).fadeIn(0);
+            $(this).find('.dropdown-menu').stop(true, true).delay(0).fadeIn(200);
         }, function () {
-            $(this).find('.dropdown-menu').stop(true, true).delay(0).fadeOut(0);
+            $(this).find('.dropdown-menu').stop(true, true).delay(0).fadeOut(100);
         });
 
         console.log('bigger screen than a mobile mobile');
