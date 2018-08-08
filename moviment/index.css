@@ -1918,9 +1918,11 @@ mobile
     /* 
     togged
     */
+/*
     .nav .navbar-right {
         display: none
     }
+*/
 
     .toggled {
         background-color: lightblue;
