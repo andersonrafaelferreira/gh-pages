@@ -1895,6 +1895,13 @@ mobile
 
 @media (max-width: 767px) {
 
+
+    .title img {
+        margin: 40px 0px;
+    }
+    .title button {
+        margin-top: 20px !important;
+    }
     #singlePage {
         padding-bottom: 60px;
         margin-top: 150px;
