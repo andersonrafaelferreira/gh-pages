@@ -1915,8 +1915,13 @@ mobile
     .title p {
         font-size: 18px;
     }
-    /*    
+    /* 
+    togged
     */
+    .nav .navbar-right {
+        display: none
+    }
+
     .toggled {
         background-color: lightblue;
     }
