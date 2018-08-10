@@ -619,6 +619,10 @@ singlePage
     font-size: 20px;
 }
 
+#singlePage p strong {
+    font-size: 20px;
+}
+
 #singlePage h3 {
     font-size: 39px;
     color: #0a4778;
@@ -834,6 +838,13 @@ miss
     margin-left: 0px !important;
 }
 
+#portfolio .col-md-4:last-child p {
+    color: white;
+    font-size: 12px;
+    position: relative;
+    top: -12px;
+    margin-bottom: -27px;
+}
 
 #portfolio .col-md-4 .item {
     padding: 0px 5px;
