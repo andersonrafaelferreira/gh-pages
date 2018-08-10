@@ -615,6 +615,10 @@ singlePage
     margin-left: 0px;
 }
 
+#singlePage p {
+    font-size: 20px;
+}
+
 #singlePage h3 {
     font-size: 39px;
     color: #0a4778;
@@ -779,7 +783,8 @@ miss
 
 #miss h3 {
     color: white;
-    font-size: 30px;
+    /*    font-size: 30px;*/
+    font-size: 33px;
     font-family: 'Dosis', sans-serif;
     font-weight: 600;
     margin-bottom: 30px;
@@ -814,7 +819,8 @@ miss
 #portfolio h4 {
     color: white;
     font-family: 'Open Sans', sans-serif;
-    font-size: 27px;
+    /*    font-size: 27px;*/
+    font-size: 30px;
     font-style: italic;
 }
 
@@ -1340,7 +1346,7 @@ opcoes
 }
 
 #opcoes .col-md-4:last-child h5 {
-    color: #005f37 !important
+    color: #59357b !important
 }
 
 #opcoes p {
