@@ -505,6 +505,7 @@ blogBanner
     font-size: 20px;
     margin: 30px 0px;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 400 !important;
 }
 
 #blogBanner {
@@ -737,9 +738,11 @@ bannerDuvidas
 
 #bannerDuvidas p {
     color: white;
-    font-size: 18px;
+    padding-right: 30px;
     margin: 30px 0px;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 400 !important;
+    font-size: 20px !important;
 }
 
 #bannerDuvidas {
@@ -1947,9 +1950,11 @@ mobile
         padding: 200px 0px;
         background-position: -300px 0px;
     }
+    /*
     #bannerDuvidas p {
         font-weight: bold !important;
     }
+*/
     .title img {
         margin: 40px 0px;
     }
@@ -1986,7 +1991,8 @@ mobile
         font-size: 35px !important;
     }
     #blogBanner p {
-        font-weight: bold;
+        /*        font-weight: bold;
+        */
         font-size: 18px;
     }
     #blogBanner {
