@@ -1931,6 +1931,9 @@ mobile
 */
 
 @media (max-width: 767px) {
+    #movimentMiss {
+        margin-top: 60px;
+    }
     #ideal {
         margin-top: 60px;
         margin-bottom: -60px;
