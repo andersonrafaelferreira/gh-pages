@@ -1931,6 +1931,14 @@ mobile
 */
 
 @media (max-width: 767px) {
+    #ideal {
+        margin-top: 60px;
+        margin-bottom: -60px;
+    }
+    #ideal .col-md-7 {
+        padding-top: 40px;
+        text-align: center;
+    }
 
     #bannerDuvidas {
         padding: 200px 0px;
