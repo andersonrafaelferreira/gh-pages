@@ -714,8 +714,17 @@ bannerDuvidas
 #bannerDuvidas h2 {
     color: white;
     font-size: 35px !important;
+    font-weight: bold;
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
+    line-height: 50px;
+    /*
+    color: white;
+    font-size: 35px !important;
+    font-family: 'Open Sans',
+    sans-serif;
+    font-style: italic;
+*/
 }
 
 #bannerDuvidas p {
@@ -1861,6 +1870,7 @@ footer .col-md-5 {
     #duvidas {
         margin-top: 50px;
     }
+
     #singlePage {
         padding-bottom: 60px;
         margin-top: 50px;
@@ -1895,7 +1905,13 @@ mobile
 
 @media (max-width: 767px) {
 
-
+    #bannerDuvidas {
+        padding: 200px 0px;
+        background-position: -600px 0px;
+    }
+    #bannerDuvidas p {
+        font-weight: bold !important;
+    }
     .title img {
         margin: 40px 0px;
     }
