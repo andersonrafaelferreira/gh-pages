@@ -202,7 +202,8 @@ header {
 }
 
 .navbar-default .navbar-brand img {
-    margin-top: -60px;
+    margin-top: -40px;
+    width: 300px
 }
 
 .navbar-default .navbar-text {
@@ -1934,6 +1935,9 @@ mobile
 */
 
 @media (max-width: 767px) {
+    #rotativo {
+        text-align: center;
+    }
     #movimentMiss {
         margin-top: 60px;
     }
@@ -2163,8 +2167,8 @@ shadow
         color: #3571a3;
     }
     .navbar-default .navbar-brand img {
-        margin-top: -30px;
-        margin-left: -30px;
+        margin-top: -20px;
+        margin-left: -10px;
         width: 240px
     }
 
