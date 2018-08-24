@@ -337,7 +337,7 @@ new styles
     border-color: white !important;
 }
 
-#maps .row {
+#maps .container {
     padding: 60px 0px 40px;
 }
 
@@ -444,8 +444,9 @@ ul.social-buttons li a {
     height: 50px;
     -webkit-transition: all .3s;
     transition: all .3s;
-/*    color: #fff;
-    */    border-radius: 100%;
+    /*    color: #fff;
+    */
+    border-radius: 100%;
     outline: 0;
     background-color: #212529;
 }
