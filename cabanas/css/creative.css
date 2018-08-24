@@ -324,6 +324,11 @@ header.masthead p {
 new styles 
 */
 
+#maps .bg-primary {
+    padding: 40px 0px 30px;
+    overflow: hidden;
+}
+
 #maps {
     padding: 0;
 }
@@ -335,10 +340,6 @@ new styles
 
 #maps hr {
     border-color: white !important;
-}
-
-#maps .container {
-    padding: 60px 0px 40px;
 }
 
 #frame {
