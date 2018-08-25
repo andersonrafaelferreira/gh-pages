@@ -324,6 +324,10 @@ header.masthead p {
 new styles 
 */
 
+img {
+    max-width: 100%
+}
+
 #maps .bg-primary {
     padding: 40px 0px 30px;
     overflow: hidden;
@@ -452,8 +456,65 @@ ul.social-buttons li a {
     background-color: #212529;
 }
 
+footer .col-md-4:first-child,
+footer .col-md-4:last-child {
+    padding-top: 10px;
+}
+
 #insta {
     padding-bottom: 0;
+}
+
+/*
+facilities
+*/
+
+#facilities {
+    padding: 60px 0px 0px;
+    text-align: center;
+}
+
+.bg-brand-color-1,
+.bg-brand-color-1 h1 {
+    color: rgb(255, 255, 255);
+}
+
+.bg-brand-color-1 {
+    background-color: #212529;
+}
+
+h2.smaller {
+    font-size: 2em;
+}
+
+#facilities {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#facilities .facility i.icon:hover {
+    color: #F05F40
+}
+
+#facilities .facility i.icon {
+    font-size: 72px;
+    color: #FFF;
+}
+
+#facilities .facility {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+#facilities .facility p {
+    margin-top: -10px;
+}
+
+@media (min-width: 992px) {
+    .col-md-offset-1 {
+        margin-left: 8.33333333%;
+    }
 }
 
 /*
