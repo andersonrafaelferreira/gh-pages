@@ -327,7 +327,14 @@ new styles
 img {
     max-width: 100%
 }
-
+/*
+#about {
+    background-image: url(../img/logoCabanasSmall.png);
+    background-position: 20px 100px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+*/
 #maps .bg-primary {
     padding: 40px 0px 30px;
     overflow: hidden;
