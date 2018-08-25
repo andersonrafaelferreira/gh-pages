@@ -343,7 +343,7 @@ img {
 }
 
 #maps hr {
-    border-color: white !important;
+    border-color: #212529 !important;
 }
 
 #frame {
@@ -420,7 +420,8 @@ img {
 
 #waiting {
     background-color: #212529;
-    background-image: url(../img/map-image.png);
+    background-image: url(../img/map.png);
+    /*    background-image: url(../img/map-image.png);*/
     background-repeat: no-repeat;
     background-position: bottom;
 }
