@@ -327,6 +327,7 @@ new styles
 img {
     max-width: 100%
 }
+
 /*
 #about {
     background-image: url(../img/logoCabanasSmall.png);
@@ -335,6 +336,7 @@ img {
     background-repeat: no-repeat;
 }
 */
+
 #maps .bg-primary {
     padding: 40px 0px 30px;
     overflow: hidden;
@@ -365,7 +367,7 @@ img {
 #video {
     padding: 0;
     margin-bottom: 100vh !important;
-    clear: both
+    clear: both;
 }
 
 #myVideo {
@@ -374,6 +376,25 @@ img {
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+}
+
+.content h1 {
+    color: #fff;
+    font-family: 'Permanent Marker', cursive !important;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40%;
+}
+
+.content {
+    position: absolute;
+    /*    bottom: 0;    */
+    /*    margin-top: -35%;*/
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 20px;
 }
 
 .mx-auto a {
@@ -500,6 +521,11 @@ h2.smaller {
     padding-bottom: 60px;
 }
 
+#facilities .col-xs-6 {
+    position: relative;
+    width: 50%;
+}
+
 #facilities .facility i.icon:hover {
     color: #F05F40
 }
@@ -523,6 +549,9 @@ h2.smaller {
     .col-md-offset-1 {
         margin-left: 8.33333333%;
     }
+    #facilities .col-lg-12 {
+        margin-bottom: 60px !important;
+    }
 }
 
 /*
@@ -532,5 +561,14 @@ mobo
 @media (max-width: 768px) {
     .navbar-brand img {
         width: 100px
+    }
+    .content {
+        position: absolute;
+        bottom: 0;
+        top: 0;
+    }
+    .content h1 {
+        margin-top: 60vh;
+        font-size: 25px;
     }
 }
