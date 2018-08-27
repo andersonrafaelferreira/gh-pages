@@ -383,7 +383,7 @@ img {
     font-family: 'Permanent Marker', cursive !important;
     font-weight: bold;
     text-align: center;
-    margin-top: 40%;
+    margin-top: 40vh;
 }
 
 .content {
@@ -568,7 +568,6 @@ mobo
         top: 0;
     }
     .content h1 {
-        margin-top: 40vh;
         font-size: 25px;
     }
 }
