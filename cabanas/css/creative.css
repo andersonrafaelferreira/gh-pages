@@ -370,8 +370,8 @@ video
 
 #video {
     padding: 0;
-    margin-bottom: 90vh !important;
-    /*    margin-bottom: 100vh !important;*/
+    /*    margin-bottom: 90vh !important;*/
+    margin-bottom: 100vh !important;
     clear: both;
 }
 
@@ -380,8 +380,8 @@ video
     right: 0;
     bottom: 0;
     min-width: 100wh;
-    min-height: 90vh;
-    /*    min-height: 100vh;*/
+    /*    min-height: 90vh;*/
+    min-height: 100vh;
 }
 
 .content h1 {
@@ -569,6 +569,25 @@ mobo
 @media (max-width: 768px) {
     .navbar-brand img {
         width: 100px
+    }
+
+    /*
+video
+*/
+    #video {
+        padding: 0;
+        margin-bottom: 90vh !important;
+        /*    margin-bottom: 100vh !important;*/
+        clear: both;
+    }
+
+    #myVideo {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        min-width: 100wh;
+        min-height: 90vh;
+        /*    min-height: 100vh;*/
     }
     .content {
         position: absolute;
