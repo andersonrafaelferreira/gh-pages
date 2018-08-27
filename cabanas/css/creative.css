@@ -545,13 +545,15 @@ h2.smaller {
     margin-top: -10px;
 }
 
+#facilities .col-lg-12 {
+    margin-bottom: 60px !important;
+}
+
 @media (min-width: 992px) {
     .col-md-offset-1 {
         margin-left: 8.33333333%;
     }
-    #facilities .col-lg-12 {
-        margin-bottom: 60px !important;
-    }
+
 }
 
 /*
