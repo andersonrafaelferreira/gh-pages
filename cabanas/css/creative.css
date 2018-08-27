@@ -374,7 +374,7 @@ img {
     position: absolute;
     right: 0;
     bottom: 0;
-    min-width: 100vh;
+    min-width: 100wh;
     min-height: 100vh;
 }
 
