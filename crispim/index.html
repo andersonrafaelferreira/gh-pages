@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CT Crispim Team</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
+
+    <!-- fontawesome v5 -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <!-- owl -->
+    <link rel="stylesheet" href="plugins/owl.carousel/owl.theme.css">
+    <link rel="stylesheet" href="plugins/owl.carousel/owl.carousel.css">
+
+    <!-- custom 4pme -->
+
+    <link rel="stylesheet" href="public/css/header.css">
+    <link rel="stylesheet" href="public/css/body.css">
+    <link rel="stylesheet" href="public/css/footer.css">
+    <link rel="stylesheet" href="public/css/mediaqueries.css">
+
+</head>
+
+<body>
+    <header>
+
+        <div id="main-navigation" class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-navigation">
+					<span class="sr-only"><?php _e( 'Toggle navigation', 'odin' ); ?></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+                    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+						<img src="public/images/logo.png" alt="">
+					</a>
+                </div>
+                <nav class="collapse navbar-collapse navbar-main-navigation" role="navigation">
+                    <ul class="nav navbar-nav navbar-right desktop">
+                        <li>
+                            <a href="https://api.whatsapp.com/send?phone=5519994373655&text=Olá&nbsp;Crispim" target="_blank" class="whatsapp">
+                                <button><i class="fab fa-whatsapp"></i> converse no whatsapp</button>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav">
+                        <li><a href="#conheca">modalidades</a></li>
+                        <li><a href="#academia">a academia</a></li>
+                        <li><a href="#onde">onde estamos</a></li>
+                        <li><a href="#fale">contato</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right mobile">
+                        <li>
+                            <a href="https://api.whatsapp.com/send?phone=5519994373655&text=Olá&nbsp;Crispim" target="_blank" class="whatsapp">
+                                <button><i class="fab fa-whatsapp"></i> converse no whatsapp</button>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- 					<?php
+						wp_nav_menu(
+							array(
+								'theme_location' => 'main-menu',
+								'depth'          => 2,
+								'container'      => false,
+								'menu_class'     => 'nav navbar-nav',
+								'fallback_cb'    => 'Odin_Bootstrap_Nav_Walker::fallback',
+								'walker'         => new Odin_Bootstrap_Nav_Walker()
+							)
+						);
+					?> -->
+
+
+                </nav>
+                <!-- .navbar-collapse -->
+            </div>
+            <!-- #main-navigation-->
+
+        </div>
+        <!-- .container-->
+    </header>
+    <!-- #header -->
+
+    <!-- banner -->
+    <section id="banner">
+        <div class="container">
+            <div class="col-md-6">
+                <h1>/vamos <br> treinar?
+                </h1>
+                <h3>atividade física e saúde são palavras que se completam. <strong>“PRATIQUE ESSA IDEIA”</strong> AQUI No ct CRISPIM!</h3>
+            </div>
+            <div class="col-md-6"></div>
+        </div>
+    </section>
+    <!-- banner END -->
+
+    <!-- free -->
+    <section id="free" class="red-bar">
+        <div class="container">
+            <div class="col-md-3">
+                <h1>Free Pass</h1>
+            </div>
+            <div class="col-md-6">
+                <h3>/ganhe grátis </h3>
+                <h4> uma aula experimental. basta ENVIAR UMA MENSAGEM EM NOSSO whatsapp.</h4>
+            </div>
+            <div class="col-md-3">
+                <a href="https://api.whatsapp.com/send?phone=5519994373655&text=Olá&nbsp;Crispim" target="_blank" class="whatsapp">
+                                <button><i class="fab fa-whatsapp"></i> converse no whatsapp</button>
+                            </a>
+            </div>
+        </div>
+    </section>
+    <!-- free END -->
+
+    <!-- qual -->
+    <section id="qual">
+        <div class="container">
+            <div class="col-md-6 desktop">
+                <img src="public/images/qualNEW.png" alt="">
+            </div>
+            <div class="col-md-6">
+                <h1>/qual <br> o seu <br> objetivo?
+                </h1>
+                <h4>SE DESEJA ADQUIRIR UMA MELHOR QUALIDADE DE VIDA OU TER PERFORMANCE PARA SER UM PROFISSIONAL EM NOSSAS MODALIDADES, VENHA PARA O CT CRISPIM!</h4>
+            </div>
+            <div class="col-md-6 mobile">
+                <img src="public/images/qualNEW.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- qual END -->
+
+    <!-- qualidade -->
+    <section id="qualidade">
+        <div class="col-md-6">
+            <h1>/qualidade <br> de vida</h1>
+            <p>A atividade física regular tem a capacidade de reduzir o risco de várias doenças crônicas, bem como promover a qualidade de vida e uma sensação de bem-estar.</p>
+        </div>
+        <div class="col-md-6">
+            <h1>/performance <br> profissional
+            </h1>
+            <p>A atividade física bem direcionada e monitorada por excelentes profissionais faz você atingir os seus objetivos mais rapididamente. Seja um profissional de sucesso treinando com a gente!</p>
+        </div>
+    </section>
+    <!-- qualidade END -->
+
+    <!-- conheca -->
+    <section id="conheca">
+        <div class="container">
+            <div class="col-md-12">
+                <h4>conheça AS nossas modalidades</h4>
+            </div>
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <div class="col-md-8">
+                        <h1>/muay <br> thay
+                        </h1>
+                        <h4>O Muay Thai é uma arte marcial conhecida como a arte das “oito armas”, pois utiliza estratégicamente as 8 regiões do corpo: os dois punhos, os dois cotovelos, os dois joelhos, além das duas canelas e dos pés.
+                        </h4>
+                        <p>A aula Muay Thai melhora o condicionamento físico, dá alívio ao estresse e gera um emagrecimento rápido, além de ensinar a se defender por meio de uma arte marcial milenar.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="col-md-8">
+                        <h1>/treino <br> funcional
+                        </h1>
+                        <h4>Exercícios funcionais movimentam todas as regiões do corpo de uma forma integrada, enquanto o trabalho com pesos é ótimo para hipertrofia muscular.</h4>
+                        <p>Os exercícios funcionais promovem a melhora do condicionamento físico e da força corporal, além de oferecerem também ganhos de flexibilidade, mobilidade e coordenação.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <div class="col-md-8">
+                        <h1>/jiu <br> jitsu
+                        </h1>
+                        <h4>o Jiu-jitsu é uma arte marcial japonesa que se popularizou no brasil e hoje é mais conhecido como brazilian jiu jitsu. <br> nele se utiliza tanto técnicas de golpes de alavancas, torções como pressões para derrubar e dominar um oponente.</h4>
+                        <p>Essa atividade tem o poder de emagrecer, aumentar a autoestima e proporcionar a qualidade de vida que você sempre sonhou. Caso escolha ter performance a nossa equipe te dará todo os ensinamentos necessários para ser um grande campeão.Venha fazer uma aula experimental e garanta mais qualidade de vida!</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="col-md-8">
+                        <h1>/kick <br> boxing
+                        </h1>
+                        <h4>Kickboxing não só se refere apenas a um grupo de artes marciais e esporte de combate em pé baseados em chutes e socos como também é um estilo de arte marcial e desporto de combate.</h4>
+                        <p>O Kick Boxing consiste em um método de luta que visa aumentar as condições físicas do praticante, ensinando também técnicas eficientes de defesa pessoal dentre eles socos, joelhadas e chutes dos mais variados tipos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- conheca END -->
+
+    <!-- nossos -->
+    <section id="nossos">
+        <div class="container">
+            <div class="col-md-6">
+                <img src="public/images/nossos.png" alt="">
+                <p>Escolha o horário que se encaixa melhor em sua agenda e venha ter mais qualidade de vida com a gente!</p>
+            </div>
+            <div class="col-md-6">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Segunda-Feira</a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>06:00 - 7:30 - muay thai misto</p>
+
+                                <p>10:00 - 11: 00 - muay thai misto</p>
+
+                                <p>11:15 - 13:00 - Jiu Jitsu</p>
+
+                                <p>15:00 - 16:10 - muay thai feminino</p>
+
+                                <p>16:30 - 17:30 - muay thai misto</p>
+
+                                <p>18:00 - 19:30 - Jiu Jitsu </p>
+
+                                <p>20:00 - 21:30 - Jiu Jitsu </p>
+
+                                <p>21:00 - 22:30 - kick boxing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Terça-Feira</a>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>06:00 - 7:30 - muay thai misto</p>
+
+                                <p>10:00 - 11: 00 - muay thai misto</p>
+
+                                <p>11:15 - 13:00 - Jiu Jitsu</p>
+
+                                <p>15:00 - 16:10 - muay thai feminino</p>
+
+                                <p>16:30 - 17:30 - muay thai misto</p>
+
+                                <p>18:00 - 19:30 - Jiu Jitsu </p>
+
+                                <p>20:00 - 21:30 - Jiu Jitsu </p>
+
+                                <p>21:00 - 22:30 - kick boxing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Quarta-Feira</a>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>06:00 - 7:30 - muay thai misto</p>
+
+                                <p>10:00 - 11: 00 - muay thai misto</p>
+
+                                <p>11:15 - 13:00 - Jiu Jitsu</p>
+
+                                <p>15:00 - 16:10 - muay thai feminino</p>
+
+                                <p>16:30 - 17:30 - muay thai misto</p>
+
+                                <p>18:00 - 19:30 - Jiu Jitsu </p>
+
+                                <p>20:00 - 21:30 - Jiu Jitsu </p>
+
+                                <p>21:00 - 22:30 - kick boxing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Quinta-Feira</a>
+                            </h4>
+                        </div>
+                        <div id="collapse5" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>06:00 - 7:30 - muay thai misto</p>
+
+                                <p>10:00 - 11: 00 - muay thai misto</p>
+
+                                <p>11:15 - 13:00 - Jiu Jitsu</p>
+
+                                <p>15:00 - 16:10 - muay thai feminino</p>
+
+                                <p>16:30 - 17:30 - muay thai misto</p>
+
+                                <p>18:00 - 19:30 - Jiu Jitsu </p>
+
+                                <p>20:00 - 21:30 - Jiu Jitsu </p>
+
+                                <p>21:00 - 22:30 - kick boxing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">Sexta-Feira</a>
+                            </h4>
+                        </div>
+                        <div id="collapse6" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>06:00 - 7:30 - muay thai misto</p>
+
+                                <p>10:00 - 11: 00 - muay thai misto</p>
+
+                                <p>11:15 - 13:00 - Jiu Jitsu</p>
+
+                                <p>15:00 - 16:10 - muay thai feminino</p>
+
+                                <p>16:30 - 17:30 - muay thai misto</p>
+
+                                <p>18:00 - 19:30 - Jiu Jitsu </p>
+
+                                <p>20:00 - 21:30 - Jiu Jitsu </p>
+
+                                <p>21:00 - 22:30 - kick boxing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">Sábado</a>
+                            </h4>
+                        </div>
+                        <div id="collapse7" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>06:00 - 7:30 - muay thai misto</p>
+
+                                <p>10:00 - 11: 00 - muay thai misto</p>
+
+                                <p>11:15 - 13:00 - Jiu Jitsu</p>
+
+                                <p>15:00 - 16:10 - muay thai feminino</p>
+
+                                <p>16:30 - 17:30 - muay thai misto</p>
+
+                                <p>18:00 - 19:30 - Jiu Jitsu </p>
+
+                                <p>20:00 - 21:30 - Jiu Jitsu </p>
+
+                                <p>21:00 - 22:30 - kick boxing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- nossos END -->
+
+    <!-- vip -->
+    <section id="vip" class="red-bar">
+        <div class="container">
+            <div class="col-md-3">
+                <h1>Vip Class</h1>
+            </div>
+            <div class="col-md-6">
+                <h3>/CONVITE A SUA TURMA </h3>
+                <h4> DESEJA TER AULAS EM GRUPO? CONHEÇA AS VANTAGENS QUE o ct CRISPIM OFERECE PARA TER UMA TURMA SÓ SUA!</h4>
+            </div>
+            <div class="col-md-3">
+                <a href="https://api.whatsapp.com/send?phone=5519994373655&text=Olá&nbsp;Crispim" target="_blank" class="whatsapp">
+                                <button><i class="fab fa-whatsapp"></i> converse no whatsapp</button>
+                            </a>
+            </div>
+        </div>
+    </section>
+    <!-- vip END -->
+
+    <!-- academia -->
+    <section id="academia">
+        <div class="container">
+            <div class="col-md-4">
+                <img src="public/images/academia.png" alt="">
+                <h4>a “família crispim” cresce a cada ano com muitas histórias e amigos que se juntaram A ELA!</h4>
+                <p><i>"O que era um hobby tornou uma paixão!  Esse sonho me levou a treinar e aprender o Jiu-Jitsu com os melhores coachs do mundo. Depois lutar vários campeonatos e conseguir alguns títulos, vi que era a hora de ter minha própria equipe." (Cleber Crispim)
+                </i></p>
+                <p>
+                    Nasce então em 1995 a equipe Crispim Team. Hoje uma das melhores equipe do cenário nacional. A Familia Crispim Team como gostamos de ser vistos, já conquistou diversos títulos no meio esportivo em lutas. Possui vários campeões brasileiros e mundiais e a consagrada título de campeã por equipe em diversos campeonatos importantes.
+                </p>
+            </div>
+            <div class="col-md-8">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+
+                        <div class="item active">
+                            <img src="public/images/academia1.png" alt="Los Angeles" style="width:100%;">
+                            <div class="carousel-caption">
+                                <h3>Los Angeles</h3>
+                                <p>LA is always so much fun!</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="public/images/academia1.png" alt="Los Angeles" style="width:100%;">
+                            <div class="carousel-caption">
+                                <h3>Chicago</h3>
+                                <p>Thank you, Chicago!</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="public/images/academia1.png" alt="Los Angeles" style="width:100%;">
+                            <div class="carousel-caption">
+                                <h3>New York</h3>
+                                <p>We love the Big Apple!</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- academia END -->
+
+    <!-- equipe -->
+    <section id="equipe">
+        <div class="container">
+            <div class="col-md-4"></div>
+            <div class="col-md-8">
+                <div class="col-md-5">
+                    <p>
+                        A <strong>equipe Crispim</strong> Team conta com vários professores tanto no Brasil como em Dubai, EUA, Índia, Austrália e França. Quando você ama seu trabalho, com certeza você terá o melhor trabalho do mundo.
+                        <strong>Familia Crispim Team</strong>, um nome forte e respeitado no mundo das lutas.
+                    </p>
+                </div>
+                <div class="col-md-7">
+                    <img src="public/images/fight.png" alt="">
+                    <blockquote class="blockquote">
+                        <h3>Luta pela Vida!</h3>
+                        <h4>Esse é o nosso lema, fortalecendo a nossa história. Uma luta diária de conquistas, fazendo do CT Crispim uma refêrencia de qualidade de vida e resultados em Limeira e região.</h4>
+                    </blockquote>
+                </div>
+                <div class="col-md-12">
+                    <div class="col-md-3">
+                        <h3>Somos <br> Federados:</h3>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <img src="public/images/somos1.png" alt="">
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <img src="public/images/somos2.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- equipe END -->
+
+    <!-- nossas -->
+    <section id="nossas">
+        <div class="container">
+            <div class="col-md-5">
+                <img src="public/images/nossas.png" alt="">
+                <h3>um trabalho bem executado realizado por profissionais competentes e apaixonados pelo que fazem só poderia ter ótimos resultados. confira algumas de nossas conquistas, </h3>
+            </div>
+            <div class="col-md-3">
+                <h6>Profissional</h6>
+                <h4>Campeão brasileiro </h4>
+                <h5>Campeão paulista <br> Fernando Cantareira</h5>
+
+                <h4>Campeã brasileira cbjj</h4>
+                <h5>4x campeÃ mundial cbjje <br> Lucimar crispim</h5>
+
+                <h4>2x Campeã mundial </h4>
+                <h5>Gabrielly crispim</h5>
+            </div>
+            <div class="col-md-4">
+                <h1>campeão paulista</h1>
+                <h1>campeão Estadual</h1>
+                <h1>campeão brasileiro</h1>
+                <h1>campeao mundial
+                </h1>
+                <h2>cleber crispim</h2>
+                <a href="">
+                <button>
+                    <img src="public/images/btnNossas.png" alt="">
+                </button>
+            </a>
+            </div>
+        </div>
+    </section>
+    <!-- nossas -->
+
+
+    <!-- team -->
+    <section id="team">
+        <div class="container">
+            <img src="public/images/team.png" alt="">
+            <h4>os integrantes da “família crispim”:</h4>
+            <div class="clear"></div>
+            <div class="col-md-3">
+                <a href="#" data-toggle="modal" data-target="#myModal1">
+                    <img src="public/images/team1.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="">
+                    <img src="public/images/team2.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="">
+                    <img src="public/images/team3.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="">
+                    <img src="public/images/team4.png" alt="">
+                </a>
+            </div>
+
+            <div class="clear"></div>
+
+            <div class="col-md-3">
+                <a href="">
+                    <img src="public/images/team5.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="">
+                    <img src="public/images/team6.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="">
+                    <img src="public/images/team7.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="">
+                    <img src="public/images/team8.png" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- team END -->
+
+    <!-- modals -->
+
+    <!-- myModal1 -->
+    <div class="modal fade" id="myModal1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <img src="public/images/team1.png" class="img-circle" alt="Cinque Terre" width="60" height="60" style="float: left; margin-right: 20px">
+                    <h4 class="modal-title">Cleber Crispim</h4>
+                    <span>jiu jitsu</span>
+                </div>
+                <div class="modal-body">
+                    <p>CAMPEÃO PAULISTA</p>
+                    <p>CAMPEÃO ESTADUAL</p>
+                    <p>CAMPEÃO BRASILEIRO</p>
+                    <p>CAMPEAO MUNDIAL</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modals END -->
+
+
+    <!-- onde -->
+    <section id="onde">
+        <div class="container">
+            <div class="col-md-4">
+                <img src="public/images/onde.png" alt="">
+                <br> <a href="">
+                Rua São João, 380 <br>
+Vila são João <br>
+Limeira (SP)
+            </a>
+                <h4>
+
+                    horário de <br> funcionamento
+                </h4>
+                <h5>Segunda, quarta e sexta das 09h às 22h</h5>
+                <h5>terça e quinta das 7h às 21h30</h5>
+                <h5>sábado das 9h30 às 11h</h5>
+            </div>
+            <div class="col-md-8">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.379493778632!2d-47.413028385192575!3d-22.56490558518677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fdfed0a05db653%3A0xb6e36036e219b375!2sFight+For+Life+Academy!5e0!3m2!1sen!2sbr!4v1537383516256" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- onde END -->
+
+    <!-- footer -->
+    <footer id="fale">
+        <div class="col-md-6">
+            <img src="public/images/imgBottom.png" alt="">
+        </div>
+        <div class="col-md-6">
+            <img src="public/images/faleBottom.png" alt="">
+            <nav>
+                <a href="tel: (19) 3704-1770">(19) 3704-1770</a>
+                <a href="https://api.whatsapp.com/send?phone=5519994373655&text=Olá&nbsp;Crispim" target="_blank">
+                (19) 99437-3655</a>
+                <a href="mailto: contato@crispimteam.com.br">contato@crispimteam.com.br</a>
+            </nav>
+            <h4>/siga nas <br> redes sociais</h4>
+            <nav>
+                <a href=""><i></i><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i></i><i class="fab fa-instagram"></i></a>
+                <a href=""><i></i><i class="fab fa-youtube"></i></a>
+            </nav>
+            <p>© 2018 Crispim Team - All Rights Reserved</p>
+            <a href="https://4pme.com.br">
+            <img src="public/images/4pme.png" alt="">
+            </a>
+        </div>
+    </footer>
+
+
+    <!-- scripts -->
+    <!-- <?php echo get_template_directory_uri(); ?> -->
+
+    <!-- smooth scrolling -->
+    <script src="plugins/smoothScrolling/smooth.jquery.min.js"></script>
+
+    <script>
+        // Select all links with hashes
+        $('a[href*="#"]')
+            // Remove links that don't actually link to anything
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .click(function(event) {
+                // On-page links
+                if (
+                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                    location.hostname == this.hostname
+                ) {
+                    // Figure out element to scroll to
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    // Does a scroll target exist?
+                    if (target.length) {
+                        // Only prevent default if animation is actually gonna happen
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000, function() {
+                            // Callback after animation
+                            // Must change focus!
+                            var $target = $(target);
+                            $target.focus();
+                            if ($target.is(":focus")) { // Checking if the target was focused
+                                return false;
+                            } else {
+                                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                                $target.focus(); // Set focus again
+                            };
+                        });
+                    }
+                }
+            });
+    </script>
+
+    <!-- headroom -->
+    <script src="plugins/headroom/headroom.min.js"></script>
+    <script>
+        // grab an element
+        var myElement = document.querySelector("header");
+        console.log(myElement);
+        // construct an instance of Headroom, passing the element
+        var headroom = new Headroom(myElement);
+        // initialise
+        headroom.init();
+    </script>
+
+    <!-- owl carousel -->
+    <script src="plugins/owl.carousel/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#owl-example").owlCarousel({
+                autoPlay: 3000, //Set AutoPlay to 3 seconds
+                items: 3,
+                itemsDesktop: [1199, 3],
+                itemsDesktopSmall: [979, 1]
+            });
+
+            $("#owl-example2").owlCarousel({
+                autoPlay: 3000, //Set AutoPlay to 3 seconds
+                items: 2,
+                itemsDesktop: [1199, 2],
+                itemsDesktopSmall: [979, 1]
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

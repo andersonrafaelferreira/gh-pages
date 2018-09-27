@@ -1,0 +1,128 @@
+@media (max-width: 767px) {
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    /*
+banner
+*/
+    #banner {
+        background-image: url(../images/bgBanner.png);
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        margin-top: -80px;
+        padding: 100px 0px
+    }
+
+    #banner h1 {
+        color: #bd1e13;
+        font-size: 90px;
+        line-height: 100px;
+    }
+
+    /*  
+    header
+    */
+    .navbar-default .navbar-brand img {
+        margin-top: 5px;
+        max-width: 180px
+    }
+    .navbar-default ul:nth-child(1) {
+        display: none;
+    }
+    .navbar-default ul:nth-child(2) {
+        background-color: black !important;
+        border-left: none;
+    }
+    .navbar-default ul:last-child {
+        background-color: black !important;
+        padding: 20px 0px 20px 10px;
+        margin-top: -20px;
+        border-left: none;
+    }
+    /*   
+    whatsapp
+    */
+    .whatsapp button:hover {
+        color: #3b010b;
+        border-color: #3b010b
+    }
+    /*    
+    qual
+    */
+    #qual {
+        padding: 50px 0px 0px;
+    }
+    #qual img {
+        bottom: -40px;
+    }
+    #qual h4 {
+        margin-top: 30px;
+        width: 100%;
+    }
+    /*    
+    qualidade
+    */
+    #qualidade p {
+        width: 100%;
+    }
+    #qualidade h1 {
+        font-size: 50px;
+    }
+    #qualidade .col-md-6:first-child {
+        padding: 80px 40px;
+    }
+    #qualidade .col-md-6:last-child {
+        padding: 80px 40px;
+    }
+    /*    
+    nossos
+    */
+    #nossos p {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    /*    
+    equipe
+    */
+    #equipe .col-md-7 img {
+        margin: 30px 0px
+    }
+    #equipe .blockquote {
+        background-color: rgba(255, 255, 255, .5);
+        padding: 10px
+    }
+    #equipe .col-md-12 .col-md-3 {
+        padding-top: 0px;
+    }
+
+    /*   
+    onde
+    */
+    #onde .col-md-4 {
+        margin-bottom: 40px;
+    }
+    /*    
+    team
+    */
+    #team {
+        padding: 60px 0px 60px;
+    }
+    /*    
+    footer
+    */
+    footer .col-md-6:last-child {
+        padding: 10px 40px 40px;
+        margin-top: -300px;
+    }
+    footer .col-md-6:first-child img {
+        margin: 40px 0px;
+    }
+
+}

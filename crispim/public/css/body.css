@@ -1,0 +1,413 @@
+/* wpcf7 */
+
+input,
+.wpcf7 input {
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    margin: 10px 0px !important;
+}
+
+textarea,
+.wpcf7 textarea {
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    margin: 10px 0px !important;
+}
+
+input[type=submit],
+.wpcf7 input[type=submit] {
+    background-color: #9cd3ff;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+}
+
+input[type=submit]:hover,
+.wpcf7 input[type=submit]:hover {
+    opacity: 0.7;
+}
+
+/*
+queries
+*/
+
+.mobile {
+    display: none;
+}
+
+.desktop {
+    display: block;
+}
+
+/*
+banner
+*/
+
+#banner {
+    background-image: url(../images/bgBanner.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-top: -90px;
+    padding: 140px 0px
+}
+
+#banner h1 {
+    color: #bd1e13;
+    font-size: 160px;
+    line-height: 140px;
+}
+
+#banner h3 {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'bebas_regular' !important;
+    width: 90%
+}
+
+/*
+equipe
+*/
+
+#equipe {
+    margin-top: 60px;
+    padding: 60px 0px 30px;
+    background-image: url(../images/bgEquipe.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+#equipe .blockquote {
+    padding: 0 20px;
+}
+
+#equipe h4 {
+    font-family: 'bebas_regular' !important;
+}
+
+#equipe .col-md-12 {
+    padding-top: 40px;
+}
+
+#equipe .col-md-12 .col-md-3 {
+    padding-top: 40px;
+}
+
+#equipe .col-md-12 .col-md-3 img {
+    padding-top: 20px;
+}
+
+#equipe .col-md-12 .col-md-3 h3 {
+    color: #9c011b
+}
+
+#equipe p {
+    color: #4c4c4c;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, .5);
+    padding: 10px
+}
+
+/*
+team
+*/
+
+#team {
+    padding: 90px 0px 140px
+}
+
+#team h4 {
+    margin: 20px 0px 40px
+}
+
+#team .col-md-3 {
+    margin-bottom: 20px;
+}
+
+
+/*
+nossas
+*/
+
+#nossas {
+    padding: 100px 0px;
+    background-color: #000;
+}
+
+#nossas img {
+    margin-bottom: 20px;
+}
+
+#nossas p {
+    font-size: 14px;
+    color: white
+}
+
+#nossas h1 {
+    color: #fff;
+    line-height: 20px;
+}
+
+
+#nossas h2 {
+    font-family: 'bebas_regular' !important;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+#nossas button {
+    background-color: #790f0f;
+    padding: 40px 40px 14px;
+    border-radius: 10px;
+    border: none
+}
+
+#nossas h3 {
+    font-family: 'bebas_regular' !important;
+    font-size: 18px;
+    color: #b0b0b0;
+    width: 80%
+}
+
+#nossas h4 {
+    font-size: 26px;
+    color: #fdfdfd;
+    margin-top: 30px;
+}
+
+#nossas h5 {
+    font-size: 15px;
+    color: #fdfdfd;
+}
+
+#nossas h6 {
+    font-size: 30px;
+    color: #c8251a;
+}
+
+/*
+qual
+*/
+
+#qual {
+    padding: 100px 0px 0px;
+}
+
+#qual img {
+    position: relative;
+    bottom: -30px
+}
+
+#qual h1 {
+    color: #dfdfdf;
+    font-size: 80px;
+    line-height: 60px;
+}
+
+#qual h4 {
+    color: #352d2d;
+    width: 50%
+}
+
+
+#qual .col-md-6:first-child {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#qual .col-md-6:last-child {
+    padding-bottom: 40px;
+}
+
+/*
+vip
+*/
+
+.red-bar {
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 30px 0px;
+}
+
+.red-bar h1 {
+    color: #790417;
+    font-size: 70px;
+}
+
+.red-bar h3 {
+    color: white
+}
+
+.red-bar h4 {
+    color: white;
+    font-family: 'bebas_regular' !important;
+    width: 80%
+}
+
+.red-bar button {
+    margin-top: 30px;
+    float: right
+}
+
+/*
+academia
+*/
+
+#academia .carousel-caption {
+    display: none;
+}
+
+#academia .col-md-4 {
+    padding: 60px 30px;
+}
+
+#academia h4 {
+    font-family: 'bebas_regular' !important;
+    margin: 30px 0px;
+}
+
+#academia p {
+    font-size: 14px;
+}
+
+/*
+qualidade
+*/
+
+#qualidade {
+    overflow: hidden;
+}
+
+#qualidade .col-md-6:first-child {
+    background-image: url(../images/qual1.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 60px 100px;
+    min-height: 500px;
+}
+
+#qualidade .col-md-6:last-child {
+    background-image: url(../images/qual2.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 60px 100px;
+    min-height: 500px;
+}
+
+#qualidade h1 {
+    color: white;
+    font-size: 70px;
+}
+
+#qualidade p {
+    color: white;
+    font-size: 14px;
+    width: 60%
+}
+
+/*
+nossos
+*/
+
+#nossos {
+    padding: 100px 0px;
+    background-color: #000;
+}
+
+#nossos img {
+    margin-bottom: 40px;
+}
+
+#nossos p {
+    font-size: 14px;
+    width: 50%;
+    color: white
+}
+
+.panel-body,
+.panel-collapse {
+    background-color: #000 !important;
+}
+
+/*
+conheca
+*/
+
+#conheca {
+    padding: 60px 0px 80px
+}
+
+#conheca .col-md-12:first-child h4 {
+    color: #151113;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#conheca h1 {
+    color: #9a1e15;
+    font-size: 70px;
+    line-height: 60px;
+}
+
+#conheca h4 {
+    color: #4c4c4c;
+}
+
+#conheca p {
+    color: #4c4c4c;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+/*
+onde
+*/
+
+#onde {
+    background-color: #2e2e2e;
+    background-image: url(../images/bgOnde.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px 0px;
+}
+
+#onde img {
+    margin: 60px 0px 30px
+}
+
+#onde iframe {
+    width: 100%;
+    height: 450px
+}
+
+#onde a {
+    color: white;
+    font-family: 'bebas_regular' !important;
+    line-height: 0px;
+    font-size: 20px;
+}
+
+#onde h4 {
+    color: white;
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+#onde h5 {
+    font-family: 'bebas_regular' !important;
+    color: white;
+    line-height: 8px;
+}
