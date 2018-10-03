@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Genitus</title>
+
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- font awesome v +5  -->
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+<!-- google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
+
+<style>
+    *{
+  font-family: 'Dosis', serif;
+}
+
+/*
+commom
+*/
+
+html {
+    position: relative;
+    min-height: 100%;
+    overflow-y: scroll;
+/* tips */
+    text-rendering: optimizaLegibility !important;
+  -webkit-font-smoothing: antialiased !important!;
+}
+
+body {
+    background-color: transparent !important;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 70px;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #2e2e2e;
+}
+.clear{
+  clear: both;
+}
+
+/* 
+================================= header4
+*/
+
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff !important;
+}
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid white !important;
+}
+
+.navbar-default {
+    /*    background-color: #e43c20 !important;*/
+    background-color: #000 !important;
+    border: none;
+    border-radius: 0 !important;
+    padding: 15px 0px;
+    padding-top: 10px;
+    margin: 0;
+    border: none !important
+}
+.navbar-brand img{
+  margin-top: -35px !important;
+}
+
+.navbar-default .navbar-brand {
+    color: #777
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: transparent
+}
+
+.navbar-default .navbar-brand img {
+    margin-top: -10px;
+}
+
+.navbar-default .navbar-text {
+    color: #777
+}
+
+.navbar-default .navbar-nav > li > a {
+  font-size: 13px;
+  letter-spacing: 1px;
+    color: white !important;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #f58634 !important;
+    background-color: transparent !important;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #f58634 !important;
+    background-color: transparent !important
+}
+
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:hover,
+.navbar-default .navbar-nav > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent
+}
+
+/* .navbar-right i {
+    margin-top: 18px;
+    float: right;
+} */
+
+/* .bar-top .container {
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+} */
+
+.bar-top li a {
+    color: #000;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.bar-top li {
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.bar-top {
+    padding: 10px;
+    /*    background-color: #e43c20;*/
+    background-color: transparent;
+    /* Standard syntax */
+    min-height: 46px;
+    position: relative;
+    z-index: 100000
+}
+
+/* .bar-top button {
+    background-color: #fa4504;
+    border: 1px solid #fa4504;
+    border-radius: 3px;
+    color: white;
+    margin-top: -7px;
+    padding: 3px 6px;
+    font-size: 11px;
+} */
+
+.social-top i {
+    margin-right: 6px;
+}
+.social-top button {
+    background-color: #f58634;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 6px;
+}
+
+/* .bar-top .col-md-2{
+  color:white;
+ margin-top:-13px;
+}.bar-top h4 a{
+  color: red !important;
+  font-size: 13px;
+  margin-top: 4px;
+} */
+
+/* .top-contato ul {
+    float: right;
+} */
+
+.bar-top .col-md-6 ul{
+  margin: 0px;
+  margin-left: -40px;
+}
+.bar-top .col-md-6:first-child{
+  padding-left: 0;
+}
+.bar-top .col-md-6:first-child ul li {
+    display: inline;
+    list-style: none;    
+}
+
+.bar-top .col-md-6:last-child ul{
+  float: right
+}
+
+.bar-top .col-md-6:last-child li:nth-child(2){
+  margin: 0px 15px
+}
+
+
+.bar-top .col-md-6:last-child ul li {
+    display: inline;
+    list-style: none;    
+}
+.bar-top a{
+    color: #000;
+    font-size: 12px;
+    margin: 0px 5px;
+    letter-spacing: 1px;
+}
+
+/* .top-contato i {
+    margin-right: 5px;
+    font-size: 1.3em;
+} */
+
+/* wpcf7 FORMS */
+
+input,
+.wpcf7 input {
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    margin: 5px 0px !important;
+}
+
+textarea,
+.wpcf7 textarea {
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    margin: 5px 0px !important;
+}
+
+input[type=submit],
+.wpcf7 input[type=submit] {
+    background-color: #ff6204;
+    color: white;
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 10px 0px !important;
+
+}
+
+input[type=submit]:hover,
+.wpcf7 input[type=submit]:hover {
+    background-color: #ff6204;
+    color: white;
+    opacity: 0.7;
+}
+
+/*
+================================= content
+*/
+
+#content {
+    padding: 100px 0px;
+}
+
+#content a {
+    color: #fa4504 !important;
+}
+
+#content a:hover {
+    color: #fa4504 !important;
+    opacity: .7;
+    text-decoration: none;
+}
+
+.pageTitle {
+    text-align: center;
+    background-color: #e43c20 !important;
+    padding: 20px 0px 10px 0px;
+    margin: 0px;
+    margin-top: -20px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.pageTitle h1 {
+    font-size: 32px !important;
+    margin-top: 20px;
+    color: #fff !important;
+    font-family: "antonio-light", cursive !important !important;
+}
+
+.bread {
+    text-align: center;
+    background-color: #383634 !important;
+    padding: 10px 0px;
+    color: #fff !important;
+}
+
+.bread a {
+    color: #fff !important;
+    font-size: 10px;
+}
+
+.bread span {
+    opacity: 0.7;
+    font-size: 10px;
+}
+
+#sidebar {
+    margin-top: 70px;
+    background-color: #f4f4f3 !important;
+    padding: 30px;
+}
+
+#sidebar h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#sidebar a {
+    color: #544d4e;
+}
+
+#sidebar li {
+    list-style: none !important;
+    margin-left: -40px;
+}
+
+/* ##################################### banner */
+#banner{
+  margin-top: -20px;
+  background-image: url(http://4cheff.com.br/temp/genitus/bgBanner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh
+}
+#banner .title{
+  position: relative;
+  margin-top: 40%;
+  transform: translateY(-50%);
+}
+#banner h1{
+  font-size: 50px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+#banner p{
+  margin-top: 40px;
+  color: white;
+  text-align: center;
+}
+
+/* ##################################### converse */
+#converse{
+  background: linear-gradient(white, #f5f5f5) !important;   
+}
+
+#converse .row{
+  margin: 80px 0px 140px
+}
+
+#converse .col-md-6{
+  text-align: center;
+}
+
+#converse .item{
+  background-color: #f3f3f3;
+  padding: 10px 20px
+}
+
+#converse .container{
+  padding: 80px 0px;
+  background: linear-gradient(white, #f5f5f5) !important;   
+  position: relative;
+  top: -100px !important;
+  border-radius: 10px
+}
+
+#converse .item button i{
+  margin-right: 6px;
+  color: #fff;
+}
+
+#converse h3{
+  color: #ec7b2f;
+  font-size: 40px;
+}
+#converse h4{
+  color: #3d3d3d;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#converse p{
+  color: #808080;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+#converse .item p{
+  margin-bottom: -30px;
+}
+#converse .item button{
+  background-color: #ec7b2f;
+  color: #fff;
+  border-radius: 50px;
+  padding: 10px 40px 10px 30px;
+  text-transform: uppercase;
+  position: relative;
+  top: 30px;
+}
+
+#converse button i{
+  margin-right: 6px;
+  color: black;
+  font-size: 10px;
+  position: relative;
+  top: -1px;
+}
+#converse button{
+  background-color: transparent;
+  color: #ec7b2f;
+  border: 3px solid #ec7b2f;
+  border-radius: 30px;
+  padding: 20px 60px 20px 50px;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+#converse .item hr { 
+  width: 100%;
+  border: 0; 
+  color: lightgray; 
+  background-color: lightgray; 
+  height: 1px;
+}
+
+#converse hr { 
+  width: 50px;
+  border: 0; 
+  color: lightgray; 
+  background-color: lightgray; 
+  height: 1px;
+}
+
+/* ##################################### blog */
+#blog{
+  padding: 80px 0px;
+  background-color: #fff;
+}
+#blog .col-md-4{
+  padding-right: 100px;
+}
+#blog .col-md-8 .col-md-4{
+  padding-right: 0px;
+}
+#blog #posts{
+  padding-top: 50px;
+}
+#blog #posts .item{
+ float: left;
+  margin-right: 20px;
+}
+#blog h3{
+  color: #ec7b2f;
+  font-size: 40px;
+}
+#blog h4{
+  color: #2e2e2e;
+  font-size: 23px;
+}
+#blog p{
+  color: #2e2e2e;
+  font-size: 16px;
+}
+#blog .item p{
+  color: #2e2e2e;
+  font-size: 14px;
+}
+#blog hr { 
+  width: 50px;
+  margin-left: 0px;
+  border: 0; 
+  color: #3d3d3d; 
+  background-color: #3d3d3d; 
+  height: 1px;
+}
+#blog a{
+  color: #ec7b2f
+}
+#blog i{
+  color: #c2c2c2;
+  margin-right: 6px;
+}
+#blog button i{
+  color: #ec7b2f;
+  margin-right: 6px;
+}
+#blog button{
+  background-color: transparent;
+  color: #ec7b2f;
+  border: 3px solid #ec7b2f;
+  border-radius: 30px;
+  padding: 10px 40px 10px 30px;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+/* ##################################### nossos */
+#nossos{
+  padding: 80px 0px;
+  background: url(http://4cheff.com.br/temp/genitus/bgRedondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#nossos .col-md-4{
+  padding-top: 180px;
+  padding-right: 100px;
+}
+#nossos #clientes{
+  padding-top: 180px;
+}
+
+#nossos h3{
+  color: #ec7b2f;
+  font-size: 40px;
+}
+#nossos p{
+  color: #c2c2c2;
+}
+#nossos hr { 
+  width: 50px;
+  margin-left: 0px;
+  border: 0; 
+  color: #3d3d3d; 
+  background-color: #3d3d3d; 
+  height: 1px;
+}
+#nossos button i{
+  margin-right: 6px;
+}
+#nossos button{
+  background-color: transparent;
+  color: #ec7b2f;
+  border: 3px solid #ec7b2f;
+  border-radius: 30px;
+  padding: 10px 40px 10px 30px;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+/* ##################################### footer */
+
+footer {
+    position: absolute;
+    width: 100%;
+}
+footer .col-md-12:first-child{
+  background-color: #1c1d1e;
+    padding: 35px  15px;
+}
+footer .col-md-12:last-child{
+  background-color: black;
+    padding: 15px;
+}
+footer .col-md-12:last-child img{
+  float: right;
+}
+
+footer .col-md-3:first-child{
+  padding-top: 70px;
+}
+
+footer nav{
+  display: inline-block;
+}
+footer h4{
+  color: #ec7c2f;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+footer nav a {
+    margin: 0px 10px;
+    color: #fff;
+    display: block;
+    margin: 10px 0px
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: none;
+    opacity: .7;
+}
+
+footer i{
+  margin-right: 10px;
+  color: white !important
+}
+footer .col-md-3:last-child a:first-child{
+    color: #fff;
+  font-weight: normal;
+}
+footer .col-md-3:last-child a{
+    color: #ec7c2f;
+  font-weight: bold;
+}
+footer hr { 
+  width: 50px;
+  margin-left: 0px;
+  border: 0; 
+  color: #fff; 
+  background-color: #fff; 
+  height: 1px;
+}
+footer p {
+    color: #f2f2ec;
+    font-size: 12px;
+    padding-top: 6px;
+}
+
+/* ##################################### media queries */
+
+@media (max-width: 767px) {
+    .bar-top {
+        display: none;
+    }
+
+    .social-top {
+        display: none;
+    }
+    
+}
+</style>
+</head>
+<body>
+
+<!-- h1 -->
+
+<div class="bar-top">
+            <div class="container">
+              <div class="col-md-6">
+                <ul>
+                  <li><a href="">Engenharia</a></li>
+                  <li>|</li>
+                  <li><a href="">Perícias</a></li>
+                  <li>|</li>
+                  <li><a href="">Consultoria</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul>
+                  <li><a href="tel: (19) 3201-5414">(19) 3201-5414</a></li>
+                  <li>|</li>
+                  <li><a href="mailto: contato@genitusengenharia.com.br">contato@genitusengenharia.com.br</a></li>
+                </ul>
+              </div>
+                
+            </div>
+            <div class="clear"></div>
+        </div>
+        <header>
+		
+			<div id="main-navigation" class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-navigation">
+					<span class="sr-only"><?php _e( 'Toggle navigation', 'odin' ); ?></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+						<img src="https://4cheff.com.br/temp/genitus/logoTop.jpg" alt="">
+					</a>
+				</div>
+				<nav class="collapse navbar-collapse navbar-main-navigation" role="navigation">
+<!-- 					<?php
+						wp_nav_menu(
+							array(
+								'theme_location' => 'main-menu',
+								'depth'          => 2,
+								'container'      => false,
+								'menu_class'     => 'nav navbar-nav',
+								'fallback_cb'    => 'Odin_Bootstrap_Nav_Walker::fallback',
+								'walker'         => new Odin_Bootstrap_Nav_Walker()
+							)
+						);
+					?>
+					 -->
+       
+					<div class="navbar-right">
+						<div class="social-top">
+							<a href=""><button><i class="fas fa-chevron-right"></i> Faça um orçamento</button></a>
+						</div>
+					</div>
+             <ul class="nav navbar-nav">
+               <li><a href="">A Genitus</a></li>
+               <li><a href="">Nossas Soluções</a></li>
+               <li><a href="">Blog</a></li>
+               <li><a href="">Clientes</a></li>
+               <li><a href="">Contato</a></li>
+          </ul>
+          
+				</nav><!-- .navbar-collapse -->
+			</div><!-- #main-navigation-->
+
+		</div><!-- .container-->
+	</header><!-- #header -->
+<!-- header END -->
+
+<!-- banner -->
+<section id="banner">
+  <div class="container">
+        <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div class="title">
+        <h1>Perícias de Engenharia e Inspeções Prediais</h1>
+    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</section>
+
+<!-- converse -->
+<section id="converse">
+  <div class="container">
+    
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <h3>Conheça nossas soluções.</h3>
+    <hr>
+    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+    </div>
+    <div class="col-md-3"></div>
+    
+    <div class="clear"></div>
+    
+    <div class="row" id="solucoes">
+           <div class="col-md-3">
+          <div class="item">
+            <img src="http://4cheff.com.br/temp/genitus/imgBlog.png" alt="">
+            <h4>There are many variations of passages</h4>
+            <hr>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority.</p>
+            <a href="#"><button><i class="fas fa-chevron-right"></i> Leia mais</button></a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="item">
+            <img src="http://4cheff.com.br/temp/genitus/imgBlog.png" alt="">
+            <h4>There are many variations of passages</h4>
+            <hr>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority.</p>
+            <a href="#"><button><i class="fas fa-chevron-right"></i> Leia mais</button></a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="item">
+            <img src="http://4cheff.com.br/temp/genitus/imgBlog.png" alt="">
+            <h4>There are many variations of passages</h4>
+            <hr>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority.</p>
+            <a href="#"><button><i class="fas fa-chevron-right"></i> Leia mais</button></a>
+          </div>
+        </div>
+      <div class="col-md-3">
+          <div class="item">
+            <img src="http://4cheff.com.br/temp/genitus/imgBlog.png" alt="">
+            <h4>There are many variations of passages</h4>
+            <hr>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority.</p>
+            <a href="#"><button><i class="fas fa-chevron-right"></i> Leia mais</button></a>
+          </div>
+        </div>
+    </div>
+    
+    <div class="clear"></div>
+    
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <h3>Converse com a gente.</h3>
+    <hr>
+    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+    <a href=""><button><i class="fas fa-chevron-right"></i> Faça seu orçamento</button></a>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</section>
+<!-- converse END -->
+
+<!-- blog -->
+<section id="blog">
+  <div class="container">
+    <div class="col-md-4">
+      <h3>Últimas <br> do Blog</h3>
+      <hr>
+      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+      <a href=""><button><i class="fas fa-chevron-right"></i> Ver todos</button></a>
+    </div>
+    <div class="col-md-8" id="posts">
+        <div class="col-md-4">
+          <div class="item">
+            <img src="http://4cheff.com.br/temp/genitus/imgBlog.png" alt="">
+            <h4>There are many variations 
+  of passages</h4>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority.</p>
+            <a href="#"><i class="fas fa-chevron-right"></i> Leia mais</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="item">
+            <img src="http://4cheff.com.br/temp/genitus/imgBlog.png" alt="">
+            <h4>There are many variations 
+  of passages</h4>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority.</p>
+            <a href="#"><i class="fas fa-chevron-right"></i> Leia mais</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="item">
+            <img src="http://4cheff.com.br/temp/genitus/imgBlog.png" alt="">
+            <h4>There are many variations 
+  of passages</h4>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority.</p>
+            <a href="#"><i class="fas fa-chevron-right"></i> Leia mais</a>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+<!-- blog END -->
+
+<!-- nossos -->
+<section id="nossos">
+  <div class="container">
+    <div class="col-md-4">
+      <h3>Nossos <br> Principais <br> Clientes</h3>
+      <hr>
+      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+      <a href=""><button><i class="fas fa-chevron-right"></i> Ver todos</button></a>
+    </div>
+    <div class="col-md-8" id="clientes">
+        <div class="col-md-4">
+          <div class="item">
+            <img src="http://4cheff.com.br/temp/genitus/cliente1.png" alt="">
+          </div>
+        </div>
+     <div class="col-md-4">
+          <div class="item">
+            <img src="http://4cheff.com.br/temp/genitus/cliente1.png" alt="">
+          </div>
+        </div>
+     <div class="col-md-4">
+          <div class="item">
+            <img src="http://4cheff.com.br/temp/genitus/cliente1.png" alt="">
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+<!-- nossos END -->
+
+<!-- footer -->
+    <footer>
+            <div class="col-md-12">
+              <div class="container">
+                <div class="col-md-3">
+                  <img src="https://4cheff.com.br/temp/genitus/logoBottom.png" alt="">
+                </div>
+                <div class="col-md-3">
+                  <h4>Navegue</h4>
+                  <nav>
+                    <a href="#">- A Genitus</a>
+                    <a href="#">- Clientes</a>
+                    <a href="#">- Blog</a>
+                    <a href="#">- Entre em contato</a>
+                </nav>
+                </div>
+                <div class="col-md-3">
+                  <h4>Nossas soluções</h4>
+                  <nav>
+                    <a href="#">- Inspeções e Perícias</a>
+                    <a href="#">- Assistência Técnica</a>
+                    <a href="#">- Treinamentos e Palestras</a>
+                    <a href="#">- Manual de Uso, Operação e 
+Manutenção</a>
+                    <a href="#">- Normas de Desempenho</a>
+                </nav>
+                </div>
+                <div class="col-md-3">
+                  <h4>Converse com a gente</h4>
+                  <nav>
+                    <a href="https://www.google.com/maps/place/GENITUS+ENGENHARIA,+PER%C3%8DCIAS+E+CONSULTORIA+LTDA/@-22.8932089,-47.0664269,17z/data=!4m8!1m2!2m1!1sRua+Tiradentes,+446++Edif%C3%ADcio+San+Thiago,+Sala+43++Vila+Itapura++Campinas!3m4!1s0x94c8c8a989d25419:0xd99266f1fabd8c68!8m2!3d-22.8930211!4d-47.0631975">Rua Tiradentes, 446  <br>
+Edifício San Thiago, Sala 43 <br>
+Vila Itapura <br>
+Campinas/SP</a>
+                    <hr>
+                    <a href="tel: (19) 3201-5414"><i class="fas fa-phone"></i> (19) 3201-5414</a>
+                    <a href="mailto: contato@genitusengenharia.com.br"><i class="fas fa-envelope"></i> contato@genitusengenharia.com.br</a>
+                </nav>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="container">
+                <p>© 2018 - Genitus Engenharia - All Rights Reserved <a href="https://4pme.com.br"><img src="https://4cheff.com.br/temp/genitus/4pme.png" alt=""></a></p>
+                </div>
+            </div>
+    </footer>
+<!-- footer END -->
+
+</body>
+</html>

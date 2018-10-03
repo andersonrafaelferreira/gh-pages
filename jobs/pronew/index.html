@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pronew</title>
+
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- font awesome v +5  -->
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+<!-- google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Barlow:400,700,900" rel="stylesheet">
+
+<style>
+body{
+  text-rendering: optimizaLegibility !important;
+  -webkit-font-smoothing: antialiased !important!;
+}
+
+/* ##################################### media queries */
+/* General Styles */
+
+#footer {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #f5f5f5;
+    padding-top: 15px;
+}
+html {
+    position: relative;
+    min-height: 100%;
+    overflow-y: scroll
+}
+body {
+    margin-bottom: 70px;
+    font-family: 'Barlow', sans-serif !important;
+}
+
+h1,h2,h3,h4,h5,h6{
+font-family: 'Barlow', sans-serif !important;
+  color: #152c50 !important
+}
+p {
+  font-size: 16px;
+  line-height: 26px;
+    font-family: 'Barlow', sans-serif !important;
+  color: #3d424a
+}
+.clear{
+    clear: both;
+}
+
+img{
+  max-width: 100%;
+}
+
+/* header #2 */
+
+				.navbar-default {
+		    background-color: #fff !important;
+		    border: none !important;
+		    border-radius: 0;
+		    padding: 15px 0px;
+}
+	
+		.navbar-default .navbar-brand {
+		    color: #777;
+      border-right: 1px solid lightgray
+		}
+	.navbar-default .navbar-brand img{
+		    margin-top: -16px;
+		}
+		.navbar-default .navbar-brand:hover,
+		.navbar-default .navbar-brand:focus {
+		    color: #5e5e5e;
+		    background-color: transparent
+		}
+		.navbar-default .navbar-text {
+		    color: #777
+		}
+		.navbar-default .navbar-nav>li>a {
+		    color: #545353;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-family: 'Barlow', sans-serif;
+      font-weight: bold;
+		}
+		.navbar-default .navbar-nav>li>a:hover,
+		.navbar-default .navbar-nav>li>a:focus {
+		    color: #333;
+		    background-color: transparent
+		}
+		.navbar-default .navbar-nav>.active>a,
+		.navbar-default .navbar-nav>.active>a:hover,
+		.navbar-default .navbar-nav>.active>a:focus {
+		    color: #555;
+		    background-color: #e7e7e7
+		}
+		.navbar-default .navbar-nav>.disabled>a,
+		.navbar-default .navbar-nav>.disabled>a:hover,
+		.navbar-default .navbar-nav>.disabled>a:focus {
+		    color: #ccc;
+		    background-color: transparent
+		}
+
+		.navbar-right i{
+			margin-top: 4px;
+      margin-right: 4px;
+			float: left;
+		}
+.social-top button{
+  margin-top: 10px;
+  background-color: #006ef7;
+  color: white;
+  padding: 6px 14px 6px 4px;
+  border: 2px solid white;
+  border-radius: 30px
+}
+.social-top button:hover{
+    border: 2px solid #006ef7;
+}
+		.social-top i{
+			margin-left: 10px;
+		}
+
+		.top-contato ul{
+			float: right;
+		}
+
+		.top-contato li{
+			float: left;
+			list-style: none;
+			color: #bebebe;
+			font-size: 12px;
+			margin-left: 15px;
+		}
+
+		.top-contato i{
+			margin-right:5px;
+		}
+
+		@media (max-width: 767px){
+			.bar-top{
+				display: none;
+			}
+
+			.social-top{
+				display: none;
+			}
+		}
+
+/*  
+contato
+*/
+#contato{
+  padding: 60px 0px
+}
+#contato h1{
+  font-size: 60px;
+  font-weight: 900;
+}
+#contato h4{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#contato p, #contato a{
+  color: #5a4b18;
+}
+#contato p:nth-child(2){
+  margin: 40px 0px !important
+}
+#contato .col-md-6:last-child{
+  background-color: #f5f4f1;
+  padding: 70px 30px 120px
+}
+#contato input, #contato textarea{
+  background-color: transparent !important;
+  border: 1px solid #5a4b18 !important;
+}
+#contato button{
+  background-color: #152c50;
+}
+
+/* 
+footer
+*/
+footer{
+  background-color: #fff;
+  
+}
+footer .container{
+  padding: 18px 0px;
+  border-top: 1px solid lightgray;
+}
+footer p{
+  color: #7a7878
+}
+footer img{
+  float: right;
+  position: relative;
+  top: 0px;
+  width: 90px
+}
+
+/* 
+pronew
+*/
+#pronew{
+  background-image: url(https://4cheff.com.br/temp/pronew/bgPronew.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0px !important
+}
+#pronew h1{
+  color: white !important;
+    font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 70px !important;
+  margin-left: 40px;
+}
+#pronew h1 span{
+  border-bottom: 1px solid white !important;
+  padding: 10px;
+}
+#pronew p{
+  color: white !important;
+  margin: 30px 0px
+}
+#pronew img{
+  float: right !important;
+  margin-top: 140px;
+}
+/* 
+segmentos
+*/
+
+#segmentos{
+    background-image: url(https://4cheff.com.br/temp/pronew/bgSegmentos.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0px 200px !important;
+  background-position: 0px -150px;
+}
+
+#segmentos .col-md-2 img{
+  width: 120px !important;
+}
+
+#segmentos .col-md-2{
+  text-align: center;
+  padding: 10px;
+  margin-top: 80px;
+}
+#segmentos .col-md-2 h4{
+  color: #000 !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+#segmentos h1 {
+  font-size: 43px;
+  line-height: 30px;
+  color: #152c50 !important;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#segmentos h1 span{
+  border-bottom: 3px solid #006ef7 !important;
+  padding-bottom: 10px;
+}
+
+/* 
+produtos
+*/
+
+#produtos{
+    background-image: url(https://4cheff.com.br/temp/pronew/bgProdutos.png);
+  background-repeat: no-repeat;
+  padding: 60px 0px 100px !important;
+  margin-top: 140px;
+}
+
+#produtos h1 {
+  font-size: 43px;
+  line-height: 30px;
+  color: #152c50 !important;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#produtos h1 span{
+  border-bottom: 3px solid #006ef7 !important;
+  padding-bottom: 10px;
+}
+#produtos .item{
+  margin-bottom: 40px;
+}
+#produtos img{
+  display: block;
+  margin: 0 auto 20px auto;
+}
+#produtos h4{
+  color: #152c50 !important;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#produtos p{
+    color: #3d424a !important;
+}
+
+/* 
+banner
+*/
+
+#banner{
+    background-image: url(https://4cheff.com.br/temp/pronew/imgBanner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0px 100px !important;
+  overflow: hidden;
+}
+#banner .col-md-4{
+  background-color: #152c50 !important;
+  padding: 100px;
+}
+
+#banner h3{
+  color: #fff !important;
+  margin-bottom: 50px;
+}
+
+#banner li{
+  color: #fff !important;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+   
+
+	<header>
+		
+			<div id="main-navigation" class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-navigation">
+					<span class="sr-only"><?php _e( 'Toggle navigation', 'odin' ); ?></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+						<img src="https://4cheff.com.br/temp/pronew/logoTop.png" alt="">
+					</a>
+				</div>
+				<nav class="collapse navbar-collapse navbar-main-navigation" role="navigation">
+          <div class="navbar-right">
+						<div class="social-top">
+							<a href="tel:19955666677"><button><i class="fab fa-whatsapp" aria-hidden="true"></i> 19 95566.6677</button></a>
+						</div>
+					</div>
+          <ul class="nav navbar-nav navbar-left">
+                                                                                                      
+            <li><a href="#produtos">PRODUTOS E SERVIÇOS</a></li>
+            <li><a href="#segmentos">SEGMENTOS ATENDIDOS</a></li>
+            <li><a href="#pronews">A PRONEW</a></li>
+            <li><a href="#contato">CONTATO</a></li>
+          </ul>
+<!-- 					<?php
+						wp_nav_menu(
+							array(
+								'theme_location' => 'main-menu',
+								'depth'          => 2,
+								'container'      => false,
+								'menu_class'     => 'nav navbar-nav',
+								'fallback_cb'    => 'Odin_Bootstrap_Nav_Walker::fallback',
+								'walker'         => new Odin_Bootstrap_Nav_Walker()
+							)
+						);
+					?> -->
+					
+					
+				</nav><!-- .navbar-collapse -->
+			</div><!-- #main-navigation-->
+
+		</div><!-- .container-->
+	</header><!-- #header -->
+
+
+<!-- banner -->
+<section id="banner">
+  <div class="col-md-4">
+    <h3>SOLUÇÃO COMPLETA EM PROJETOS
+INDUSTRIAIS:</h3>
+    <ul>
+      <li>DISPOSITIVOS</li>
+      <li>MÁQUINAS ESPECIAIS</li>
+      <li>LINHAS DE MONTAGEM</li>
+    </ul>
+  </div>
+  <div class="col-md-8"></div>
+</section>
+
+<div class="clear"></div>
+
+<!-- produtos -->
+<section id="produtos">
+  <div class="container">
+<div class="col-md-3">
+    <h1>Produtos</h1>
+    <h1><span>Serviços</span></h1>
+</div>
+<div class="col-md-3">
+  <div class="item">
+    <img src="https://4cheff.com.br/temp/pronew/pn.png" alt="">
+    <h4>Projetos mecânicos de máquinas especiais  e automação industrial</h4>
+    <p>Fechamento de máquinas (enclausuramento) <br>
+  Sistema anti-poluição <br>
+  Adaptação de componentes em máquinas de série ou especiais <br>
+  Projetos para reforma de máquinas (retrofiting) <br>
+  Bancadas de testes <br>
+  Componentes para torres de resfriamento. </p>
+    </div>
+
+</div>
+<div class="col-md-3">
+  <div class="item">
+    <img src="https://4cheff.com.br/temp/pronew/pn.png" alt="">
+    <h4>Projetos mecânicos de estruturas metálicas e equipamentos industriais</h4>
+    <p>Escadas marinheiro <br>
+        Escadas inclinadas <br>
+        Plataformas de acesso <br>
+        Proteções de plataformas</p>
+  </div>
+    </div>
+<div class="col-md-3">
+  <div class="item">
+  <img src="https://4cheff.com.br/temp/pronew/pn.png" alt="">
+  <h4>Desenhos mecânicos 
+e layouts</h4>
+  <p>Plantas de fundação <br>
+Layouts de fábrica <br>
+Detalhamentos em geral <br>
+de projetos mecânicos.</p>
+    </div>
+    </div>
+    
+    <div class="clear"></div>
+    
+    <div class="col-md-3"></div>
+    <div class="col-md-3">
+        <div class="item">
+    <img src="https://4cheff.com.br/temp/pronew/pn.png" alt="">
+    <h4>Projetos mecânicos de dispositivos mecânicos</h4>
+    <p>Dispositivos de usinagem <br>
+      Dispositivos de montagem <br> 
+      Dispositivos de gabaritos <br>
+      Dispositivos de solda</p>
+        </div>
+    </div>
+    <div class="col-md-3">
+      <img src="https://4cheff.com.br/temp/pronew/pn.png" alt="">
+      <h4>Projetos mecânicos de linhas de montagem automatizadas</h4>
+      <p>Máquinas de testes <br>
+Máquinas de montagem <br>
+Linhas automatizadas</p>
+    </div>
+    <div class="col-md-3">
+      <img src="https://4cheff.com.br/temp/pronew/pn.png" alt="">
+      <h4>Normalização e padronização</h4>
+      <p>Execução de normas internas de engenharia (padronização) <br>
+Adequação de produtos as normas NRs vigentes</p>
+    </div>
+    
+  </div>
+</section>
+<!-- segmentos -->
+<section id="segmentos">
+  <div class="container">
+    <h1>Segmentos</h1>
+    <h1><span>Atendidos</span></h1>
+    <div class="clear"></div>
+    <div class="col-md-2">
+      <img src="https://4cheff.com.br/temp/pronew/seg1.png" alt="">
+      <h4>usinas de açúcar e álcool</h4>
+    </div>
+    <div class="col-md-2">
+      <img src="https://4cheff.com.br/temp/pronew/seg2.png" alt="">
+      <h4>Empresas de automação industrial, reformas e retrofiting
+</h4>
+    </div>
+    <div class="col-md-2">
+      <img src="https://4cheff.com.br/temp/pronew/seg3.png" alt="">
+      <h4>indÚstrias moveleiras e de reciclagem</h4>
+    </div>
+    <div class="col-md-2">
+      <img src="https://4cheff.com.br/temp/pronew/seg4.png" alt="">
+      <h4>IndÚstrias mecânicas em geral, máquinas e  equipamentos automotivos</h4>
+    </div>
+    <div class="col-md-2">
+      <img src="https://4cheff.com.br/temp/pronew/seg5.png" alt="">
+      <h4>Indústrias de materiais elétricos e eletrônicos</h4>
+    </div>
+    <div class="col-md-2">
+      <img src="https://4cheff.com.br/temp/pronew/seg6.png" alt="">
+      <h4>indÚstrias farmacÊuticas, quÍmicas e tÊxteis</h4>
+    </div>
+  </div>
+</section>
+
+<!-- pronew -->
+<section id="pronew">
+  <div class="container">
+  <div class="col-md-6">
+    <h1><span>A Pronew</span></h1>
+    <p>A Pronew é uma empresa prestadora de serviços na área de engenharia de projetos mecânicos em geral. Situada na cidade de Indaiatuba | SP – Brasil.
+</p>
+<p>
+Contamos com uma equipe altamente qualificada, projetistas mecânicos e hidráulicos com  mais de 35 anos de experiência em máquinas especiais e know how internacional.
+</p>
+<p>
+Desenvolvemos desde simples dispositivos até complexas linhas de trabalho para diferentes setores industriais. Contamos com os mais atuais softwares de engenharia para oferecer trabalhos em CAD em 2D ou 3D atendendo a necessidade de mercado.
+</p>
+<p>
+Objetivando a otimização do custo/benefício, nossa empresa se destaca nesse segmento, superando os desafios e satisfazendo nossos clientes.
+</p>
+<p>
+Parceria com nossos clientes é sempre nossa meta, visando uma relação de confiança e qualidade e credibilidade nos serviços prestados.
+</p>
+<p>
+Aprimorar sempre, esse lema faz da Pronew uma empresa séria, ética e consolidada com seus valores e ideais.
+</p>
+   </div>
+  <div class="col-md-6">
+      <img src="https://4cheff.com.br/temp/pronew/pronew1.png" alt="">
+    </div>
+  </div>
+</section>
+<!-- contato -->
+<section id="contato">
+  <div class="container">
+    <div class="col-md-6">
+      <h1>Contato</h1>
+      <p>Preencha os campos do formulário ao lado para que nosso setor de atendimento possa retornar seu contato, se preferir, contate-nos através de nossos telefones e e-mails.</p>
+           <h4><i class="fas fa-phone"></i> Atendimento</h4>
+<a href="tel: (19) 3885-0351">(19) 3885-0351</a>
+<hr>
+<h4><i class="fas fa-envelope"></i> e-mail</h4>
+<a href="mailto:contato@pronew.com.br">contato@pronew.com.br</a>
+<hr>
+     <h4><i class="fas fa-clock"></i> Atendimento</h4>
+<p>Segunda a Sexta das 8h às 18h</p>
+
+    </div>
+    <div class="col-md-6">
+      <div id="app"></div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <div class="col-md-6">
+      <p>© Copyright 2018. Pronew - All Rights Reserved</p>
+    </div>
+    <div class="col-md-6">
+      <img src="https://4cheff.com.br/temp/pronew/4pme.png" alt="">
+    </div>
+  </div>
+  
+<script>
+        (function(d, s, mail) {
+            var js = d.createElement(s);
+            js.src = 'https://4pmesites.com.br/sdk/f-sdk.js';
+            d.body.appendChild(js);
+            let info = {
+                mail
+            }
+            $('#app').attr('title', info.mail);
+        }(document, 'script', 'myapplabdrive@gmail.com' ));
+
+</script>  
+</body>
+</html>

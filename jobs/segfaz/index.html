@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Segfaz</title>
+
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- font awesome v +5  -->
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+<!-- google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
+<!-- carousel -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css">
+
+<style>
+body{
+/*   background-color: red !important; */
+  margin: 0px !important;
+  padding: 0px  !important;
+}
+
+/* .bar-top{display: none;}
+.navbar-default{ display: none;} */
+
+
+/* 
+================================= header4
+*/
+
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff !important;
+}
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid white !important;
+}
+
+.navbar-default {
+    /*    background-color: #e43c20 !important;*/
+    background-color: white !important;
+    border: none;
+    border-radius: 0 !important;
+    padding: 15px 0px;
+    padding-top: 10px;
+    margin: 0;
+    border: none !important;
+  margin-top: -17px;
+  z-index: 1000000000;
+}
+
+.navbar-default .navbar-brand {
+    color: #777
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: transparent
+}
+
+.navbar-default .navbar-brand img {
+    margin-top: -10px;
+}
+
+.navbar-default .navbar-text {
+    color: #777
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #3a2874 !important;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: gray !important;
+    background-color: transparent !important;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: gray !important;
+    background-color: transparent !important
+}
+
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:hover,
+.navbar-default .navbar-nav > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent
+}
+
+.navbar-right i {
+    margin-top: 18px;
+    float: right;
+}
+
+/* .bar-top .container {
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+ */
+.bar-top li a {
+    color: #adafb2;
+    text-decoration: none;
+}
+
+.bar-top li {
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.bar-top {
+    padding: 10px;
+    /*    background-color: #e43c20;*/
+    background-color: #f6f4f4;
+    /* Standard syntax */
+    min-height: 46px;
+    position: relative;
+    z-index: 100000;
+  margin-top: -20px;
+}
+
+.bar-top button {
+    background-color: #3a2874;
+    border: 1px solid #3a2874;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: white;
+    margin-top: -17px;
+    padding: 10px 20px;
+    font-size: 11px;
+}
+
+.social-top i {
+    margin-left: 10px;
+}
+
+/* .bar-top .col-md-2{
+  color:white;
+ margin-top:-13px;
+}.bar-top h4 a{
+  color: red !important;
+  font-size: 13px;
+  margin-top: 4px;
+} */
+
+.top-contato ul {
+    float: right;
+}
+
+
+.top-contato li {
+    float: right;
+    list-style: none;
+    color: white;
+    font-size: 10px;
+    margin-left: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.top-contato i {
+    margin-right: 5px;
+    font-size: 1.3em;
+}
+
+
+@media (max-width: 767px) {
+    .bar-top {
+        display: none;
+    }
+
+    .social-top {
+        display: none;
+    }
+  
+  .navbar-brand img{
+        margin-top: -14px;
+  }
+  .navbar-default li{
+    padding-left: 15px
+  }
+}
+
+body{
+  margin:0;
+  padding:0;
+}
+#banner{ 
+  background-image: url(https://4cheff.com.br/temp/segfaz/bgBanner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin-top: -20px;
+  padding: 300px 0px
+}
+#banner h1{ 
+  color: white
+}
+#banner p{ 
+  color: #3a2874;
+  margin: 30px 0px 50px;
+  font-weight: bold;
+}
+#banner button{
+  background-color: #3a2874;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px
+}
+/* 
+oque
+*/
+#oque h1{
+  font-size: 60px;
+  font-weight: normal;
+}
+#oque .col-md-3{
+  text-align: center;
+  padding: 20px;
+}
+#oque .col-md-3 img{
+  padding: 20px
+}
+#oque{
+  background-color: #ccdbe1;
+  padding: 80px 0px;
+  color: #3a2874
+}
+#oque .col-md-7 a:last-child button{
+  float: right;
+}
+#oque .col-md-7 a button{
+  background-color: #0000ff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+#oque .col-md-5 p{
+  margin: 30px 0px 50px
+}
+#oque .col-md-5 a button{
+  background-color: #3a2874;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px
+}
+/* 
+nossa
+*/
+#nossa{
+  padding: 80px 0px;
+  background-color: #fff;
+}
+#nossa h1{
+  color: #3a2874;
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+/* 
+seguradora
+*/
+#seguradora h2{
+   color: #42caec;
+  font-size: 38px;
+  font-weight: normal;
+}
+
+#seguradora{
+    background-color: #00376a;
+padding: 80px 0px
+}
+#owl-parceiras .item{
+  padding: 70px 0px 50px
+}
+/* 
+fale 
+*/
+#fale{
+  background-color: #d5d8de;
+  padding: 80px 0px
+}
+#fale p{
+  margin: 30px 0px
+}
+#fale h1{
+  font-size: 60px;
+  font-weight: normal;
+  color: #3a2874;
+}
+#fale h4{
+    color: #3a2874;
+}
+#fale .col-md-6:last-child{
+  padding: 180px 0px 0px
+}
+#fale button{
+  background-color: #3a2874;
+}
+#fale input{
+  padding: 30px !important
+}
+#fale textarea{
+  padding: 30px !important
+}
+/* onde */
+#onde{
+  background-color: #3a2874;
+  color: white;
+}#onde h1{
+  font-size: 60px;
+  font-weight: normal;
+}
+#onde .col-md-4{
+  padding-top: 20px;
+}
+
+/* footer */
+footer nav{
+  margin-top: 20px;
+}
+footer a{
+  padding: 10px;
+  color: #74787c
+}footer a:hover{
+  color: #74787c;
+  opacity: .7;
+  text-decoration: none;
+}
+footer{
+  background-color: #1c2631;
+  padding: 15px 0px;
+}
+footer p{
+  text-align: right;
+  color: #74787c
+}
+#copyright{
+  color: #5f6265;
+  background-color: #212c39;
+  padding: 15px 0px
+}
+#copyright .col-md-6:last-child{
+  text-align: right;
+}
+</style>
+</head>
+<body>
+
+
+<!-- h1 -->
+
+        <div class="bar-top">
+            <div class="container">
+                <ul class="top-contato">
+                    <li><a href="#"><button><i class="far fa-check-circle"></i> Faça uma cotação</button></a></li>
+                    <li><a href="tel:(19) 99782-6043"><i class="fas fa-phone"></i> (19) 99782-6043</a></li>
+                    <li><a href="tel:(19) 3701-3444"><i class="fas fa-phone"></i> (19) 3701-3444</a></li>
+                    <li><a href="mailto:osmar.cassiano@segfazseguros.com"><i class="far fa-envelope"></i> osmar.cassiano@segfazseguros.com</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <header>
+
+            <div id="main-navigation" class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-navigation">
+					<span class="sr-only"><?php _e( 'Toggle navigation', 'odin' ); ?></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+                        <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+						<img src="https://4cheff.com.br/temp/segfaz/segFazTop.png" alt="">
+					</a>
+                    </div>
+                    <nav class="collapse navbar-collapse navbar-main-navigation" role="navigation">
+<!--                         <?php
+    wp_nav_menu(
+        array(
+            'theme_location' => 'main-menu',
+            'depth'          => 2,
+            'container'      => false,
+            'menu_class'     => 'nav navbar-nav navbar-right',
+            'fallback_cb'    => 'Odin_Bootstrap_Nav_Walker::fallback',
+            'walker'         => new Odin_Bootstrap_Nav_Walker()
+        )
+    );
+?> -->
+                               <ul class="nav navbar-nav navbar-right">
+                                 <li><a href="#oque">Seguros</a></li>
+                                 <li><a href="#nossa">A GCR Seguros</a></li>
+                                 <li><a href="#fale">Canais de Atendimento</a></li>
+                              </ul>
+                    </nav>
+                    <!-- .navbar-collapse -->
+                </div>
+                <!-- #main-navigation-->
+
+            </div>
+            <!-- .container-->
+        </header>
+<!-- header END -->
+
+<!-- banner -->
+<section id="banner">
+  <div class="container">
+    <div class="col-md-6">
+      
+    </div>
+    <div class="col-md-6">
+      <h1><strong>SEGFAZ</strong> para <br>
+você <strong>viver seguro.</strong></h1>
+      <p>Conte sempre com a atenção de nossos profissionais para entender o que você procura e para indicar o que você precisa.</p>
+      <a href=""><button><i class="far fa-check-circle"></i> Faça um orçamento</button></a>
+    </div>
+  </div>
+</section>
+<!-- banner END -->
+
+
+<!-- oque -->
+<section id="oque">
+  <div class="container">
+    <div class="col-md-5">
+      <h1>O que <br> <strong> 
+oferecemos.</strong></h1>
+      <p>Segfaz Seguros opera nos seguintes ramos de seguros:</p>
+      <a href=""><button><i class="far fa-check-circle"></i> Faça um orçamento</button></a>
+    </div>
+    <div class="col-md-7">
+      <h4>Patrimoniais:</h4>
+      <div class="row">
+        <div class="col-md-3">
+          <img src="https://4cheff.com.br/temp/segfaz/oque/oque1.png" alt="">
+          <h5>Automóveis</h5>
+        </div>
+        <div class="col-md-3">
+          <img src="https://4cheff.com.br/temp/segfaz/oque/oque2.png" alt="">
+          <h5>Residencial</h5>
+        </div>
+        <div class="col-md-3">
+          <img src="https://4cheff.com.br/temp/segfaz/oque/oque3.png" alt="">
+          <h5>Equipamentos</h5>
+        </div>
+        <div class="col-md-3">
+          <img src="https://4cheff.com.br/temp/segfaz/oque/oque4.png" alt="">
+          <h5>Transporte</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <img src="https://4cheff.com.br/temp/segfaz/oque/oque5.png" alt="">
+          <h5>Seguro Vida</h5>
+        </div>
+        <div class="col-md-3">
+          <img src="https://4cheff.com.br/temp/segfaz/oque/oque6.png" alt="">
+          <h5>Seguro Odontológico</h5>
+        </div>
+        <div class="col-md-3">
+          <img src="https://4cheff.com.br/temp/segfaz/oque/oque7.png" alt="">
+          <h5>Seguro Saúde</h5>
+        </div>
+        <div class="col-md-3">
+          <img src="https://4cheff.com.br/temp/segfaz/oque/oque8.png" alt="">
+          <h5>Fiança Locatícia</h5>
+        </div>
+      </div>
+<a href="https://portal.sulamericaseguros.com.br/seguroviagem.htm?ref=eyJkYWRvc1Byb2R1Y2FvIjp7IkFBIjoiMjcyNyIsIkFWIjoiMCIsIkVBIjoiMTcxODgiLCJFViI6IjE2MTk1NzgiLCJ1b3BFbWlzc2FvIjoiMjIxIiwidW9wTmVnb2NpbyI6IjM4NTkifSwiY29ycmV0b3JOb21lIjoiU2VnZmF6IFNlZ3Vyb3MiLCJpZENvcnJldG9yIjoiNjgzOTQiLCJwZXJjZW50dWFsQ29ycmV0YWdlbSI6W3sicGVyY2VudHVhbENvcnJldGFnZW0iOiIyMC4wMCJ9LHsicGVyY2VudHVhbEFnZW5jaWFtZW50byI6IjAuMDAifSx7InBlcmNlbnR1YWxQcmVzdGFjYW9TZXJ2aWNvIjoiMC4wMCJ9LHsiaW5kZXhPcGNhbyI6IjMifV0sIm5vbWVQcm9tb3RvciI6IiIsImltZ0NvcnJldG9yIjoiaHR0cHM6Ly9jb3JyZXRvci5zdWxhbWVyaWNhc2VndXJvcy5jb20uYnIvZGF0YS9maWxlcy9DQi9FMS9ERC9DMy84QjQxNDYxMDAxMTMzQjM2OUI0NjE2QTgvbG9nbyUyMHNlZ2Zhei5qcGcifQ=="><button>Seguro viagem <i class="fas fa-chevron-right"></i></button></a>
+<a href="http://sulamericaodonto.com.br/segfazcorr"><button>Plano odontológico <i class="fas fa-chevron-right"></i></button></a>
+    </div>
+  </div>
+</section>
+<!-- oque END -->
+
+
+<!-- nossa -->
+<section id="nossa">
+  <div class="container">
+    <div class="col-md-6">
+      <h1>Nossa <br><strong>empresa</strong></h1>
+      <p>A nossa equipe dedica-se à você ou sua empresa. O modelo de negócio é desenvolvido com inovação e eficiência, voltado para a satisfação de nossos clientes. Com nossa seguradora você irá trazer mais segurança, trazendo resultados melhores e com sua satisfação. </p><p>
+Venha já conhecer a SegFaz e faça bons negócios. Estamos aguardando sua visita.</p>
+    </div>
+    <div class="col-md-6">
+      <img src="https://4cheff.com.br/temp/segfaz/segfazFachada.png" alt="">
+    </div>
+  </div>
+</section>
+<!-- nossa END -->
+
+<!-- seguradora -->
+<section id="seguradora">
+  <div class="container">
+   
+    <h2>Seguradoras parceiras</h2>
+    <div id="owl-parceiras">
+      <div class="item">
+        <img src="https://4cheff.com.br/temp/segfaz/oque/oque1.png" alt="">
+      </div>
+    <div class="item">
+        <img src="https://4cheff.com.br/temp/segfaz/oque/oque1.png" alt="">
+      </div>
+    <div class="item">
+        <img src="https://4cheff.com.br/temp/segfaz/oque/oque1.png" alt="">
+      </div>
+    <div class="item">
+        <img src="https://4cheff.com.br/temp/segfaz/oque/oque1.png" alt="">
+      </div>
+    <div class="item">
+        <img src="https://4cheff.com.br/temp/segfaz/oque/oque1.png" alt="">
+      </div>
+    <div class="item">
+        <img src="https://4cheff.com.br/temp/segfaz/oque/oque1.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- seguradora END -->
+
+<!-- fale -->
+<section id="fale">
+  <div class="container">
+  <div class="col-md-6">
+    <h1>Fale <br><strong>conosco</strong></h1>
+    <p>Preencha os campos do formulário ao lado para que nosso setor de atendimento possa retornar o seu contato, se preferir, contate-nos através de nossos telefones e e-mails.
+
+</p>
+    <h4><i class="fas fa-phone"></i> Central de Relacionamento</h4>
+    <p>(19) 2114-3499 |  99782-6043</p>
+    <h4><i class="fas fa-envelope"></i> Nosso email</h4>      
+    <p>osmar.cassiano@segfazseguros.com</p>
+    <h4><i class="fas fa-clock"></i> Atendimento</h4>
+    <p>Segunda à Sexta-feira das 8 às 11h30 | 13 às 18 horas</p>
+ 
+
+  </div>
+  <div class="col-md-6">
+    <div id="app"></div>
+    </div>
+    </div>
+</section>
+<!-- onde -->
+<section id="onde">
+  <div class="container">
+    <div class="col-md-4">
+      <h1>Onde <br><strong> Estamos</strong></h1>
+    <p>Limeira - SP</p>
+    </div>
+    <div class="col-md-7">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.2218405376984!2d-47.402396484428564!3d-22.570804785183707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c880f000f6cd57%3A0x747179a1509e5987!2sR.+Alm.+Barroso%2C+235+-+Vila+Cidade+Jardim%2C+Limeira+-+SP%2C+13480-270!5e0!3m2!1spt-BR!2sbr!4v1530195143828" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+<footer>
+  <div class="container">
+    <div class="col-md-6">
+      <nav>
+        <a href="">Home</a>
+        <a href="">Seguros</a>
+        <a href="">Clientes</a>
+        <a href="">A SegFaz Seguros</a>
+        <a href="">Canais de atendimento</a>
+      </nav>
+    </div>
+    <div class="col-md-6">
+      <p>Rua Almirante Barroso, 235 – CEP: 13.480-270 – Cidade Jardim<br>
+Centro - Limeira (SP)<br>
+CEP 13480-756</p>
+    </div>
+  </div>
+</footer>
+<section id="copyright">
+  <div class="container">
+    <div class="col-md-6">
+      <p>Copyright © 2018 SegFaz seguros Todos os direitos reservados.</p>
+    </div>
+    <div class="col-md-6">
+      <a href="https://4pme.com.br">
+        <img src="https://4cheff.com.br/temp/segfaz/4pme.png" alt="">
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- scripts -->
+    <script>
+        (function(d, s, mail) {
+            var js = d.createElement(s);
+            js.src = 'https://4pmesites.com.br/sdk/f-sdk.js';
+            d.body.appendChild(js);
+            let info = {
+                mail
+            }
+            $('#app').attr('title', info.mail);
+        }(document, 'script', 'myapplabdrive@gmail.com' ));
+    </script>
+
+ <!-- smooth scrolling -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        // Select all links with hashes
+        $('a[href*="#"]')
+            // Remove links that don't actually link to anything
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .click(function(event) {
+                // On-page links
+                if (
+                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                    location.hostname == this.hostname
+                ) {
+                    // Figure out element to scroll to
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    // Does a scroll target exist?
+                    if (target.length) {
+                        // Only prevent default if animation is actually gonna happen
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000, function() {
+                            // Callback after animation
+                            // Must change focus!
+                            var $target = $(target);
+                            $target.focus();
+                            if ($target.is(":focus")) { // Checking if the target was focused
+                                return false;
+                            } else {
+                                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                                $target.focus(); // Set focus again
+                            };
+                        });
+                    }
+                }
+            });
+
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#owl-parceiras").owlCarousel({
+                autoPlay: 3000, //Set AutoPlay to 3 seconds
+                items: 4,
+                itemsDesktop: [1199, 3],
+                itemsDesktopSmall: [979, 1]
+            });
+
+            $("#owl-why").owlCarousel({
+                autoPlay: 3000, //Set AutoPlay to 3 seconds
+                items: 2,
+                itemsDesktop: [1199, 2],
+                itemsDesktopSmall: [979, 1]
+            });
+
+        });
+
+    </script>
+</body>
+</html>

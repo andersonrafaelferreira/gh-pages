@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ZM</title>
+
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- font awesome v +5  -->
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+<!-- google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Open+Sans" rel="stylesheet">
+
+<style>
+
+
+*{
+font-family: 'Open Sans', sans-serif;
+}
+
+/*
+commom
+*/
+
+html {
+    position: relative;
+    min-height: 100%;
+    overflow-y: scroll;
+}
+
+body {
+    background-color: transparent !important;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 70px;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Libre Baskerville', serif !important;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #1c1d1e;
+}
+
+.clear{
+  clear: both;
+}
+/* 
+================================= header4
+*/
+
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff !important;
+}
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid white !important;
+}
+
+.navbar-default ul{
+    border-left: 1px solid rgba(255,255,255,0.4);
+}
+
+.navbar-default {
+    /*    background-color: #e43c20 !important;*/
+    background-color: #1c1d1e !important;
+    border: none;
+    border-radius: 0 !important;
+    padding: 15px 0px;
+    padding-top: 10px;
+    margin: 0;
+    border: none !important
+}
+
+.navbar-default .navbar-brand {
+    color: #777
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: transparent
+}
+
+.navbar-default .navbar-brand img {
+    margin-top: -10px;
+  width: 200px
+}
+
+.navbar-default .navbar-text {
+    color: #777
+}
+
+.navbar-default .navbar-nav > li > a {
+    font-size: 13px;
+    font-family: 'Libre Baskerville', serif !important;
+    color: #e2dcac !important;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  opacity: .7;
+    color: #e2dcac !important;
+    background-color: transparent !important;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #e2dcac !important;  
+  opacity: .7;
+    background-color: transparent !important
+}
+
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:hover,
+.navbar-default .navbar-nav > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent
+}
+
+.navbar-right i {
+    margin-top: 18px;
+    float: right;
+}
+
+.bar-top .container {
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.bar-top li a {
+    color: white;
+    text-decoration: none;
+}
+
+.bar-top li {
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.bar-top {
+    padding: 10px;
+    /*    background-color: #e43c20;*/
+    background-color: transparent;
+    /* Standard syntax */
+    min-height: 46px;
+    position: relative;
+    z-index: 100000
+}
+
+.bar-top button {
+    background-color: #fa4504;
+    border: 1px solid #fa4504;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: white;
+    margin-top: -7px;
+    padding: 3px 6px;
+    font-size: 11px;
+}
+
+.social-top i {
+    margin-left: 10px;
+}
+
+/* .bar-top .col-md-2{
+  color:white;
+ margin-top:-13px;
+}.bar-top h4 a{
+  color: red !important;
+  font-size: 13px;
+  margin-top: 4px;
+} */
+
+.top-contato ul {
+    float: right;
+}
+
+
+.top-contato li {
+    float: right;
+    list-style: none;
+    color: white;
+    font-size: 10px;
+    margin-left: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.top-contato i {
+    margin-right: 5px;
+    font-size: 1.3em;
+}
+
+/* wpcf7 FORMS 
+
+input,
+.wpcf7 input {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    margin: 5px 0px !important;
+}
+
+textarea,
+.wpcf7 textarea {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    margin: 5px 0px !important;
+}
+
+input[type=submit],
+.wpcf7 input[type=submit] {
+    background-color: #1c1d1e;
+    color: white;
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 10px 0px !important;
+
+}
+
+input[type=submit]:hover,
+.wpcf7 input[type=submit]:hover {
+    background-color: #1c1d1e;
+    color: white;
+    opacity: 0.7;
+}
+
+/*
+================================= content
+*/
+
+#content {
+    padding: 100px 0px;
+}
+
+#content a {
+    color: #fa4504 !important;
+}
+
+#content a:hover {
+    color: #fa4504 !important;
+    opacity: .7;
+    text-decoration: none;
+}
+
+.pageTitle {
+    text-align: center;
+    background-color: #e43c20 !important;
+    padding: 20px 0px 10px 0px;
+    margin: 0px;
+    margin-top: -20px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.pageTitle h1 {
+    font-size: 32px !important;
+    margin-top: 20px;
+    color: #fff !important;
+    font-family: "antonio-light", cursive !important !important;
+}
+
+.bread {
+    text-align: center;
+    background-color: #383634 !important;
+    padding: 10px 0px;
+    color: #fff !important;
+}
+
+.bread a {
+    color: #fff !important;
+    font-size: 10px;
+}
+
+.bread span {
+    opacity: 0.7;
+    font-size: 10px;
+}
+
+#sidebar {
+    margin-top: 70px;
+    background-color: #f4f4f3 !important;
+    padding: 30px;
+}
+
+#sidebar h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#sidebar a {
+    color: #544d4e;
+}
+
+#sidebar li {
+    list-style: none !important;
+    margin-left: -40px;
+}
+
+/* 
+banner
+*/
+
+
+#banner{
+  padding: 100px 0;
+  height: 100vh;
+  background-color: #554;
+  overflow: hidden;
+  margin-top: -20px;
+  position: relative;
+  margin-bottom: 200px;
+}
+
+#banner h2{
+  color: #614a3c;
+  font-size: 38px;
+  margin-bottom: 40px;
+}
+
+#banner button{
+  background-color: #1c1d1e !important;
+  color: white;
+  padding: 14px 40px;
+  border: none;
+  text-transform: uppercase;
+  font-family: 'Libre Baskerville', serif;
+  letter-spacing: 2px;
+font-weight: light;
+  font-size: 10px;
+}
+
+#banner p{
+  color: #614a3c;
+  font-size: 15px;
+  margin-bottom: 40px;
+  font-family: 'Libre Baskerville', serif;font-style: italic;
+}
+
+#banner .col-md-4{
+  padding: 0;
+  position: absolute;
+  bottom: 0px;
+  z-index: 999999999999 !important;
+}
+#banner .col-md-4 .item{
+  background-color: #f2f2ec;
+  overflow: hidden;
+  padding: 50px;
+}
+#banner hr { 
+  border: 0; 
+  width: 100%; 
+  color: black; 
+  background-color: black; 
+  height: 1px; 
+  margin-left: 0px;
+  margin-right: 20px;
+}
+/* 
+como
+*/
+
+#como{
+  padding: 60px 0px;
+  background-color: #f2f2ec;
+}
+
+#blocks{
+  margin-top: -160px;
+}
+
+#como .col-md-3 p{
+  font-style: italic;
+  font-family: 'Libre Baskerville', serif !important;
+}
+#como .item{
+  background-image: url(https://4cheff.com.br/temp/zm/como1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  padding-top: 100px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+#como .item p{
+  color: white;
+  font-style: italic;
+  font-family: 'Libre Baskerville', serif !important;
+  font-size: 15px;
+  margin-top: 7px;
+  margin-bottom: 30px;
+}
+#como .item hr { 
+  border: 0; 
+  width: 50px; 
+  color: #fff; 
+  background-color: #fff; 
+  height: 1px; 
+  margin-left: 0px;
+  margin-right: 20px;
+}
+
+#como .item a {
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Libre Baskerville', serif;
+}
+
+#como h1 {
+  font-size: 40px;
+  color: #54392a;
+  font-style: italic;
+}
+
+#como h2{
+  font-size: 40px;
+  color: white;
+  font-style: italic;
+}
+
+#como hr { 
+  border: 0; 
+  width: 60px; 
+  color: #1c1d1e; 
+  background-color: #1c1d1e; 
+  height: 1px; 
+  margin-left: 0px;
+  margin-right: 20px;
+}
+
+/* 
+frase
+*/
+#frase{
+  padding: 200px 0px;
+  background-color: #333;
+}
+#frase h1{
+  color: white;
+  font-style: italic;
+  text-align: center;
+}
+
+/* 
+porque
+*/
+#porque{
+  padding: 50px 0px;
+  background-color: #f2f2ec;
+}
+#porque h1 {
+  font-size: 31px;
+  color: #1c1d1e;
+  font-style: italic;
+}
+#porque h5 {
+  color: #1c1d1e !important;
+    margin: 40px;
+  font-size: 18px;
+font-family: 'Open Sans', sans-serif !important;
+  
+}
+#porque hr { 
+  border: 0; 
+  width: 60px; 
+  color: #1c1d1e; 
+  background-color: #1c1d1e; 
+  height: 3px; 
+  margin-left: 0px;
+  float: left;
+  margin-right: 20px;
+}
+
+#porque .col-md-4 p {
+  font-family: 'Libre Baskerville', serif;
+    color: #515151;
+}
+
+#porque .col-md-4 p strong{
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+  color: #515151;
+}
+
+#porque .col-md-4{
+  background-color: white !important;
+  padding: 40px;
+  border-radius: 10px
+}
+
+/* ##################################### footer */
+
+footer {
+  background-color: #1c1d1e;
+    padding: 0px 15px 10px!important;
+    position: absolute;
+    width: 100%;
+  overflow: hidden !important;
+}
+
+footer hr { 
+  border: 0; 
+  width: 60px; 
+  color: white; 
+  background-color: white; 
+  height: 3px; 
+  margin-left: 0px
+}
+
+footer h4{
+  color: white;
+  font-style: italic;
+  margin-bottom: 40px;
+  font-size: 22px;
+}
+
+
+footer h5{
+  font-size: 15px;
+  color: white;
+}
+
+
+footer .col-md-3{
+  margin-top: 40px;
+}
+
+footer .col-md-3 img{
+  width: 200px;
+  margin-top: 60px;
+}
+
+footer .col-md-12{
+  margin: 40px 0px 0px
+}
+
+footer .col-md-12 img{
+  float: right;
+  position: relative;
+  top: -30px !important
+}
+
+footer a , footer a:visited {
+  display: block;
+    margin: 0px 10px;
+    color: #a6a6a6;
+  margin: 4px;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: none;
+    opacity: 1;
+}
+
+/* footer a:first-child,
+footer .col-md-7 {
+    padding-left: 0 !important;
+} */
+/* 
+footer .col-md-7 a:first-child img {
+    border-right: 1px solid #a6a6a6;
+    padding-right: 20px;
+} */
+.col-md-12 img:last-child {
+    position: relative;
+    top: 0px
+}
+
+footer p {
+    color: #f2f2ec;
+    font-size: 11px;
+    padding-top: 6px;
+}
+
+
+/* ##################################### media queries */
+
+@media (max-width: 767px) {
+    .bar-top {
+        display: none;
+    }
+
+    .social-top {
+        display: none;
+    }
+    
+}
+</style>
+
+</head>
+<body>
+
+<!-- h1 -->
+
+<!--         <div class="bar-top">
+            <div class="container">
+                <ul class="top-contato">
+                    <li><a href="https://api.whatsapp.com/send?phone=5519984241090&text=OiEbMaquinas"><button><i class="fab fa-whatsapp"></i> Fale com a gente</button></a></li>
+                    <li><a href="mailto:contato@ebmaquinas.com.br">contato@ebmaquinas.com.br</a></li>
+                    <li>-</li>
+                    <li><a href="tel:1937013670">(19) 3701-3670</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div> -->
+        <header>
+
+            <div id="main-navigation" class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-navigation">
+					<span class="sr-only"><?php _e( 'Toggle navigation', 'odin' ); ?></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+                        <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+						<img src="https://4cheff.com.br/temp/zm/logo.png" alt="">
+					</a>
+                    </div>
+                    <nav class="collapse navbar-collapse navbar-main-navigation" role="navigation">
+<!--                         <?php
+    wp_nav_menu(
+        array(
+            'theme_location' => 'main-menu',
+            'depth'          => 2,
+            'container'      => false,
+            'menu_class'     => 'nav navbar-nav navbar-right',
+            'fallback_cb'    => 'Odin_Bootstrap_Nav_Walker::fallback',
+            'walker'         => new Odin_Bootstrap_Nav_Walker()
+        )
+    );
+?> -->
+                               <ul class="nav navbar-nav">
+                                 <li class="active"><a href="#">O Escritório</a></li>
+                                 <li><a href="#">Áreas de atuação</a></li>
+                                 <li><a href="#">Profissionais</a></li>
+                                 <li><a href="#">Blog</a></li>
+                                 <li><a href="#">Contato</a></li>
+                              </ul>
+                    </nav>
+                    <!-- .navbar-collapse -->
+                </div>
+                <!-- #main-navigation-->
+
+            </div>
+            <!-- .container-->
+        </header>
+<!-- header END -->
+
+<!-- banner -->
+<section id="banner">
+  <div class="col-md-4">
+    <div class="item">
+                  <h2>Escritório <br>
+Advocacia <br>
+Empresarial</h2>
+                <div class="col-md-3">
+                  <hr>
+                </div>
+                <div class="col-md-9">
+                  <p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. </p>
+                  <a href="#"><button><i class="fas fa-chevron-right"></i> Converse conosco</button></a>
+                </div>
+              </div>
+  </div>
+  <div class="col-md-8"></div>
+</section>
+
+<div class="clear"></div>
+
+<!-- como -->
+    <section id="como">
+        <div class="container">
+            <div class="col-md-3">
+                <h1>Como podemos te ajudar? </h1>
+              <hr>
+              <p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. </p>
+          </div>
+          <div class="col-md-9" id="blocks">
+            <div class="col-md-6">
+              <div class="item">
+                  <h2>Cível</h2>
+                <div class="col-md-3">
+                  <hr>
+                </div>
+                <div class="col-md-9">
+                  <p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. </p>
+                  <a href="#">Conheça mais</a>
+                </div>
+              </div>
+              <div class="item">
+                <h2>Cível</h2>
+                <div class="col-md-3">
+                  <hr>
+                </div>
+                <div class="col-md-9">
+                  <p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. </p>
+                  <a href="#">Conheça mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+                <div class="item">
+                <h2>Cível</h2>
+                <div class="col-md-3">
+                  <hr>
+                </div>
+                <div class="col-md-9">
+                  <p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. </p>
+                  <a href="#">Conheça mais</a>
+                </div>
+              </div>
+              <div class="item">
+                <h2>Cível</h2>
+                <div class="col-md-3">
+                  <hr>
+                </div>
+                <div class="col-md-9">
+                  <p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. </p>
+                  <a href="#">Conheça mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+</section>
+
+<!-- frase -->
+<section id="frase">
+  <div class="container">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <h1>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h1>
+    </div>
+    <div class="col-md-2"></div>
+    </div>
+</section>
+
+<!-- porque -->
+    <section id="porque">
+        <div class="container">
+            <div class="col-md-8">
+                <h1><hr>Por que confiar na ZM Advocacia? </h1>
+                <h5>Donec lobortis euismod cursus. Morbi ipsum metus, posuere nec porttitor a, ultrices sit amet nibh.  </h5>
+                <div class="row">
+                    <div class="col-md-2">
+                        <img src="https://4cheff.com.br/ebmaquinas/wp-content/themes/EBMaquinas/images/iconPorque.png" alt="">
+                    </div>
+                    <div class="col-md-10">
+                        <h4>Donec lobortis euismod cursus.</h4>
+                        <p>
+                            Donec lobortis euismod cursus. Morbi ipsum metus, posuere nec porttitor a, ultrices sit amet nibh. </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <img src="https://4cheff.com.br/ebmaquinas/wp-content/themes/EBMaquinas/images/iconPorque.png" alt="">
+                    </div>
+                    <div class="col-md-10">
+                        <h4>Donec lobortis euismod cursus.</h4>
+                        <p>
+                            Donec lobortis euismod cursus. Morbi ipsum metus, posuere nec porttitor a, ultrices sit amet nibh. </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <img src="https://4cheff.com.br/ebmaquinas/wp-content/themes/EBMaquinas/images/iconPorque.png" alt="">
+                    </div>
+                    <div class="col-md-10">
+                        <h4>Donec lobortis euismod cursus.</h4>
+                        <p>
+                            Donec lobortis euismod cursus. Morbi ipsum metus, posuere nec porttitor a, ultrices sit amet nibh. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <p><strong>Converse com a gente,</strong> <br>preencha os campos abaixo.</p>
+                <input type="text" placeholder="Nome">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Telefone">
+                <textarea name="" id="" cols="30" rows="5" placeholder="Mensagem"></textarea>
+                <input type="submit" value="Enviar">
+            </div>
+        </div>
+    </section>
+    <!-- porque END -->
+
+<!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                    <a href=""><img src="https://4cheff.com.br/temp/zm/logo_bottom.png" alt=""></a>
+              </div>
+              <div class="col-md-3">
+                <h4>Navegue</h4>
+                <nav>
+                    <a href="#">A ZM Advocacia</a>
+                    <a href="#">Profissionais</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Entre em contato</a>
+                </nav>
+              </div>
+              <div class="col-md-3">
+                <h4>Áreas de atuação</h4>
+                <nav>
+                    <a href="#">Cível</a>
+                    <a href="#">Trabalhista</a>
+                    <a href="#">Tributário</a>
+                    <a href="#">Terceiro Setor</a>
+                </nav>
+              </div>
+              <div class="col-md-3">
+                <h4>Onde estamos</h4>
+                <nav>
+                  <h5>Limeira (SP)</h5>
+                  <a href="https://www.google.com/maps/search/Rua Almirante Barroso, nº 330 - Cidade Jardim" target="_blank">Rua Almirante Barroso, nº 330 - Cidade Jardim</a>
+                  <h5>Guaratinguetá (SP)</h5>
+                  <a href="https://www.google.com/maps/search/Rua Joaquim Miguel, nº 38 - Centro">Rua Joaquim Miguel, nº 38 - Centro</a>
+                  <h5>São José do Rio Pardo (SP)</h5>
+                  <a href="https://www.google.com/maps/search/Rua Curupaiti, nº 293 - Centro">Rua Curupaiti, nº 293 - Centro</a>
+                  <hr>
+                  <a href="tel:(19) 3701-3970">Fone: (19) 3701-3970</a>
+                  <a href="mailto: zm@zmadvocacia.com.br ">zm@zmadvocacia.com.br </a>
+                  <br>
+                </nav>
+            </div>
+            <div class="col-md-12">
+                <p>© 2018 - ZM Advocacia - All Rights Reserved </p> <a href="https://4pme.com.br"><img src="http://4cheff.com.br/temp/zm/4pme.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+<!-- footer END -->
+
+</body>
+</html>

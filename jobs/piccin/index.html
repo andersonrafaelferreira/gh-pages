@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Piccin</title>
+
+       <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,700|Barlow:400,600" rel="stylesheet">
+
+<!-- font awesome v +5  -->
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+
+    <style>
+    /* General Styles */
+
+.show{
+  display: block;
+}
+
+#footer {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #f5f5f5;
+    padding-top: 15px;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    overflow-y: scroll
+}
+
+body {
+    margin-bottom: 70px;
+font-family: 'Barlow', sans-serif !important;
+}
+
+p{
+  font-family: 'Barlow', sans-serif !important;
+  font-size: 16px;
+  line-height: 26px;
+  color: #1c1d1e
+}
+
+h1,h2,h3,h4,h5,h6{
+font-family: 'Barlow Condensed', sans-serif !important;
+}
+
+img{
+  max-width: 100%;
+}
+
+a:hover{
+  opacity: .8 !important;
+  text-decoration: none !important;
+}
+
+.clear{
+    clear: both;
+}
+
+/* header #1 */
+	.navbar-default {
+		    background-color: #343434 !important;
+		    border: 1px solid #343434 !important;
+		    border-radius: 0 !important;
+		    padding: 15px 0px;
+		}
+		.navbar-default .navbar-brand {
+		    color: #777
+		}
+	.navbar-default .navbar-brand img{
+		    margin-top: -22px;
+    width: 180px
+		}
+		.navbar-default .navbar-brand:hover,
+		.navbar-default .navbar-brand:focus {
+		    color: #5e5e5e;
+		    background-color: transparent
+		}
+		.navbar-default .navbar-text {
+		    color: #777
+		}
+
+    .navbar-default ul{
+      padding-left: 40px
+    }
+
+		.navbar-default .navbar-nav>li>a {
+		    color: #fff !important;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-family: 'Barlow', sans-serif;
+		}
+		.navbar-default .navbar-nav>li>a:hover,
+		.navbar-default .navbar-nav>li>a:focus {
+      color: #fff !important;		
+      opacity: .8;
+      background-color: transparent
+		}
+		.navbar-default .navbar-nav>.active>a,
+		.navbar-default .navbar-nav>.active>a:hover,
+		.navbar-default .navbar-nav>.active>a:focus {
+      color: #fff !important;		
+      opacity: .8;
+      background-color: transparent
+		}
+		.navbar-default .navbar-nav>.disabled>a,
+		.navbar-default .navbar-nav>.disabled>a:hover,
+		.navbar-default .navbar-nav>.disabled>a:focus {
+		    color: #ccc;
+		    background-color: transparent
+		}
+
+		.navbar-right i{
+			margin-top: 18px;
+			float: right;
+		}
+
+		.bar-top{
+			padding: 10px 10px 0px ;
+			background-color: #0066ad;
+		}
+
+	.bar-top ul{
+			float: right
+		}
+    .bar-top a{
+      color: white
+    }
+
+
+.bar-top a:hover{
+      color: white;
+  opacity: .8;
+    }
+
+		.social-top i{
+			margin-left: 10px;
+		}
+.social-top a{
+			margin-top: 10px;
+  position: relative;
+  top: 4px;
+  color: white !important;
+  font-size: 26px;
+		}
+
+   .social-top a:nth-child(2){
+      color: #00ffff !important;
+     margin: 0px 10px !important
+    }
+
+		.top-contato ul{
+			float: right;
+		}
+
+		.top-contato li{
+			float: left;
+			list-style: none;
+			color: #bebebe;
+			font-size: 12px;
+			margin-left: 15px;
+		}
+
+		.top-contato i{
+			margin-right:5px;
+		}
+
+		@media (max-width: 767px){
+			.bar-top{
+				display: none;
+			}
+
+			.social-top{
+				display: none;
+			}
+		}
+
+/* ##################################### banner */
+#banner{
+  background-image: url(https://4cheff.com.br/temp/piccin/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  margin-top: -20px;
+  text-align: center;
+}
+#banner #block{
+/*   position: relative !important; */
+  margin-top: 40vh !important;
+  transform: translateY(-50%);
+}
+#banner h3{
+  color: white;
+  
+}
+#banner input[type=text]{
+  border: none;
+  padding: 10px;
+  color: gray;
+  width: 300px;
+  margin-left: 0px;
+}
+#banner input[type=submit]{
+  padding: 9px;
+  color: gray;
+  border: none;
+  background-color: #fff;
+  font-weight: bold;
+  margin-left: -40px;
+}
+
+/* ##################################### carros */
+#carros{
+  padding: 100px 0px;
+}
+#carros .row{
+  text-align: center;
+  margin-bottom: 40px;
+
+}
+#carros .row h2{
+  color: #14459b;
+  font-weight: bold;
+  font-size: 40px;
+}
+#carros h4{
+  color: black;
+  font-size: 20px;
+}
+#carros h5{
+  color: #14459b;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-top: -4px;
+}
+#carros button{
+  background-color: #14459b;
+  padding: 10px;
+  width: 100%;
+  color: white
+}
+
+/* #carros .col-md-3{
+  background-color: red;
+} */
+
+/* ##################################### footer */
+
+footer {
+  background-color: #0066ad;
+    padding: 0px 15px 10px!important;
+    position: absolute;
+    width: 100%;
+  overflow: hidden !important;
+}
+
+footer hr { 
+  border: 0; 
+  width: 60px; 
+  color: white; 
+  background-color: white; 
+  height: 3px; 
+  margin-left: 0px
+}
+
+footer h4{
+  color: white;
+  font-style: italic;
+  margin-bottom: 40px;
+  font-size: 22px;
+}
+
+
+footer h5{
+  font-size: 15px;
+  color: white;
+}
+
+
+footer .col-md-8{
+  margin-top: 40px;
+}
+
+footer .col-md-4 img{
+  width: 180px;
+  margin-top: 60px;
+}
+
+footer .col-md-12{
+  margin: 40px 0px 0px;
+}
+
+footer .col-md-12 img{
+  float: right;
+  position: relative;
+  top: -30px !important
+}
+
+footer a , footer a:visited {
+  display: block;
+    margin: 0px 10px;
+    color: #fff;
+  margin: 4px;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: none;
+    opacity: .7;
+}
+
+/* footer a:first-child,
+footer .col-md-7 {
+    padding-left: 0 !important;
+} */
+/* 
+footer .col-md-7 a:first-child img {
+    border-right: 1px solid #a6a6a6;
+    padding-right: 20px;
+} */
+.col-md-12 img:last-child {
+    position: relative;
+    top: 0px
+}
+
+.col-md-12 p{
+  font-size: 14px;
+}
+
+footer p {
+    color: #f2f2ec;
+    font-size: 11px;
+    padding-top: 36px;
+  padding-right: 30px;
+}
+iframe{
+  margin-top: 20px;
+  width: 100%;
+  height: 130px
+}
+</style>
+</head>
+<body>
+ 
+<!-- code starts here -->
+
+<!-- header #1 -->
+	   <div class="bar-top">
+            <div class="container">
+                <ul class="top-contato">
+                    
+                    <li><a href="https://www.google.com/maps/search/Rua João Guilherme, 457 Vl. Cidade Jardim | Limeira/SP"><i class="fas fa-map-marker-alt"></i> Rua João Guilherme, 457 Vl. Cidade Jardim | Limeira/SP </a></li>
+                    <li><a href="mailto:contato@piccinautomoveis.com.br"><i class="far fa-envelope"></i> contato@piccinautomoveis.com.br</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+	<header>
+		
+			<div id="main-navigation" class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-navigation">
+					<span class="sr-only"><?php _e( 'Toggle navigation', 'odin' ); ?></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+						<img src="https://4cheff.com.br/temp/piccin/logoTop.png" alt="">
+					</a>
+				</div>
+				<nav class="collapse navbar-collapse navbar-main-navigation" role="navigation">
+<!-- 					<?php
+						wp_nav_menu(
+							array(
+								'theme_location' => 'main-menu',
+								'depth'          => 2,
+								'container'      => false,
+								'menu_class'     => 'nav navbar-nav',
+								'fallback_cb'    => 'Odin_Bootstrap_Nav_Walker::fallback',
+								'walker'         => new Odin_Bootstrap_Nav_Walker()
+							)
+						);
+					?>
+					 -->
+       
+					<div class="navbar-right">
+						<div class="social-top">
+							<a href="tel: 19 3702-2500">19 3702-2500</a>
+              <a href="#">|</a>
+							<a href="tel: 19 3702-2500">19 3702-2500</a>
+						</div>
+					</div>
+             <ul class="nav navbar-nav">
+            <li><a href="">link1</a></li>
+            <li><a href="">link2</a></li>
+          </ul>
+          
+				</nav><!-- .navbar-collapse -->
+			</div><!-- #main-navigation-->
+
+		</div><!-- .container-->
+	</header><!-- #header -->
+
+<!-- banner -->
+<section id="banner">
+  <div class="container">
+    <div id="block">
+      <h3>Qual o carro que você procura?</h3>
+      <input type="text">
+      <input type="submit" value="OK">
+    </div>
+  </div>
+</section>
+<!-- banner END -->
+
+<!-- carros -->
+<section id="carros">
+  <div class="container">
+    <div class="row">
+      <h2>SEMI NOVOS (destaques)</h2>
+    </div>
+    <a href="#" onmouseover="over(this)" onmouseout="out(this)">
+      <div class="col-md-3">
+        <img src="https://4cheff.com.br/temp/piccin/semi1.png" alt="">   
+        <h4>RENAULT DUSTER 1.6 16V FLEX</h4>
+        <h5>R$80.000</h5>
+        <button style="display: none">+ Detalhes</button>
+      </div>
+    </a>
+     <a href="#" onmouseover="over(this)" onmouseout="out(this)">
+      <div class="col-md-3">
+        <img src="https://4cheff.com.br/temp/piccin/semi1.png" alt="">   
+        <h4>RENAULT DUSTER 1.6 16V FLEX</h4>
+        <h5>R$80.000</h5>
+        <button style="display: none">+ Detalhes</button>
+      </div>
+    </a>
+    <a href="#" onmouseover="over(this)" onmouseout="out(this)">
+      <div class="col-md-3">
+        <img src="https://4cheff.com.br/temp/piccin/semi1.png" alt="">   
+        <h4>RENAULT DUSTER 1.6 16V FLEX</h4>
+        <h5>R$80.000</h5>
+        <button style="display: none">+ Detalhes</button>
+      </div>
+    </a>
+    <a href="#" onmouseover="over(this)" onmouseout="out(this)">
+      <div class="col-md-3">
+        <img src="https://4cheff.com.br/temp/piccin/semi1.png" alt="">   
+        <h4>RENAULT DUSTER 1.6 16V FLEX</h4>
+        <h5>R$80.000</h5>
+        <button style="display: none">+ Detalhes</button>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                    <a href=""><img src="https://4cheff.com.br/temp/piccin/logoTop.png" alt=""></a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet pulvinar lectus non dignissim. Quisque elementum felis vehicula justo pretium, non malesuada urna hendrerit. Quisque rhoncus nulla sed varius fringilla. Duis imperdiet ipsum urna, sed commodo ipsum malesuada sit amet.</p>
+              </div>
+              <div class="col-md-8">
+                <div class="col-md-3">
+                <h4>Navegação</h4>
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">Seminovos</a>
+                    <a href="#">A Piccin</a>
+                    <a href="#">Financiamento</a>
+                    <a href="#">Contato</a>
+                </nav>
+              </div>
+              <div class="col-md-3">
+                <h4>Marcas</h4>
+                <nav>
+                    <a href="#">Fiat</a>
+                    <a href="#">Honda</a>
+                    <a href="#">Chevrolet</a>
+                    <a href="#">Nissan</a>
+                    <a href="#">Peugeout</a>
+                    <a href="#">Ford</a>
+                    <a href="#">Renault</a>
+                </nav>
+              </div>
+                <div class="col-md-6">
+                <h4>Onde Estamos</h4>
+                <nav>
+                    <a href="https://www.google.com/maps/search/Rua João Guilherme, 457 Vl. Cidade Jardim | Limeira/SP"> Rua João Guilherme, 457 Vl. Cidade Jardim | Limeira/SP </a>
+                </nav>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.26101697394!2d-47.402112684428204!3d-22.56933898518442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c880efdf31cc29%3A0x7653ef5df59c0134!2sR.+Jo%C3%A3o+Guilherme%2C+457+-+Vila+Cidade+Jardim%2C+Limeira+-+SP%2C+13480-276!5e0!3m2!1spt-BR!2sbr!4v1532437135488" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+              </div>
+            <div class="col-md-12">
+                <p>@2018 Piccin Automóveis - all rights reserved </p> <a href="https://4pme.com.br"><img src="http://4cheff.com.br/temp/zm/4pme.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+<!-- footer END -->
+
+<script>
+function over(e) {
+  var element = e.childNodes;
+  element[1].lastElementChild.classList.add("show");
+  //[1].lastElementChild
+}
+
+function out(e) {
+  var element = e.childNodes;
+  element[1].lastElementChild.classList.remove("show");
+}
+
+/*
+
+or add this line bellow in add-to-cart.php
+    
+    <button style="opacity: 0" onmouseover="this.style.opacity = 1" onmouseout="this.style.opacity = 0">+ Detalhes</button>
+
+
+    <a href="<?php echo get_permalink( $product_id ); ?>">
+        <button type="button" style="opacity: 0" onmouseover="this.style.opacity = 1" onmouseout="this.style.opacity = 0">+ Detalhes</button>
+    </a>
+
+*/ 
+</script>
+
+</body>
+</html>
