@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Glaucia</title>
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- font awesome v +5  -->
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+<!-- google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Allura|Barlow+Condensed:400,700" rel="stylesheet">
+
+
+<style>
+/* common */
+body{
+  text-rendering: optimizaLegibility !important;
+  -webkit-font-smoothing: antialiased !important!;
+}
+/* 
+font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Allura', cursive;
+*/
+p{
+  font-size: 16px;
+  line-height: 26px;
+  font-family: 'Barlow Condensed', sans-serif !important;
+  color: #626262;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Barlow Condensed', sans-serif !important;
+    font-weight: bold;
+    color: #321f32 !important
+}
+hr{
+  border: 0; 
+  width: 80%; 
+  color: #f00 !important; 
+  background-color: #f00 !important; 
+  height: 5px;
+}
+img{
+  max-width: 100%;
+}
+.clear {
+  clear: both;
+}
+/* common END */
+/* 
+banner
+*/
+#banner{
+  background-image: url('https://4cheff.com.br/temp/coach/banner.png');
+  background-repeat: no-repeat;
+  background-size: contan !important;
+  padding-top: 30px;
+}
+#banner .col-md-6:last-child{
+  padding: 200px 0px 240px;
+  text-align: center;
+}
+#banner h1{
+  font-weight: bold;
+  color: white !important;
+  font-size: 100px;
+  line-height: 50px;
+}
+#banner h1:nth-child(2){
+  font-size: 70px !important;
+  margin-top: 40px !important;
+}
+#banner h1 span{
+  font-family: 'Allura', cursive;margin-right: 20px;
+}
+#banner h3{
+  margin-top: 40px;
+  color: white !important
+}
+/* 
+se
+*/
+#se{
+  padding: 100px 0px 140px;
+}
+#se h1{
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 70px;
+}
+#se .col-md-3 {
+  border-right: 1px solid #321f32 !important;
+  min-height: 180px;
+  text-align: center;
+}#se .col-md-3:last-child {
+  border-color: transparent !important
+}
+#se .col-md-3 img{
+  display: block;
+  margin: 0px auto;
+  margin-bottom: 20px;
+}
+
+/* 
+icone
+*/
+#icone{
+  padding: 60px 0px;
+  text-align: center;
+}
+/* 
+blocks
+*/
+#blocks h1{
+  text-align: center;
+  font-size: 51px;
+}
+#blocks p{
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+#blocks .new{
+  padding: 70px 20px
+}
+#blocks .new:first-child{
+  background-color: #e3e0de;
+  padding: 30px 0px
+}
+#blocks .new:nth-child(2){
+  background-color: #8f88ba;
+}
+#blocks .new:nth-child(3){
+  background-color: #8f73b1;
+}
+#blocks .new:last-child{
+  background-color: #8f5db8;
+}
+
+/* 
+paralax
+*/
+#parallax{
+  padding: 300px 0px 340px;
+  background-image: url('https://4cheff.com.br/temp/coach/parallax.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#parallax h1{
+  font-size: 55px;
+  color: white !important;
+  text-align: center;
+  font-weight: normal;
+}
+#parallax h1 strong{
+  font-weight: bold;
+}
+/* 
+entao
+*/
+#entao{
+  padding: 100px 0px
+}
+#entao .row{
+  margin-bottom: 40px;
+}
+#entao h2{
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: -20px;
+}
+#entao h1{
+  font-size: 50px;
+  text-align: center;
+  font-weight: normal;
+}
+#entao span{
+  color: #da9058;
+  font-family: 'Allura', cursive;
+  font-size: 50px;
+  margin-right: 20px;
+}
+#entao .clear{
+  margin: 50px 0px
+}
+#entao p{
+  color: #321f32 !important;
+  font-size: 20px;
+    line-height: 36px !important;
+}
+
+/* 
+garanta
+*/
+#garanta{
+  background-color: #492d82;
+  padding: 100px 0px
+}
+#garanta h2{
+    text-align: center;
+    color: white !important;
+  margin-bottom: 20px;
+}
+
+#garanta p{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  line-height: 40px;
+}
+/* 
+fale
+*/
+#fale{
+  padding: 80px 0px;
+  background-color: #e3e0de;
+}
+#fale h1{
+font-size: 65px;
+}
+#fale p{
+  margin: 40px 0px
+}
+#fale a{
+  color: #626161;
+  margin-bottom: 40px !important;
+}
+#fale hr{
+  border: 0; 
+  width: 100px; 
+  color: #626161 !important; 
+  background-color: #626161 !important; 
+  height: 3px;
+  margin-left: 0;
+}
+#fale input, #fale textarea{
+  padding: 26px !important
+}
+#fale button{
+  background-color: #342732 !important;
+  padding: 20px;
+  font-size: 16px;
+}
+
+
+/* 
+footer
+*/
+footer{
+  background-color: #342732;
+  padding: 18px 0px 15px;
+}
+footer p{
+  color: white
+}
+footer img{
+  float: right;
+  position: relative;
+  top: 6px
+}
+
+/* ##################################### media queries */
+
+@media (max-width: 767px) {
+  #banner img{
+    width: 120px
+  }
+  #banner .col-md-6:last-child{
+    padding: 100px 0px 180px
+  }
+  #se .col-md-3{
+    margin-bottom: 40px;
+    border-color: transparent !important
+  }
+  #parallax{
+    padding: 130px 0px
+  }
+  #entao img{
+    margin: 40px 0px
+  }
+  #entao .col-md-3{
+    margin: 40px 0px
+  }
+  #fale .col-md-6:first-child{
+    margin-bottom: 40px;
+  }
+    
+}
+</style>
+</head>
+<body>
+    
+
+<!-- banner -->
+<section id="banner">
+  <div class="container">
+    <div class="col-md-6">
+      <img src="https://4cheff.com.br/temp/coach/logoTop.png" alt="Logo">
+    </div>
+    <div class="col-md-6">
+      <h1>Todo o </h1>
+      <h1><span>final</span> de um </h1>
+      <h1>ciclo</h1>
+      <h3>é o novo começo de uma nova história </h3>
+    </div>
+  </div>
+</section>
+
+<!-- se -->
+<section id="se">
+  <div class="container">
+    <h1>Se <strong>você ...</strong></h1>
+    <div class="clear"></div>
+    <div class="col-md-3">
+      <img src="https://4cheff.com.br/temp/coach/se1.png" alt="">
+      <h4>Vem sentindo insatisfação com seus resultados</h4>
+    </div>
+  <div class="col-md-3">
+      <img src="https://4cheff.com.br/temp/coach/se2.png" alt="">
+      <h4>Vive a vida no automático
+</h4>
+    </div>
+  <div class="col-md-3">
+      <img src="https://4cheff.com.br/temp/coach/se3.png" alt="">
+      <h4>É facilmente influenciado pelos outros</h4>
+    </div>
+  <div class="col-md-3">
+      <img src="https://4cheff.com.br/temp/coach/se4.png" alt="">
+      <h4>É inseguro em suas decisões</h4>
+    </div>
+  </div>
+</section>
+
+<div class="clear"></div>
+
+<!-- blocks -->
+<section id="blocks">
+  <div class="new">
+    <div class="container">
+    <h1>O QUE <strong> PODE ESTAR <br>
+ACONTECENDO? </strong></h1>
+    </div>
+  </div>
+  <div class="new">
+    <div class="container">
+      <p>Se sua vida parece ter estacionado e não sabe o que fazer, ficou sem sentido e sem graça.</p>
+    </div>
+  </div>
+<div class="new">
+    <div class="container">
+      <p> Situações onde se é coagida, desmotivada, não tendo um sentido real para VIVER.</p>
+    </div>
+  </div>
+<div class="new">
+    <div class="container">
+      <p>Entendo como se sente e saiba que essa realidade pode ser outra e bem diferente... Vem Comigo!</p>
+    </div>
+  </div>
+</section>
+
+<!-- icone -->
+<section id="icone">
+  <div class="container">
+    <img src="https://4cheff.com.br/temp/coach/icone.png" alt="">
+  </div>
+</section>
+
+<!-- parallax -->
+<section id="parallax">
+  <div class="container">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <h1>As <strong>escolhas que você</strong> faz determinam o caminho para onde o seu FUTURO irá seguir.</h1>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+</section>
+
+<div class="clear"></div>
+
+<!-- entao -->
+<section id="entao">
+  <div class="container">
+    <div class="row">
+      <h2>então você precisa...</h2>
+      <h1><span>workshop</span>Vivendo de <strong>bem consigo</strong></h1>
+    </div>
+    <div class="col-md-6">
+      <p>Você aprenderá a se blindar de pessoas e situações negativas, agindo de forma proativa 
+Desenvolverá seus maiores potenciais, qualidades e se fortalecerá internamente
+Irá aumentar o amor por si e caso não o tenha, virá a amar-se, aceita-se e respeitar-se dando o seu devido valor. 
+     </p>   <p>
+Saberá que sua vida, sua felicidade, seus sonhos, depende <strong>SÓ DE VOCÊ</strong> 
+Conduzirá o "leme" da sua vida com leveza e maestria. E conforme suas ações , o melhor em sua vida estará se manifestando diariamente.
+     </p>   <p>
+Aprenderá que seu futuro são resultados do que está fazendo no hoje E entenderá que o seu presente é o que realmente existe.
+Entenderá o porquê de estar estagnado e saberá tomar ações que irá mudar essa realidade.
+   </p>   <p>
+. Seus relacionamentos sociais, familiares e amorosos serão mais harmoniosos e prósperos. 
+      <br>
+. Identificar crenças limitantes (verdades absolutas que são obsoletas e não havia percebido)  e substituí-las por crenças fortalecedoras  e funcionais para o que realmente deseja</p>
+    </div>
+    <div class="col-md-6">
+      <img src="https://4cheff.com.br/temp/coach/circled.png" alt="">
+    </div>
+    
+    <div class="clear"></div>
+    
+    <div class="col-md-3">
+      <p><strong>Para quem se destina esses encontros?</strong> <br>
+Para àquelas pessoas que estão querendo alavancar o seu potencial, tanto a nível pessoal, como profissional. </p>
+    </div>
+    <div class="col-md-3">
+      <p><strong>Quantos encontros serão?</strong><br>São encontros semanais presenciais, no total de 10, sendo 1 vez por semana, com duração de 2h30.</p>
+    </div>
+    <div class="col-md-3">
+      <p><strong>Quantas pessoas estarão contigo nesses encontros.</strong><br>
+Você e no máximo 5 pessoas. </p>
+    </div>
+    <div class="col-md-3">
+      <p><strong>Que atividades terei nesses encontros e como elas poderão me ajudar?</strong><br>
+Serão utilizadas ferramentas (materiais didáticos, elaborados por especialistas do Coaching Integral Sistêmico) para uso a nível emocional e racional promovendo conscientização em seus integrantes, e a partir daí, novas escolhas são tomadas em sua vida </p>
+    </div>
+    
+  </div>
+</section>
+
+<!-- garanta -->
+<section id="garanta">
+  <div class="container">
+    <h2> Garanta já sua vaga</h2>
+    <p>São vagas limitadas por grupo! <br>
+Os encontros serão ministrados pela Glaucia A. Rossatto - Psicóloga e Master Coach. <br>
+Entre em contato pelo WhatsApp 19  981780599 com a mensagem <span>QUERO FAZER PARTE DESSES ENCONTROS</span></p>
+
+  </div>
+</section>
+<!-- fale -->
+<section id="fale">
+  <div class="container">
+    <div class="col-md-6">
+      <h1>Fale Comigo</h1>
+      <p>Preencha os campos do formulário ao lado para que nosso setor de atendimento possa retornar o seu contato, se preferir, contate-nos através de nossos telefones e e-mails.
+
+</p>
+      <h4><i class="fas fa-phone"></i> Telefone</h4>
+      <a href="tel: (19) 98178.0599">(19) 98178.0599</a>
+<hr>
+      <h4><i class="fas fa-envelope"></i> Nosso e-mail:</h4>
+     <a href="mailto: glaurossattoa@yahoo.com.br">glaurossattoa@yahoo.com.br</a>
+
+    </div>
+    <div class="col-md-6">
+      <div id="app"></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="col-md-6">
+      <p>© Copyright 2018. Glaucia Rossatto | Master Coach - All Rights Reserved</p>
+    </div>
+    <div class="col-md-6">
+      <img src="https://4cheff.com.br/temp/coach/4pme.png" alt="">
+    </div>
+  </div>
+</footer>
+
+<!-- scripts -->
+    <script>
+        (function(d, s, mail) {
+            var js = d.createElement(s);
+            js.src = 'https://4pmesites.com.br/sdk/f-sdk.js';
+            d.body.appendChild(js);
+            let info = {
+                mail
+            }
+            $('#app').attr('title', info.mail);
+        }(document, 'script', 'myapplabdrive@gmail.com' ));
+    </script>
+</body>
+</html>
