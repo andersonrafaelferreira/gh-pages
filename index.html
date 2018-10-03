@@ -2,9 +2,53 @@
 <html lang="pt-bt" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>GitHub-pages</title>
+    <title>Freela Tech Portfolio</title>
+  <style>
+  iframe{
+  width: 320px;
+  height: 568px;
+}
+button{
+  position:absolute;
+}
+  </style>
   </head>
   <body>
-<h1>Rafael Ferreira</h1>
+    <iframe id="frame" src="" frameborder="0"></iframe>
+
+    <select name="" id="selection" onchange="newSrc(value)">
+      <option value="">Selecione o projeto</option>
+      <option value="https://contabilidadeacr.com.br/">ACR Contabilidade</option>
+      <option value="https://armandoroqueoficial.com.br/">Armando Roque</option>
+      <option value="https://brasmetallimeira.com.br/">Brasmetal Limeira</option>  
+      <option value="https://cafecustom.net/">Cafe Custom</option>
+      <option value="https://casainspirare.com.br/">Casa Inspirare</option>
+      <option value="https://cheiademimos.com.br/">Cheia De Mimos</option>
+      <option value="https://clzseguranca.com.br/">CLZ Seguranca</option>
+      <option value="https://copodefruta.com.br/">Copo De Fruta</option>
+      <option value="https://renovadecor.net.br/">Renova Decor</option>
+      <option value="https://grupodezani.com.br">Grupo Dezani</option>
+      <option value="https://gsacessorios.com.br/">GS Acessórios</option>
+      <option value="https://limcad.com.br/">Limcad</option>
+      <option value="https://www.laboutik.com.br/blog/">La Boutik - Blog</option>
+      <option value="https://loopequipamentos.ind.br/">Loop Equipamentos</option>
+      <option value="https://lovelacos.com.br/">Love Laços</option>
+      <option value="https://premiumtours.com.br/">Premium Tours</option>
+      <option value="https://renovapiscinas.com.br/">Renova Piscinas</option>
+      <option value="https://santicioli.com.br/">Santicioli</option>
+      <option value="https://sjptransportes.com.br/">SJP Transportes</option>
+      <option value="https://souzaacos.com.br/">Souza Aços</option>
+      <option value="https://vivacommaisqualidade.com.br/">Viva Com Mais Qualidade</option>
+      <option value="https://vilanovapiscinas.com.br/">Vila Nova Piscinas</option>
+    
+    </select>
+
+    <script>
+      let tmp = document.getElementById('frame')
+const newSrc = (e) => { 
+  tmp.src = e
+  console.log(e)
+}
+    </script>
   </body>
 </html>
