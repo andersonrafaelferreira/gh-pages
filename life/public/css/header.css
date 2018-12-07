@@ -1,0 +1,232 @@
+/*
+vars
+*/
+
+/* 
+fonts
+
+
+@font-face {
+    font-family: 'bebas_neuethin';
+    src: url('bebasneue_thin-webfont.woff2') format('woff2'),
+    url('bebasneue_thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*/
+
+/* General Styles */
+
+html {
+    position: relative;
+    min-height: 100%;
+    overflow-y: scroll;
+}
+
+body {
+    margin-bottom: 70px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Barlow', sans-serif;
+    color: #474747;
+}
+
+
+p {
+    font-family: 'Barlow', sans-serif;
+    color: #474747;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+ul {
+    list-style: none;
+    margin-left: -38px;
+}
+
+img {
+    max-width: 100%
+}
+
+hr {
+    border: 0;
+    width: 70px;
+    color: #9cd3ff;
+    background-color: #9cd3ff;
+    height: 2px;
+    position: relative;
+    margin-left: 4px
+}
+
+
+.clear {
+    clear: both;
+}
+
+/* header #2 */
+
+.navbar-default {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 15px 0px;
+    margin-bottom: 0px;
+}
+
+.navbar-default .navbar-brand img {
+    margin-top: 5px;
+    width: auto
+}
+
+.navbar-default .navbar-brand {
+    color: #777
+}
+
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: transparent
+}
+
+.navbar-default .navbar-text {
+    color: #777
+}
+
+.navbar-default ul:last-child {
+    border-left: 1px solid rgba(255, 255, 255, .4);
+}
+
+.agende:hover {
+    background-color: #a90557;
+    opacity: 0.7;
+    border-color: #a90557;
+}
+
+.agende {
+    color: white;
+    border-radius: 5px;
+    background-color: #a90557;
+    border-color: #a90557;
+    padding: 10px 30px;
+    margin-top: -5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.navbar-default .navbar-nav > li {
+    margin-top: 10px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.navbar-right a {
+    padding: 0px !important;
+    margin-top: 10px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #a90557;
+    background-color: transparent
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #a90557;
+    background-color: #bd1e13
+}
+
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:hover,
+.navbar-default .navbar-nav > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent
+}
+
+
+/* centered */
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+/* centered END */
+
+header h4 {
+    font-size: 10px;
+    margin-top: 0;
+}
+
+header h3 {
+    font-size: 14px;
+    margin-top: -7px;
+
+}
+
+/*
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+*/
+
+.social-top i {
+    margin-right: 10px;
+}
+
+/*
+.social-top button {
+    padding: 20px 30px;
+    background-color: #a03b3c;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 40px;
+    font-size: 12px;
+}
+*/
+
+.top-contato ul {
+    float: right;
+}
+
+.top-contato li {
+    float: left;
+    list-style: none;
+    color: #bebebe;
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+.top-contato i {
+    margin-right: 5px;
+}
