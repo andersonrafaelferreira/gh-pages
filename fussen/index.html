@@ -51,6 +51,9 @@ margin: 20px 0;
 #featured{
 margin-top: 80px;
 }
+.projects-section{
+    padding: 80px 0 !important;
+}
     </style>
 </head>
 
@@ -59,7 +62,12 @@ margin-top: 80px;
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">LA City Hostel</a>
+            <!--            <a class="navbar-brand js-scroll-trigger" href="#page-top">LA City Hostel</a>-->
+
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <img src="img/logo/la-logo-black.png" style="width: 60px">
+            </a>
+
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars"></i>
@@ -71,6 +79,12 @@ margin-top: 80px;
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#projects">Rooms/Appartments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#tours">Tours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#bike-rental">Bike Rental</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
@@ -86,7 +100,9 @@ margin-top: 80px;
             <div class="mx-auto text-center">
                 <h1 class="mx-auto my-0 text-uppercase">LA City Hostel</h1>
                 <h2 class="text-white-50 mx-auto mt-2 mb-5">The best place to stay in Füssen</h2>
-                <a href="#about" class="btn btn-primary js-scroll-trigger">Learn more</a>
+                <a href="#about" class="btn btn-primary js-scroll-trigger">
+                    Learn more
+                </a>
             </div>
         </div>
     </header>
@@ -154,8 +170,61 @@ margin-top: 80px;
                 </div>
             </div>
 
+        </div>
+    </section>
+
+    <section id="tours" class="projects-section bg-light">
+        <div class="container">
+
+            <h2 class="black-white mb-5 text-center">Tours</h2>
+
+            <!-- Project One Row -->
+            <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="https://fh-sites.imgix.net/sites/1949/2018/11/07121423/suraj-patil-1104516-unsplash.jpg?auto=compress%2Cformat&fit=crop&crop=faces&w=720&h=480" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <h4 class="text-white">Half-Day Tour from Füssen</h4>
+                                <p class="mb-0 text-white-50">Skip the Line: See Neuschwanstein, Hohenschwangau, Marien Bridge, & Alpsee</p>
+                                <hr class="d-none d-lg-block mb-0 ml-0">
+                                <br>
+                                <a target="_blank" href="https://bavariancastletour.com/castle-tours/skip-line-half-day/" class="btn btn-primary js-scroll-trigger">Book</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Two Row -->
+            <div class="row justify-content-center no-gutters">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="https://fh-sites.imgix.net/sites/1949/2018/11/07121343/nikita-semerenko-776957-unsplash.jpg?auto=compress%2Cformat&fit=crop&crop=faces&w=720&h=480" alt="">
+                </div>
+                <div class="col-lg-6 order-lg-first">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <h4 class="text-white">Full-Day Tour from Füssen</h4>
+                                <p class="mb-0 text-white-50">Skip the Line: Explore Neuschwanstein, Oberammergau, & Linderhof Castles.</p>
+                                <hr class="d-none d-lg-block mb-0 mr-0">
+                                <br>
+                                <a target="_blank" href="https://bavariancastletour.com/castle-tours/skip-line-full-day/" class="btn btn-primary js-scroll-trigger">Book</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br id="bike-rental">
+            <br>
+            <br>
+            <h2 class="black-white mb-5 text-center">Bike Rental</h2>
+
             <!-- Featured Project Row -->
-            <div class="row align-items-center no-gutters mb-4 mb-lg-5" id="featured">
+            <div class="row align-items-center no-gutters mb-4 mb-lg-5">
                 <div class="col-xl-8 col-lg-7">
                     <img class="img-fluid mb-3 mb-lg-0" src="img/bike.jpg" alt="Photo by Daniel Frank from Pexels">
                 </div>
@@ -164,11 +233,10 @@ margin-top: 80px;
                         <h4>An adventure by bike?</h4>
                         <p class="text-black-50 mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos veniam nobis perferendis, iste illo eius provident itaque sit odit sunt!</p>
                         <br>
-                        <a href="#signup" class="btn btn-primary js-scroll-trigger">Rent a bike</a>
+                        <a target="_blank" href="https://bavariancastletour.com/fussen-bike-rentals/" class="btn btn-primary js-scroll-trigger">Rent a bike</a>
                     </div>
                 </div>
             </div>
-
 
 
         </div>
