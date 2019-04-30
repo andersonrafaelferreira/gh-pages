@@ -29,7 +29,10 @@ width: 100%
 form input{
 margin-top: 10px;
 }
-form input[type=date]{
+ 
+        
+form input[type=date],
+form input[type=number]{
 margin: 10px;
 }
 form button{
@@ -48,12 +51,19 @@ margin-top: 10px;
 #about .btn{
 margin: 20px 0;
 }
+        
 #featured{
 margin-top: 80px;
 }
-.projects-section{
-    padding: 80px 0 !important;
+        
+#projects{
+    padding-bottom: 0px !important;
 }
+           
+form button{
+    margin-bottom: 40px !important;
+}
+        
     </style>
 </head>
 
@@ -65,7 +75,7 @@ margin-top: 80px;
             <!--            <a class="navbar-brand js-scroll-trigger" href="#page-top">LA City Hostel</a>-->
 
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <img src="img/logo/la-logo-black.png" style="width: 60px">
+                <img src="img/logo/la-logo-green.png" style="width: 60px">
             </a>
 
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -133,7 +143,7 @@ margin-top: 80px;
             <!-- Project One Row -->
             <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
                 <div class="col-lg-6">
-                    <img class="img-fluid" src="img/hostel.jpg" alt="">
+                    <img class="img-fluid" src="img/room.jpg" alt="">
                 </div>
                 <div class="col-lg-6">
                     <div class="bg-black text-center h-100 project">
@@ -153,7 +163,7 @@ margin-top: 80px;
             <!-- Project Two Row -->
             <div class="row justify-content-center no-gutters">
                 <div class="col-lg-6">
-                    <img class="img-fluid" src="img/apartment.jpg" alt="">
+                    <img class="img-fluid" src="img/apartment-la.jpg" alt="">
                 </div>
                 <div class="col-lg-6 order-lg-first">
                     <div class="bg-black text-center h-100 project">
@@ -226,7 +236,7 @@ margin-top: 80px;
             <!-- Featured Project Row -->
             <div class="row align-items-center no-gutters mb-4 mb-lg-5">
                 <div class="col-xl-8 col-lg-7">
-                    <img class="img-fluid mb-3 mb-lg-0" src="img/bike.jpg" alt="Photo by Daniel Frank from Pexels">
+                    <img class="img-fluid mb-3 mb-lg-0" src="img/bikes.jpeg" alt="Photo by Daniel Frank from Pexels">
                 </div>
                 <div class="col-xl-4 col-lg-5">
                     <div class="featured-text text-center text-lg-left">
@@ -269,13 +279,33 @@ margin-top: 80px;
                             <label for="" class="text-white">Departure date</label>
                             <input type="date" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
                         </div>
+                        <div class="form-inline d-flex">
+                            <label for="" class="text-white">Number of people</label>
+                            <input type="number" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="How many people...">
+                        </div>
                         <button type="submit" class="btn btn-primary mx-auto">Send</button>
                     </form>
+
+                    <div class="social d-flex justify-content-center">
+                        <a href="#" class="mx-2">
+                            <img src="img/logo/master-sm.png" alt="">
+                        </a>
+                        <a href="#" class="mx-2">
+                            <img src="img/logo/visa-sm.png" alt="">
+                        </a>
+                        <a href="#" class="mx-2">
+                            <img src="img/logo/maestro-sm.png" alt="">
+                        </a>
+                        <a href="#" class="mx-2">
+                            <img src="img/logo/paypal-sm.png" alt="">
+                        </a>
+                    </div>
 
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Contact Section -->
     <section class="contact-section bg-black">
@@ -331,7 +361,7 @@ margin-top: 80px;
                     <i class="fab fa-facebook-f"></i>
                 </a>
                 <a href="#" class="mx-2">
-                    <i class="fab fa-github"></i>
+                    <i class="fab fa-instagram"></i>
                 </a>
             </div>
 
