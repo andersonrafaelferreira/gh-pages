@@ -10,9 +10,9 @@ fetch('https://api.sheety.co/13114ddb-a40c-46cc-89e6-dc3fc10eb989')
 unico = []
 function solista(){
   const soEstado = list.map(item => item.estado)
-  console.log('aqui', soEstado)
+//   console.log('aqui', soEstado)
   unico = new Set(soEstado);
-  console.log(unico)
+//   console.log(unico)
 }
 
 const estados = [
@@ -37,7 +37,16 @@ function carrega_estado(){
 
 
 function carrega_cidade(c){
-  console.log(c)
+  
+  document.getElementById("cidade").innerHTML = '';
+  
+  var x = document.createElement("OPTION");
+    var t = document.createTextNode('Selecione a cidade');
+    x.appendChild(t);
+    document.getElementById("cidade").appendChild(x);
+  
+//   console.log(c)
+  
    document.getElementById("cidade").disabled = false
    for(i = 0; i < c.length; i++){
    var x = document.createElement("OPTION");
