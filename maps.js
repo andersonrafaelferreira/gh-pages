@@ -5,6 +5,8 @@ fetch('https://api.sheety.co/13114ddb-a40c-46cc-89e6-dc3fc10eb989')
   .then( data => {
   list = data;
   solista()
+  
+  document.getElementById('mapa').innerHTML = data[4].maps
 })
 
 unico = []
