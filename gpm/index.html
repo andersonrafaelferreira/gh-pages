@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- bootstrap offline remove later -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="fonts/lato/stylesheet.css">
+    <link rel="stylesheet" href="fonts/sourcesanspro/stylesheet.css">
+
+    <!-- font awesome 5 -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <!-- owl -->
+    <link rel="stylesheet" href="plugins/owl.carousel/owl.theme.css">
+    <link rel="stylesheet" href="plugins/owl.carousel/owl.carousel.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="index.css">
+
+    <title></title>
+</head>
+
+<body>
+    <div id="pre-header">
+        <div class="container">
+            <nav>
+                <a href="#">TRABALHE CONOSCO</a>
+                <a href="#">Seja um revendedor</a>
+                <a href="#">MEUS ORÇAMENTOS <span> 1 </span></a>
+            </nav>
+        </div>
+    </div>
+    <!-- header -->
+    <header>
+        <div id="main-navigation" class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-navigation">
+                        <span class="sr-only">
+                            <?php _e( 'Toggle navigation', 'odin' ); ?></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+                        <img src="images/logo.png" alt="">
+                    </a>
+                </div>
+                <nav class="collapse navbar-collapse navbar-main-navigation" role="navigation">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="">Início</a></li>
+                        <li><a href="#empresa">empresa</a></li>
+                        <!--                        <li><a href="#produtos">produtos</a></li>-->
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">produtos
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Produto 1</a></li>
+                                <li><a href="#">Produto 1-2</a></li>
+                                <li><a href="#">Produto 1-3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#servicos">serviços</a></li>
+                        <li><a href="#certificacoes">certificações</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <li>
+                            <input type="text">
+
+                        </li>
+                        <li>
+                            <button type="submit">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </li>
+                    </ul>
+                    <!-- 					<?php
+						wp_nav_menu(
+							array(
+								'theme_location' => 'main-menu',
+								'depth'          => 2,
+								'container'      => false,
+								'menu_class'     => 'nav navbar-nav',
+								'fallback_cb'    => 'Odin_Bootstrap_Nav_Walker::fallback',
+								'walker'         => new Odin_Bootstrap_Nav_Walker()
+							)
+						);
+					?> -->
+
+
+                </nav><!-- .navbar-collapse -->
+            </div><!-- #main-navigation-->
+
+        </div><!-- .container-->
+    </header><!-- #header -->
+
+    <!-- header END -->
+
+    <!-- banner 
+    <section id="banner">
+        <div class="container">
+
+            <h1>
+                INOVAÇÃO, QUALIDADE E TECNOLGIA <br>
+                para as situações mais extremas.
+            </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, nulla.</p>
+        </div>
+    </section>
+<!-- banner END -->
+
+    <!-- nossos -->
+    <section id="nossos">
+        <div class="container">
+            <h1>Nossos Serviços</h1>
+            <div class="col-md-12">
+                <div class="col-md-3"></div>
+                <a href="">
+                    <div class="col-md-6" id="nosso">
+                        <h4>Solicite seu orçamento</h4>
+                        <p>Nossa equipe responderá em até 24h</p>
+                    </div>
+                </a>
+                <div class="col-md-3"></div>
+                <div class="col-md-3"></div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+    </section>
+    <!-- nossos END -->
+
+    <!-- video -->
+    <section id="video">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <iframe src="https://www.youtube.com/embed/2WtBxY8y6X0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-2"></div>
+    </section>
+    <!-- video END -->
+
+
+    <section id="pre-footer">
+        <div class="container">
+            <div class="col-md-3">
+                <img src="images/logo-bottom.png" alt="">
+            </div>
+            <div class="col-md-3">
+                <h4>Novidades</h4>
+                <div class="col-md-6">
+                    <img src="images/img4x4-footer.png" alt="">
+                    <img src="images/img4x4-footer.png" alt="">
+                </div>
+                <div class="col-md-6">
+                    <img src="images/img4x4-footer.png" alt="">
+                    <img src="images/img4x4-footer.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h4>Entre em contato</h4>
+                <a href=""><i class="fas fa-map-marker-alt"></i> R. Stefano Malesqui, 172 <br>
+                    <span></span>Capuava, Mauá - SP</a>
+                <a href=""><i class="fas fa-mobile-alt"></i> 55 11 4421-0300</a>
+                <a href=""><i class="far fa-envelope"></i>vendas@gpmbrasil.com.br</a>
+                <div class="social">
+                    <nav>
+                        <a href="https://facebook.com" target="_blank">
+                            <img src="images/facebook.png" alt="">
+                        </a>
+                        <a href="https://facebook.com" target="_blank">
+                            <img src="images/facebook.png" alt="">
+                        </a>
+                        <a href="https://facebook.com" target="_blank">
+                            <img src="images/facebook.png" alt="">
+                        </a>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h4>NEWSLETTER</h4>
+                <p>Cadastre-se para receber todas as novidades e promoções da GPM Brasil.</p>
+                <div class="form">
+                    <input type="text" placeholder="Digite seu e-mail">
+                    <button>Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="col-md-4">
+                <a href="http://naple.com.br/" target="_blank">© 2019 NAPLE MARKETING E DESIGN.</a>
+            </div>
+            <div class="col-md-8">
+                <nav>
+                    <a href="#">Início<span> · </span> </a>
+                    <a href="#">Empresa<span> · </span> </a>
+                    <a href="#">Produtos<span> · </span> </a>
+                    <a href="#">Serviços<span> · </span> </a>
+                    <a href="#">Certificações<span> · </span> </a>
+                    <a href="#">Contato</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <!-- footer END -->
+
+    <!-- scripts -->
+    <!--
+    <script src="jquery.min.js"></script>
+<script src="bootstrap.min.js"></script>
+-->
+
+    <!-- owl carousel -->
+    <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+
+    <script src="plugins/owl.carousel/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            //            $("#clientes_carousel").owlCarousel({
+            //                autoPlay: 3000, //Set AutoPlay to 3 seconds
+            //                items: 3,
+            //                itemsDesktop: [1199, 3],
+            //                itemsDesktopSmall: [979, 1]
+            //            });
+
+            //           $("#equipamentos_carousel").owlCarousel({
+            // autoPlay: 3000, //Set AutoPlay to 3 seconds
+            // items: 3,
+            // itemsDesktop: [1199, 3],
+            // itemsDesktopSmall: [979, 1]
+            // });
+
+        });
+    </script>
+    <!-- smooth scrolling -->
+    <script src="plugins/smoothScrolling/smooth.jquery.min.js"></script>
+
+    <script>
+        // Select all links with hashes
+        $('a[href*="#"]')
+            // Remove links that don't actually link to anything
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .click(function(event) {
+                // On-page links
+                if (
+                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                    location.hostname == this.hostname
+                ) {
+                    // Figure out element to scroll to
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    // Does a scroll target exist?
+                    if (target.length) {
+                        // Only prevent default if animation is actually gonna happen
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000, function() {
+                            // Callback after animation
+                            // Must change focus!
+                            var $target = $(target);
+                            $target.focus();
+                            if ($target.is(":focus")) { // Checking if the target was focused
+                                return false;
+                            } else {
+                                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                                $target.focus(); // Set focus again
+                            };
+                        });
+                    }
+                }
+            });
+    </script>
+</body>
+
+</html>
