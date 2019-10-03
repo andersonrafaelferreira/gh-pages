@@ -209,6 +209,17 @@ pre-header
 banner
 */
 
+#banner {
+    padding: 100px 0;
+    background-image: url(images/banner/Banner_Principal_BG.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 656px;
+    margin-top: -20px;
+
+}
+
 #banner h1 {
     font-size: 36px;
     color: #0e0e0e;
