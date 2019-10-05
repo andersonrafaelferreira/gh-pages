@@ -797,7 +797,31 @@ mobile*/
     #categorias .item .col-md-12:first-child {
         padding-top: 30px;
     }
+
+    /* mobile */
+    .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        padding-top: 30px;
+    }
+
+    #pre-header a {
+        font-size: 8px;
+    }
+
+    .navbar-default .navbar-brand img {
+        margin-top: -42px;
+        width: 120px
+    }
+
+
+
+    #pre-header a span {
+        top: 0px !important;
+    }
 }
+
+
+
 
 @media (max-width: 767px) {
     .bar-top {
@@ -806,5 +830,11 @@ mobile*/
 
     .social-top {
         display: none;
+    }
+
+    .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        border: none !important;
+        border-color: #434343 !important;
     }
 }
