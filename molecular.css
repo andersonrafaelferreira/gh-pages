@@ -17,6 +17,10 @@
 *,
 body {
 	font-family: "magraregular";
+	margin-bottom: 0 !important;
+}
+html {
+	margin-bottom: 0 !important;
 }
 p {
 	font-family: "magraregular";
@@ -53,7 +57,7 @@ img {
 #header {
 	background-color: #0295c9;
 	min-height: 146px;
-	margin-bottom: -1px;
+	margin-bottom: -3px !important;
 }
 #header .navbar-header {
 }
@@ -92,7 +96,7 @@ img {
 }
 #banner h5 {
 	color: white;
-	margin: 20px 0;
+	margin: 20px 0 !important;
 	font-family: magra !important;
 }
 #banner {
@@ -120,7 +124,7 @@ img {
 }
 #banner .molecular-form {
 	margin-top: 50px;
-	margin-bottom: -430px;
+	margin-bottom: -430px !important;
 }
 
 /* footer */
@@ -180,7 +184,7 @@ footer {
 .form-title {
 	width: 100%;
 	font-size: 23px;
-	margin-bottom: 20px;
+	margin-bottom: 20px !important;
 }
 .form-title strong {
 	font-family: magrabold;
@@ -194,17 +198,23 @@ footer {
 	height: 665px;
 	overflow-y: scroll;
 }
-
+span.wpcf7-not-valid-tip {
+	color: #f00 !important;
+	font-size: 1em !important;
+	font-weight: normal !important;
+	display: block !important;
+}
 .wpcf7-form input {
 	background-color: #f6f6f6;
 	border-radius: 25px;
 	padding: 14px;
 	border: none;
-	margin-bottom: 10px;
+	margin-bottom: 10px !important;
 	width: 100%;
 }
 .wpcf7-form input[type="checkbox"] {
 	width: auto !important;
+	margin-bottom: 20px !important;
 }
 .wpcf7-form input[type="submit"] {
 	background-image: linear-gradient(to right, #4ec9bf, #00b0df);
@@ -230,7 +240,7 @@ footer {
 
 /* quem */
 #quem {
-	margin: 60px 0 40px;
+	margin: 60px 0 !important;
 }
 #quem h1 {
 	color: #213b47;
@@ -239,7 +249,7 @@ footer {
 #quem h2 {
 	color: #213b47;
 	font-size: 29px;
-	margin-bottom: 20px;
+	margin-bottom: 20px !important;
 }
 #quem .col-md-12 {
 	margin-bottom: 30px;
@@ -346,7 +356,7 @@ footer {
 }
 .item:nth-child(7) p {
 	color: #213b47 !important;
-	margin: 12px 0;
+	margin: 12px 0 20px !important;
 }
 .item:nth-child(7) {
 	display: flex;
@@ -357,11 +367,11 @@ footer {
 	background-color: #fdbe00;
 	border-bottom-left-radius: 15px;
 	border-bottom-right-radius: 15px;
-	border-bottom: 10px solid red !important;
+	/* border-bottom: 10px solid red !important; */
 	border-right: 10px solid #fdbe00;
 	border-left: 10px solid #fdbe00;
 	position: relative;
-	margin-bottom: -10px;
+	margin-bottom: -10px !important;
 	margin-left: -10px;
 	margin-right: -10px;
 }
@@ -374,6 +384,7 @@ footer {
 #preteste h1 {
 	color: #213b47;
 	font-size: 46px;
+	margin-bottom: 20px !important;
 }
 #preteste p {
 	color: #213b47;
@@ -391,10 +402,19 @@ footer {
 }
 
 /* lista */
-#lista {
+/* #lista {
 	background-image: url(./images/bullets.png);
 	background-repeat: no-repeat;
 	background-size: contain;
+} */
+
+#lista {
+	display: flex;
+	margin-top: 0;
+	margin-bottom: 10px;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 300px;
 }
 
 /* passos */
@@ -429,7 +449,7 @@ footer {
 	color: #213b47;
 	font-size: 46px;
 	text-align: center;
-	margin-bottom: 30px;
+	margin-bottom: 20px !important;
 	margin-top: 100px;
 }
 #passos .col-md-12:first-child p {
@@ -452,5 +472,118 @@ footer {
 	background-position: right;
 	min-height: 400px;
 	background-color: #f6f6f6;
-	margin-bottom: -60px;
+	margin-bottom: -60px !important;
+}
+
+/* mobile */
+
+@media (max-width: 767px) {
+	#quem .col-md-3 {
+		display: none;
+	}
+	#quem li {
+		list-style: disc;
+		margin-left: -40px;
+	}
+	/* footer */
+	footer .border-right {
+		border-right: none;
+		margin-bottom: 40px !important;
+	}
+	footer .col-md-5 img {
+		margin-top: 40px;
+	}
+	/* teste */
+	#teste .col-md-3 {
+		width: 100% !important;
+		margin: 40px 0 20px !important;
+	}
+	#teste .col-md-3:nth-child(2) {
+		border-bottom: 0px !important;
+	}
+	.item:nth-child(7) p {
+		color: #213b47 !important;
+		margin: 12px 0 20px !important;
+	}
+
+	.twenty {
+		width: 100% !important;
+		margin-bottom: 40px !important;
+	}
+	/* passos */
+	#passos {
+		margin-top: 0px !important;
+	}
+	#passos h1 {
+		margin: 40px 0 50px !important;
+	}
+	/* quem */
+	#quem .col-md-6 {
+		margin-bottom: 60px !important;
+	}
+	#quem h1 {
+		margin-bottom: 60px !important;
+	}
+	/* logo topo */
+	.navbar-brand img {
+		height: auto !important;
+	}
+
+	/* banner */
+	#banner .col-md-6 > img {
+		max-width: auto;
+		margin-top: 40px;
+	}
+
+	.icons {
+		width: auto !important;
+		height: auto !important;
+	}
+
+	#banner h5 {
+		color: white;
+		margin: 20px 0 !important;
+		font-family: magra !important;
+		font-size: 23px !important;
+	}
+	#banner .col-md-4:nth-child(4) {
+		border-left: none !important;
+		border-right: none !important;
+		margin-top: 40px !important;
+	}
+
+	#banner a {
+		font-size: 40px !important;
+	}
+
+	#banner a > button {
+		font-size: 22px;
+	}
+	#banner .col-md-4 {
+		margin: 20px !important;
+	}
+
+	.twenty p {
+		line-height: 28px !important;
+		font-size: 22px !important;
+		margin-top: 14px !important;
+	}
+	#passos p > span {
+		display: block;
+		color: #213b47;
+		font-size: 16px;
+		line-height: 19px;
+		margin-top: 10px;
+	}
+	#preteste {
+		margin-top: -200px !important;
+	}
+
+	#preteste h1 {
+		background-color: #f6f6f6;
+		margin-bottom: 40px !important;
+	}
+	#teste {
+		padding: 41px 0 110px !important;
+	}
 }
