@@ -166,10 +166,14 @@ input {
   aside.col-md-4 h2 {
     font-size: 35px;
   }
+  aside.col-md-4 .action-button {
+    margin-bottom: 60px;
+  }
   aside.col-md-4 {
     background-color: transparent !important;
     background-color: rgba(50, 141, 221, 0.4);
     height: 78vh;
+    min-height: 100%;
     text-align: center;
     display: block;
   }
