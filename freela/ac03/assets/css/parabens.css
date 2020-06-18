@@ -1,0 +1,12 @@
+@media screen and (max-width: 767px) {
+  aside.col-md-4 .content {
+    margin-bottom: 50px;
+  }
+  aside.col-md-4 {
+    background-color: transparent !important;
+    background-color: rgba(50, 141, 221, 0.4);
+    height: 100%;
+    text-align: center;
+    display: block;
+  }
+}

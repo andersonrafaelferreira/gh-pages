@@ -154,6 +154,7 @@ input {
   }
   aside.col-md-4 .content {
     margin-top: 50px;
+    margin-bottom: 50px;
   }
   aside.col-md-4 .lh35 {
     line-height: 35px;
@@ -172,8 +173,7 @@ input {
   aside.col-md-4 {
     background-color: transparent !important;
     background-color: rgba(50, 141, 221, 0.4);
-    height: 78vh;
-    min-height: 100%;
+    height: 100%;
     text-align: center;
     display: block;
   }
