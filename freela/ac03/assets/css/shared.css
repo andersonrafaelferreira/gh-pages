@@ -1,0 +1,139 @@
+/* geral */
+
+img {
+  max-width: 100%;
+}
+
+.clear {
+  clear: both;
+}
+
+.desktop {
+  display: block;
+}
+.mobile {
+  display: none;
+}
+
+/* geral END */
+
+main {
+  height: 100vh;
+  background-image: url("../images/wxYi9eq.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+aside h2 {
+  font-size: 35px;
+}
+
+aside p {
+  margin-bottom: 60px;
+  font-size: 20px;
+}
+
+.ou {
+  margin: 30px 0;
+  display: block;
+  font-size: 20px;
+}
+
+aside.col-md-4 {
+  background-color: rgba(50, 141, 221, 0.4);
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .content{
+  position: relative;
+  top: 50%;
+  transform: translate(0,-60%);
+} */
+article.col-md-8 {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+article.col-md-8 h1 {
+  color: #808080;
+  font-size: 40px;
+}
+
+footer img {
+  position: fixed;
+  bottom: 0px !important;
+}
+
+.action-button {
+  background: #004ea8;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 4px;
+  color: white;
+}
+
+.action-button:hover {
+  background: #004ea8;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 4px;
+  color: white;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  /* geral mobile */
+
+  img {
+    max-width: 100%;
+  }
+
+  .clear {
+    clear: both;
+  }
+
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+
+  /* geral mobile END */
+  main {
+    height: auto !important;
+    background-image: url("../images/CSv5zPz.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  article.col-md-8 {
+    margin-top: 147px;
+    height: auto;
+  }
+  article.col-md-8 img {
+    width: 174px;
+    height: 115px;
+  }
+  article.col-md-8 h1 {
+    font-size: 25px;
+  }
+  aside.col-md-4 h2 {
+    font-size: 35px;
+  }
+  aside.col-md-4 {
+    background-color: transparent !important;
+    background-color: rgba(50, 141, 221, 0.4);
+    height: 56vh;
+    text-align: center;
+    display: block;
+  }
+}
