@@ -3,7 +3,10 @@
 img {
   max-width: 100%;
 }
-
+textarea:focus,
+input:focus {
+  outline: none;
+}
 .clear {
   clear: both;
 }
@@ -90,6 +93,25 @@ footer img {
   text-decoration: none;
 }
 
+input:first-child {
+  margin-top: 20px;
+}
+input:last-child {
+  margin-bottom: 40px;
+}
+input {
+  width: 100% !important;
+  margin-bottom: 20px;
+  border: none;
+  background-color: white;
+  padding: 10px 10px 9px 12px;
+  font-size: 15px;
+}
+.esqueceu {
+  display: block;
+  margin-top: 20px;
+  color: #000;
+}
 @media screen and (max-width: 767px) {
   /* geral mobile */
 
@@ -140,6 +162,7 @@ footer img {
     margin: 0 auto;
     margin-bottom: 30px;
   }
+
   aside.col-md-4 h2 {
     font-size: 35px;
   }
