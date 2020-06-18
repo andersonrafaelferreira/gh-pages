@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vídeo streaming</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vídeo streaming</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="stylesheet" href="./assets/css/bs/bootstrap.min.css">
-  <script src="./assets/js/jquery/jquery.min.js"></script>
-  <script src="./assets/js/jquery/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/bs/bootstrap.min.css" />
+    <script src="./assets/js/jquery/jquery.min.js"></script>
+    <script src="./assets/js/jquery/bootstrap.min.js"></script>
 
-  <link rel="stylesheet" href="./assets/css/video.css">
+    <link rel="stylesheet" href="./assets/css/video.css" />
 
-  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-
-
-</head>
-<body>
-  
-<nav class="navbar navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">
-      <img src="./assets/images/video/9MMutZm.png" alt=""></a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <p class="navbar-text">Plataforma Digital Para Eventos On-Line</p>
-      <ul class="nav navbar-nav">
-<!--         <li class="active"><a href="#">Home</a></li>
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="./assets/images/video/9MMutZm.png" alt=""
+          /></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <p class="navbar-text">Plataforma Digital Para Eventos On-Line</p>
+          <ul class="nav navbar-nav">
+            <!--         <li class="active"><a href="#">Home</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -44,201 +50,329 @@
         </li>
         <li><a href="#">Page 2</a></li>
         <li><a href="#">Page 3</a></li> -->
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Ajuda</a></li>
-        <li><a href="index.html">Sair</a></li>
-      </ul>
-    </div>
-  </div>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" onclick="openBot()">Ajuda</a></li>
+            <li><a href="index.html">Sair</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <img src="./assets/images/video/kf99Fzi.png" id="bb" class="desktop" />
+    <img
+      src="./assets/images/video/header_img_bottom_mobile.png"
+      id="bb"
+      class="mobile"
+    />
 
-</nav>
-<img src="./assets/images/video/kf99Fzi.png" id="bb"  class="desktop"/>
-<img src="./assets/images/video/header_img_bottom_mobile.png" id="bb" class="mobile"/>
-  
-  
-<div class="container" style="margin-top: 62px">
-  <main id="streaming">
-    <div class="col-md-8">
-      <div class="col-md-6 desktop">
-        <h3>Você está na sala</h3>
-        <h1>Sala ao vivo 01</h1>
-      </div>
-      <div class="col-md-6 desktop">
-        <p>Texto descritivo sobre o tema da palestra realizado na sala. Um overview bem curto com os principais tópicos, entrevistas e assuntos que serão abordados pelos palestrantes.</p>
-      </div>
-      <video controls>
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-        Your browser does not support HTML video.
-      </video>
-      <div class="col-md-6 mobile">
-        <h3>Você está na sala</h3>
-        <h1>Sala ao vivo 01</h1>
-      </div>
-      <div class="col-md-6 mobile">
-        <p>Texto descritivo sobre o tema da palestra realizado na sala. Um overview bem curto com os principais tópicos, entrevistas e assuntos que serão abordados pelos palestrantes.</p>
-      </div>
-    </div>
-    <div class="col-md-4" id="messages">
-      <div class="message-list">
-       <p>João: <strong>Minha opnião é a seguinte, quero aprender sem deixar o professor mandar em mim!</strong></p> 
-       
-        <p>João: <strong>Minha opnião é a seguinte, quero aprender sem deixar o professor mandar em mim!</strong></p> 
-       
-        <p>João: <strong>Minha opnião é a seguinte, quero aprender sem deixar o professor mandar em mim!</strong></p> 
-       
-        <p>João: <strong>Minha opnião é a seguinte, quero aprender sem deixar o professor mandar em mim!</strong></p> 
-       
-        <p>João: <strong>Minha opnião é a seguinte, quero aprender sem deixar o professor mandar em mim!</strong></p> 
-       
-        <p>João: <strong>Minha opnião é a seguinte, quero aprender sem deixar o professor mandar em mim!</strong></p> 
-       
-        <p>João: <strong>Minha opnião é a seguinte, quero aprender sem deixar o professor mandar em mim!</strong></p> 
-       
-        <p>penultimo: <strong>Minha opnião é a seguinte, quero aprender sem deixar o professor mandar em mim!</strong></p> 
-       
-        <p>ultimo: <strong>Minha opnião é a seguinte, quero aprender sem deixar o professor mandar em mim!</strong></p> 
-       
-      </div>
-      <div class="box-message">
-        <p>Henrique Natalino</p>
-        <input type="text">
-        <p>1/200 <a href="#"><i class="fas fa-paper-plane"></i></a></p>
-      </div>
-    </div>
-  </main>
-  
-  <article>
-    <div class="col-md-7" id="chat">
-      <div id="chatbox">
-        <textarea name="" id="" cols="30" rows="4"></textarea>
-        <span>Envie uma pergunta para os palestrantes...</span>
-        <a href="#" class="action-button">Enviar</a>
-      </div>
-    </div>
-    <div class="col-md-5" id="info">
-        <img src="./assets/images/video/AHsuQQC.png" alt="">
-      <p class="descricao">
-        Faça download das apresentações dessa palestra e outros materiais relacionados ao evento.
-      </p>
-    </div>
-    
-  </article>
-  
-  <div class="clear"></div>
-  
-  <div id="apresentadores">
-    <div class="col-md-4">
-     <div class="people">
-        <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="">
-      <h4 class="nome">
-        Grant Marshall
-      </h4>
-      <p class="descricao">
-        Médico-cientista, CEO na Genomika Diagnostics
-      </p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="">
-      <h4 class="nome">
-        Grant Marshall
-      </h4>
-      <p class="descricao">
-        Médico-cientista, CEO na Genomika Diagnostics
-      </p>
-    </div>
-    <div class="col-md-4">
-      <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="">
-      <h4 class="nome">
-        Grant Marshall
-      </h4>
-      <p class="descricao">
-        Médico-cientista, CEO na Genomika Diagnostics
-      </p>
-    </div>
-    
-  </div>
-  
-  <div class="clear"></div>
-  
-  <div id="room-container">
-    <div class="room-header">
-      <h4>Outras Salas Ao Vivo</h4>
-    </div>
-    
-    <div class="rooms">
-      
-      <div class=" col-md-3">
-        <div class="room">
-           <div class="overlay">
-            <p>Você está aqui!</p>
+    <div class="container" style="margin-top: 62px;">
+      <main id="streaming">
+        <div class="col-md-8">
+          <div class="col-md-6 desktop">
+            <h3>Você está na sala</h3>
+            <h1>Sala ao vivo 01</h1>
           </div>
-          
-          <p class="title">Sala ao Vivo 02</p>
-          <img src="./assets/images/video/pGn7Ehr.png" alt="Sala ao Vivo 02 Cover">
-            <div class="texto">
-              <p>Texto descritivo sobre o tema da palestra realizado na sala. Um overview bem curto com os principais tópicos.</p>
-            </div>
+          <div class="col-md-6 desktop">
+            <p>
+              Texto descritivo sobre o tema da palestra realizado na sala. Um
+              overview bem curto com os principais tópicos, entrevistas e
+              assuntos que serão abordados pelos palestrantes.
+            </p>
           </div>
-      </div>
-      
-      <div class=" col-md-3">
-        <div class="room">
-          <p class="title">Sala ao Vivo 02</p>
-          <img src="./assets/images/video/pGn7Ehr.png" alt="Sala ao Vivo 02 Cover">
-            <div class="texto">
-              <p>Texto descritivo sobre o tema da palestra realizado na sala. Um overview bem curto com os principais tópicos.</p>
-            </div>
+          <video controls>
+            <source
+              src="https://www.w3schools.com/html/mov_bbb.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support HTML video.
+          </video>
+          <div class="col-md-6 mobile">
+            <h3>Você está na sala</h3>
+            <h1>Sala ao vivo 01</h1>
           </div>
-      </div>
-      <div class=" col-md-3">
-        <div class="room">
-          <p class="title">Sala ao Vivo 03</p>
-          <img src="./assets/images/video/pGn7Ehr.png" alt="Sala ao Vivo 02 Cover">
-            <div class="texto">
-              <p>Texto descritivo sobre o tema da palestra realizado na sala. Um overview bem curto com os principais tópicos.</p>
-            </div>
+          <div class="col-md-6 mobile">
+            <p>
+              Texto descritivo sobre o tema da palestra realizado na sala. Um
+              overview bem curto com os principais tópicos, entrevistas e
+              assuntos que serão abordados pelos palestrantes.
+            </p>
           </div>
-      </div>
-      <div class=" col-md-3">
-        <div class="room">
-          <p class="title">Sala ao Vivo 04</p>
-          <img src="./assets/images/video/pGn7Ehr.png" alt="Sala ao Vivo 02 Cover">
-            <div class="texto">
-              <p>Texto descritivo sobre o tema da palestra realizado na sala. Um overview bem curto com os principais tópicos.</p>
-            </div>
-          </div>
-      </div>
-      <div class=" col-md-3">
-        <div class="room">
-          <p class="title">Sala ao Vivo 05</p>
-          <img src="./assets/images/video/pGn7Ehr.png" alt="Sala ao Vivo 02 Cover">
-            <div class="texto">
-              <p>Texto descritivo sobre o tema da palestra realizado na sala. Um overview bem curto com os principais tópicos.</p>
-            </div>
-          </div>
-      </div>
-      
-      
-      
-    </div>
-    
-  </div>
-  
-    <div class="clear"></div>
+        </div>
+        <div class="col-md-4" id="messages">
+          <div class="message-list">
+            <p>
+              João:
+              <strong
+                >Minha opnião é a seguinte, quero aprender sem deixar o
+                professor mandar em mim!</strong
+              >
+            </p>
 
-  
-  
-</div>
-  
-  <footer>
-<img src="./assets/images/Cbvv9zl.png" alt="footer img" class="desktop">
-<img src="./assets/images/bg_shared_bottom.png" alt="footer mobile" class="mobile">
-    <div class="container">
-      <p>Copyright © 2020 | Antonicelli Comunicação e Eventos</p>
-    </div>
-  </footer>
+            <p>
+              João:
+              <strong
+                >Minha opnião é a seguinte, quero aprender sem deixar o
+                professor mandar em mim!</strong
+              >
+            </p>
 
-</body>
+            <p>
+              João:
+              <strong
+                >Minha opnião é a seguinte, quero aprender sem deixar o
+                professor mandar em mim!</strong
+              >
+            </p>
+
+            <p>
+              João:
+              <strong
+                >Minha opnião é a seguinte, quero aprender sem deixar o
+                professor mandar em mim!</strong
+              >
+            </p>
+
+            <p>
+              João:
+              <strong
+                >Minha opnião é a seguinte, quero aprender sem deixar o
+                professor mandar em mim!</strong
+              >
+            </p>
+
+            <p>
+              João:
+              <strong
+                >Minha opnião é a seguinte, quero aprender sem deixar o
+                professor mandar em mim!</strong
+              >
+            </p>
+
+            <p>
+              João:
+              <strong
+                >Minha opnião é a seguinte, quero aprender sem deixar o
+                professor mandar em mim!</strong
+              >
+            </p>
+
+            <p>
+              penultimo:
+              <strong
+                >Minha opnião é a seguinte, quero aprender sem deixar o
+                professor mandar em mim!</strong
+              >
+            </p>
+
+            <p>
+              ultimo:
+              <strong
+                >Minha opnião é a seguinte, quero aprender sem deixar o
+                professor mandar em mim!</strong
+              >
+            </p>
+          </div>
+          <div class="box-message">
+            <p>Henrique Natalino</p>
+            <input type="text" />
+            <p>
+              1/200 <a href="#"><i class="fas fa-paper-plane"></i></a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <article>
+        <div class="col-md-7" id="chat">
+          <div id="chatbox">
+            <textarea name="" id="" cols="30" rows="4"></textarea>
+            <span>Envie uma pergunta para os palestrantes...</span>
+            <a href="#" class="action-button">Enviar</a>
+          </div>
+        </div>
+        <div class="col-md-5" id="info">
+          <img src="./assets/images/video/AHsuQQC.png" alt="" />
+          <p class="descricao">
+            Faça download das apresentações dessa palestra e outros materiais
+            relacionados ao evento.
+          </p>
+        </div>
+      </article>
+
+      <div class="clear"></div>
+
+      <div id="apresentadores">
+        <div class="col-md-4">
+          <div class="people">
+            <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="" />
+            <h4 class="nome">
+              Grant Marshall
+            </h4>
+            <p class="descricao">
+              Médico-cientista, CEO na Genomika Diagnostics
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="" />
+          <h4 class="nome">
+            Grant Marshall
+          </h4>
+          <p class="descricao">
+            Médico-cientista, CEO na Genomika Diagnostics
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="" />
+          <h4 class="nome">
+            Grant Marshall
+          </h4>
+          <p class="descricao">
+            Médico-cientista, CEO na Genomika Diagnostics
+          </p>
+        </div>
+      </div>
+
+      <div class="clear"></div>
+
+      <div id="room-container">
+        <div class="room-header">
+          <h4>Outras Salas Ao Vivo</h4>
+        </div>
+
+        <div class="rooms">
+          <div class="col-md-3">
+            <div class="room">
+              <div class="overlay">
+                <p>Você está aqui!</p>
+              </div>
+
+              <p class="title">Sala ao Vivo 02</p>
+              <img
+                src="./assets/images/video/pGn7Ehr.png"
+                alt="Sala ao Vivo 02 Cover"
+              />
+              <div class="texto">
+                <p>
+                  Texto descritivo sobre o tema da palestra realizado na sala.
+                  Um overview bem curto com os principais tópicos.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="room">
+              <p class="title">Sala ao Vivo 02</p>
+              <img
+                src="./assets/images/video/pGn7Ehr.png"
+                alt="Sala ao Vivo 02 Cover"
+              />
+              <div class="texto">
+                <p>
+                  Texto descritivo sobre o tema da palestra realizado na sala.
+                  Um overview bem curto com os principais tópicos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="room">
+              <p class="title">Sala ao Vivo 03</p>
+              <img
+                src="./assets/images/video/pGn7Ehr.png"
+                alt="Sala ao Vivo 02 Cover"
+              />
+              <div class="texto">
+                <p>
+                  Texto descritivo sobre o tema da palestra realizado na sala.
+                  Um overview bem curto com os principais tópicos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="room">
+              <p class="title">Sala ao Vivo 04</p>
+              <img
+                src="./assets/images/video/pGn7Ehr.png"
+                alt="Sala ao Vivo 02 Cover"
+              />
+              <div class="texto">
+                <p>
+                  Texto descritivo sobre o tema da palestra realizado na sala.
+                  Um overview bem curto com os principais tópicos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="room">
+              <p class="title">Sala ao Vivo 05</p>
+              <img
+                src="./assets/images/video/pGn7Ehr.png"
+                alt="Sala ao Vivo 02 Cover"
+              />
+              <div class="texto">
+                <p>
+                  Texto descritivo sobre o tema da palestra realizado na sala.
+                  Um overview bem curto com os principais tópicos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="clear"></div>
+    </div>
+
+    <footer>
+      <img src="./assets/images/Cbvv9zl.png" alt="footer img" class="desktop" />
+      <img
+        src="./assets/images/bg_shared_bottom.png"
+        alt="footer mobile"
+        class="mobile"
+      />
+      <div class="container">
+        <p>Copyright © 2020 | Antonicelli Comunicação e Eventos</p>
+      </div>
+    </footer>
+
+    <!-- starts hidden -->
+    <div id="bot">
+      <div class="bot-box">
+        <a href="#" onclick="closeBot()">
+          <img src="./assets/images/bot/x.png" alt="" id="close" />
+        </a>
+        <h2>
+          Como posso <br />
+          ajudá-lo?
+        </h2>
+        <textarea
+          name=""
+          id=""
+          cols=""
+          rows=""
+          placeholder="Faça uma pergunta..."
+        ></textarea>
+        <div id="button-container">
+          <button id="bot-button">Enviar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- scripts -->
+    <script>
+      function openBot() {
+        document.getElementById("bot").style.visibility = "visible";
+        document.getElementById("bot").style.opacity = "1";
+      }
+
+      function closeBot() {
+        document.getElementById("bot").style.visibility = "hidden";
+        document.getElementById("bot").style.opacity = "0";
+      }
+    </script>
+  </body>
 </html>
