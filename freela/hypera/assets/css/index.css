@@ -153,7 +153,8 @@ rooms */
 }
 .overlay {
   position: absolute;
-  top: -5px;
+  /* top: -5px; */
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
@@ -162,7 +163,8 @@ rooms */
   background: rgba(0, 0, 0, 0.7);
   color: #f1f1f1;
   max-width: 100%;
-  height: 102%;
+  /* height: 102%; */
+  height: 100%;
   transition: 0.5s ease;
   opacity: 1;
   color: white;
@@ -211,6 +213,7 @@ footer p {
     background-size: cover;
     height: 100%;
     padding-top: 100px;
+    padding-bottom: 60px;
   }
 
   #confira {
@@ -240,6 +243,12 @@ footer p {
   }
 
   #rooms #title h3 {
+    padding-top: 2px;
     padding-bottom: 5px;
+  }
+
+  #room-list .col-md-3 {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
