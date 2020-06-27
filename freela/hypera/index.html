@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 1</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="./assets/css/bs/bootstrap.min.css" />
+    <script src="./assets/js/jquery/jquery.min.js"></script>
+    <script src="./assets/js/jquery/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/bot.css" />
+
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="./assets/images/logo.png" alt=""
+          /></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <!--         <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li> -->
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <p class="navbar-text">REUNIÃO GERENCIAL ONLINE 2020</p>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Programação</a></li>
+            <li><a href="#">Salas</a></li>
+            <li><a href="#">Arquivos</a></li>
+            <li><a href="#" onclick="openBot()">Ajuda</a></li>
+            <li><a href="index.html">Sair</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- banner -->
+    <div id="banner">
+      <div class="container">
+        <div class="col-md-6">
+          <img src="./assets/images/logo_missao.png" alt="" />
+        </div>
+        <div class="col-md-6">
+          <p>
+            A Hypera apresenta a edição online da Reunião Gerencial Missão
+            Hypera a Conquista do Sell Out II, para você viver experiências
+            inéditas em conteúdo e relacionamento no conforto de sua casa ou de
+            onde estiver.
+          </p>
+          <p>
+            Este evento proporcionará muito conhecimento, troca de experiências
+            e discussão dos temas que impactam o dia a dia das equipes Hypera.
+          </p>
+          <p>
+            Serão mais de 500 pessoas reunidas na nossa reunião gerencial online
+            que acontecerá de 06 a 08/07/2020.
+          </p>
+          <p>
+            O evento está dividido em 10 salas simultâneas, veja a agenda do
+            evento e localize a sua sala.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- banner END -->
+    <div class="container">
+      <!-- confira -->
+      <div id="confira">
+        <h2>Confira a programação e bom evento</h2>
+        <div class="light"></div>
+
+        <img src="./assets/images/foto_site.jpg" alt="" />
+
+        <div class="light"></div>
+      </div>
+      <!-- confira END -->
+
+      <!-- rooms -->
+      <div id="rooms">
+        <div class="container">
+          <div class="col-md-12" id="title">
+            <h3>Salas Ao Vivo</h3>
+          </div>
+
+          <div id="room-list">
+            <!-- each room -->
+            <div class="col-md-3">
+              <div class="room">
+                <div class="overlay">
+                  <p>Você está aqui!</p>
+                </div>
+                <img src="./assets/images/planets/Sol.png" alt="" />
+                <div class="room-title">Plenária</div>
+                <div class="lineup">
+                  <h4 class="room-date">Dia 07/07</h4>
+                  <ul>
+                    <li>08h00 - Abertura SG</li>
+                    <li>08h30 - Vendas Sell In</li>
+                    <li>09h00 - Vendas Sell Out</li>
+                    <li>09h15 - Mkt - NeoPharma</li>
+                    <li>10h00 - Intervalo</li>
+                    <li>10h15 - Mkt Genéricos</li>
+                    <li>10h45 - Mkt Similares</li>
+                    <li>11h45 - Trade Ativação</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- each room END -->
+            <!-- each room -->
+            <div class="col-md-3">
+              <div class="room">
+                <img src="./assets/images/planets/Sol.png" alt="" />
+                <div class="room-title">Plenária</div>
+                <div class="lineup">
+                  <h4 class="room-date">Dia 07/07</h4>
+                  <ul>
+                    <li>08h00 - Abertura SG</li>
+                    <li>08h30 - Vendas Sell In</li>
+                    <li>09h00 - Vendas Sell Out</li>
+                    <li>09h15 - Mkt - NeoPharma</li>
+                    <li>10h00 - Intervalo</li>
+                    <li>10h15 - Mkt Genéricos</li>
+                    <li>10h45 - Mkt Similares</li>
+                    <li>11h45 - Trade Ativação</li>
+                    <li>08h00 - Abertura SG</li>
+                    <li>08h30 - Vendas Sell In</li>
+                    <li>09h00 - Vendas Sell Out</li>
+                    <li>09h15 - Mkt - NeoPharma</li>
+                    <li>10h00 - Intervalo</li>
+                    <li>10h15 - Mkt Genéricos</li>
+                    <li>10h45 - Mkt Similares</li>
+                    <li>11h45 - Trade Ativação</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- each room END -->
+            <!-- each room -->
+            <div class="col-md-3">
+              <div class="room">
+                <img src="./assets/images/planets/Sol.png" alt="" />
+                <div class="room-title">Plenária</div>
+                <div class="lineup">
+                  <h4 class="room-date">Dia 07/07</h4>
+                  <ul>
+                    <li>08h00 - Abertura SG</li>
+                    <li>08h30 - Vendas Sell In</li>
+                    <li>09h00 - Vendas Sell Out</li>
+                    <li>09h15 - Mkt - NeoPharma</li>
+                    <li>10h00 - Intervalo</li>
+                    <li>10h15 - Mkt Genéricos</li>
+                    <li>10h45 - Mkt Similares</li>
+                    <li>11h45 - Trade Ativação</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- each room END -->
+            <!-- each room -->
+            <div class="col-md-3">
+              <div class="room">
+                <img src="./assets/images/planets/Sol.png" alt="" />
+                <div class="room-title">Plenária</div>
+                <div class="lineup">
+                  <h4 class="room-date">Dia 07/07</h4>
+                  <ul>
+                    <li>08h00 - Abertura SG</li>
+                    <li>08h30 - Vendas Sell In</li>
+                    <li>09h00 - Vendas Sell Out</li>
+                    <li>09h15 - Mkt - NeoPharma</li>
+                    <li>10h00 - Intervalo</li>
+                    <li>10h15 - Mkt Genéricos</li>
+                    <li>10h45 - Mkt Similares</li>
+                    <li>11h45 - Trade Ativação</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- each room END -->
+            <!-- each room -->
+            <div class="col-md-3">
+              <div class="room">
+                <img src="./assets/images/planets/Sol.png" alt="" />
+                <div class="room-title">Plenária</div>
+                <div class="lineup">
+                  <h4 class="room-date">Dia 07/07</h4>
+                  <ul>
+                    <li>08h00 - Abertura SG</li>
+                    <li>08h30 - Vendas Sell In</li>
+                    <li>09h00 - Vendas Sell Out</li>
+                    <li>09h15 - Mkt - NeoPharma</li>
+                    <li>10h00 - Intervalo</li>
+                    <li>10h15 - Mkt Genéricos</li>
+                    <li>10h45 - Mkt Similares</li>
+                    <li>11h45 - Trade Ativação</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- each room END -->
+          </div>
+        </div>
+      </div>
+      <!-- rooms END -->
+
+      <!-- container -->
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="col-md-6">
+          <img src="./assets/images/logo_bottom.png" alt="Logo" />
+        </div>
+        <div class="col-md-6">
+          <p>Copyright © 2020 | Hypera Pharma</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- starts hidden -->
+    <div id="bot">
+      <div class="bot-box">
+        <a href="#" onclick="closeBot()">
+          <img src="./assets/images/bot/x.png" alt="" id="close" />
+        </a>
+        <h2>
+          Como posso <br />
+          ajudá-lo?
+        </h2>
+        <textarea
+          name=""
+          id=""
+          cols=""
+          rows=""
+          placeholder="Faça uma pergunta..."
+        ></textarea>
+        <div id="button-container">
+          <button id="bot-button">Enviar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- scripts -->
+    <script>
+      function openBot() {
+        document.getElementById("bot").style.visibility = "visible";
+        document.getElementById("bot").style.opacity = "1";
+      }
+
+      function closeBot() {
+        document.getElementById("bot").style.visibility = "hidden";
+        document.getElementById("bot").style.opacity = "0";
+      }
+    </script>
+  </body>
+</html>
