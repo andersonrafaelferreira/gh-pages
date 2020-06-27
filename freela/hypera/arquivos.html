@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arquivos</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="./assets/css/bs/bootstrap.min.css" />
+    <script src="./assets/js/jquery/jquery.min.js"></script>
+    <script src="./assets/js/jquery/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/bot.css" />
+
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
+      rel="stylesheet"
+    />
+
+    <link href=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css rel=stylesheet>
+
+
+    <link
+    href=https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.20/css/dataTables.bootstrap.min.css
+    rel=stylesheet>
+
+    <style>
+      body {
+        background-color: white;
+      }
+      .navbar{
+        background-image: url(./assets/images/mask_menu.png);
+      }
+      .table-responsive {
+        margin-top: 100px !important;
+        margin-bottom: 0px !important;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="./assets/images/logo.png" alt=""
+          /></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <!--         <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li> -->
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <p class="navbar-text">REUNIÃO GERENCIAL ONLINE 2020</p>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="programacao.html">Programação</a></li>
+            <li><a href="#">Salas</a></li>
+            <li><a href="arquivos.html">Arquivos</a></li>
+            <li><a href="#" onclick="openBot()">Ajuda</a></li>
+            <li><a href="index.html">Sair</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <!-- container -->
+      <div class="table-responsive">
+
+      <table
+        cellspacing="0"
+        class="table"
+        id="example"
+        width="100%"
+      >
+        <thead>
+          <tr>
+            <th><i class="far fa-file"></i></th>
+            <th>Nome</th>
+            <th>Modificada</th>
+            <th>Data da foto</th>
+            <th>Compartilhada com</th>
+            <th>Tamanho</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <!-- table item -->
+          <tr>
+            <td><i class="far fa-file-video"></i></td>
+            <td>Abada.mp4</td>
+            <td>11 de mar.</td>
+            <td>-</td>
+            <td><i class="fas fa-users"></i> Compartilhado</td>
+            <td>87,2 MB</td>
+          </tr>
+          <!-- table item END -->
+          <!-- table item -->
+          <tr>
+            <td><i class="far fa-file-video"></i></td>
+            <td>Rbada.mp4</td>
+            <td>12 de mar.</td>
+            <td>-</td>
+            <td><i class="fas fa-users"></i> Compartilhado</td>
+            <td>87,2 MB</td>
+          </tr>
+          <!-- table item END -->
+          <!-- table item -->
+          <tr>
+            <td><i class="far fa-file-video"></i></td>
+            <td>Abada.mp4</td>
+            <td>11 de mar.</td>
+            <td>-</td>
+            <td><i class="fas fa-users"></i> Compartilhado</td>
+            <td>87,2 MB</td>
+          </tr>
+          <!-- table item END -->
+          <!-- table item -->
+          <tr>
+            <td><i class="far fa-file-video"></i></td>
+            <td>Abada.mp4</td>
+            <td>11 de mar.</td>
+            <td>-</td>
+            <td><i class="fas fa-users"></i> Compartilhado</td>
+            <td>87,2 MB</td>
+          </tr>
+          <!-- table item END -->
+          <!-- table item -->
+          <tr>
+            <td><i class="far fa-file-video"></i></td>
+            <td>Abada.mp4</td>
+            <td>11 de mar.</td>
+            <td>-</td>
+            <td><i class="fas fa-users"></i> Compartilhado</td>
+            <td>87,2 MB</td>
+          </tr>
+          <!-- table item END -->
+          <!-- table item -->
+          <tr>
+            <td><i class="far fa-file-video"></i></td>
+            <td>Abada.mp4</td>
+            <td>11 de mar.</td>
+            <td>-</td>
+            <td><i class="fas fa-users"></i> Compartilhado</td>
+            <td>87,2 MB</td>
+          </tr>
+          <!-- table item END -->
+          <!-- table item -->
+          <tr>
+            <td><i class="far fa-file-video"></i></td>
+            <td>Abada.mp4</td>
+            <td>11 de mar.</td>
+            <td>-</td>
+            <td><i class="fas fa-users"></i> Compartilhado</td>
+            <td>87,2 MB</td>
+          </tr>
+          <!-- table item END -->
+          <!-- table item -->
+          <tr>
+            <td><i class="far fa-file-video"></i></td>
+            <td>Abada.mp4</td>
+            <td>11 de mar.</td>
+            <td>-</td>
+            <td><i class="fas fa-users"></i> Compartilhado</td>
+            <td>87,2 MB</td>
+          </tr>
+          <!-- table item END -->
+          <!-- table item -->
+          <tr>
+            <td><i class="far fa-file-video"></i></td>
+            <td>Abada.mp4</td>
+            <td>11 de mar.</td>
+            <td>-</td>
+            <td><i class="fas fa-users"></i> Compartilhado</td>
+            <td>87,2 MB</td>
+          </tr>
+          <!-- table item END -->
+          <!-- table item -->
+          <tr>
+            <td><i class="far fa-file-video"></i></td>
+            <td>Abada.mp4</td>
+            <td>11 de mar.</td>
+            <td>-</td>
+            <td><i class="fas fa-users"></i> Compartilhado</td>
+            <td>87,2 MB</td>
+          </tr>
+          <!-- table item END -->
+          <!-- table item -->
+          <tr>
+            <td><i class="far fa-file-video"></i></td>
+            <td>Abada.mp4</td>
+            <td>11 de mar.</td>
+            <td>-</td>
+            <td><i class="fas fa-users"></i> Compartilhado</td>
+            <td>87,2 MB</td>
+          </tr>
+          <!-- table item END -->
+          <!-- table item -->
+          <tr>
+            <td><i class="far fa-file-video"></i></td>
+            <td>Abada.mp4</td>
+            <td>11 de mar.</td>
+            <td>-</td>
+            <td><i class="fas fa-users"></i> Compartilhado</td>
+            <td>87,2 MB</td>
+          </tr>
+          <!-- table item END -->
+          <!-- table item -->
+          <tr>
+            <td><i class="far fa-file-video"></i></td>
+            <td>Abada.mp4</td>
+            <td>11 de mar.</td>
+            <td>-</td>
+            <td><i class="fas fa-users"></i> Compartilhado</td>
+            <td>87,2 MB</td>
+          </tr>
+          <!-- table item END -->
+          <!-- table item -->
+          <tr>
+            <td><i class="far fa-file-video"></i></td>
+            <td>Abada.mp4</td>
+            <td>11 de mar.</td>
+            <td>-</td>
+            <td><i class="fas fa-users"></i> Compartilhado</td>
+            <td>87,2 MB</td>
+          </tr>
+          <!-- table item END -->
+          <!-- table item -->
+          <tr>
+            <td><i class="far fa-file-video"></i></td>
+            <td>Abada.mp4</td>
+            <td>11 de mar.</td>
+            <td>-</td>
+            <td><i class="fas fa-users"></i> Compartilhado</td>
+            <td>87,2 MB</td>
+          </tr>
+          <!-- table item END -->
+          <!-- table item -->
+          <tr>
+            <td><i class="far fa-file-video"></i></td>
+            <td>Abada.mp4</td>
+            <td>11 de mar.</td>
+            <td>-</td>
+            <td><i class="fas fa-users"></i> Compartilhado</td>
+            <td>87,2 MB</td>
+          </tr>
+          <!-- table item END -->
+          <!-- table item -->
+          <tr>
+            <td><i class="far fa-file-video"></i></td>
+            <td>Abada.mp4</td>
+            <td>11 de mar.</td>
+            <td>-</td>
+            <td><i class="fas fa-users"></i> Compartilhado</td>
+            <td>87,2 MB</td>
+          </tr>
+          <!-- table item END -->
+        </tbody>
+      </table>
+      </div>
+
+      <!-- container -->
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="col-md-6">
+          <img src="./assets/images/logo_bottom.png" alt="Logo" />
+        </div>
+        <div class="col-md-6">
+          <p>Copyright © 2020 | Hypera Pharma</p>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- table -->
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.20/js/jquery.dataTables.min.js></script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.20/js/dataTables.bootstrap.min.js></script>
+    
+    <script>
+      $(document).ready(function() {
+        $('#example').DataTable({"language": {
+            "lengthMenu": "Mostrando _MENU_ itens",
+            "zeroRecords": "Nenhum registro - desculpe",
+            "info": "Mostrando página _PAGE_ de _PAGES_",
+            "infoEmpty": "Nenhum registro encontrado",
+            "infoFiltered": "(filtered from _MAX_ total)",
+            "search": "Buscar",
+            "oPaginate": {
+                "sFirst":    "Primeiro",
+                "sPrevious": "Anterior",
+                "sNext":     "Seguinte",
+                "sLast":     "Último"
+            },
+        }});
+      });
+
+    </script>
+
+    <!-- starts hidden -->
+    <div id="bot">
+      <div class="bot-box">
+        <a href="#" onclick="closeBot()">
+          <img src="./assets/images/bot/x.png" alt="" id="close" />
+        </a>
+        <h2>
+          Como posso <br />
+          ajudá-lo?
+        </h2>
+        <textarea
+          name=""
+          id=""
+          cols=""
+          rows=""
+          placeholder="Faça uma pergunta..."
+        ></textarea>
+        <div id="button-container">
+          <button id="bot-button">Enviar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- scripts -->
+    <script>
+      function openBot() {
+        document.getElementById("bot").style.visibility = "visible";
+        document.getElementById("bot").style.opacity = "1";
+      }
+
+      function closeBot() {
+        document.getElementById("bot").style.visibility = "hidden";
+        document.getElementById("bot").style.opacity = "0";
+      }
+    </script>
+  </body>
+</html>
