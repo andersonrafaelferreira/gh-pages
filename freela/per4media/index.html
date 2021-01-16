@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Bootstrap Example</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Play:wght@400;700&display=swap" rel="stylesheet">
+
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+	<header>
+		<div id="main-navigation" class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-navigation">
+						<span class="sr-only">
+							<?php _e( 'Toggle navigation', 'odin' ); ?></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+						<img src="./exports/logoMenu.png">
+					</a>
+				</div>
+				<nav class="collapse navbar-collapse navbar-main-navigation" role="navigation">
+					<div class="navbar-right">
+						<div class="social-top">
+							<a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+							<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+							<a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+							<a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="">O que fazemos</a></li>
+						<li><a href="">Como obter resultados</a></li>
+						<li><a href="">Blog</a></li>
+						<li><a href="">Contato</a></li>
+					</ul>
+					<!-- 					<?php
+						wp_nav_menu(
+							array(
+								'theme_location' => 'main-menu',
+								'depth'          => 2,
+								'container'      => false,
+								'menu_class'     => 'nav navbar-nav',
+								'fallback_cb'    => 'Odin_Bootstrap_Nav_Walker::fallback',
+								'walker'         => new Odin_Bootstrap_Nav_Walker()
+							)
+						);
+					?> -->
+
+
+				</nav><!-- .navbar-collapse -->
+			</div><!-- #main-navigation-->
+
+		</div><!-- .container-->
+	</header><!-- #header -->
+
+	<section id="banner">
+		<div class="container">
+			<div class="col-md-12">
+				<div class="col-md-6">
+				</div>
+				<div class="col-md-6">
+					<h1>Criamos, implementamos e otimizamos estratégias digitais para aquisição de novos clientes via mídia digital.</h1>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section id="video-container">
+		<div class="container">
+			<div class="col-md-8">
+				<video controls>
+					<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+			<div class="col-md-4">
+				<img src="./exports/4banner.png" alt="">
+			</div>
+		</div>
+	</section>
+
+	<section id="oque">
+		<div class="container">
+			<div class="col-md-8"></div>
+			<div class="col-md-4">
+				<h1>O que a p4m oferece?</h1>
+			</div>
+		</div>
+	</section>
+
+	<section id="quem">
+		<div class="container">
+			<div class="col-md-1">
+				<img src="./exports/lateral.png" alt="">
+			</div>
+			<div class="col-md-11">
+				<div class="col-md-5"></div>
+				<div class="col-md-6">
+					<p>Diferente da compra de um anúncio em um único site, possibilitamos que sua marca apareça nos mais variados espaços digitais, como smartphones, video-games, SmartTVs e claro, internet (mobile e desktop), sendo mostrada para o público-alvo correto, no horário certo e utilizando a forma de atração mais assertiva.</p>
+				</div>
+				<div class="clear"></div>
+				<div class="col-md-12">
+					<h1>Quem pode <br>
+						contratar <br>
+						a p4m?</h1>
+				</div>
+				<div class="clear"></div>
+				<div class="col-md-8">
+					<p>Praticamente todo mundo que deseja ampliar suas estratégias para aquisição de novos clientes por meio do digital. E, além de escolher com mais assertividade o público que quer atingir, com dezenas de estratégias que possibilitam centenas de segmentações (e milhares de oportunidades) , você também tem a certeza de um investimento muito mais eficaz. Seja o seu desejo algo simples ou complexo, estamos aqui para te ajudar.</p>
+				</div>
+				<div class="col-md-9">
+					<button class="shadow">Entre em contato</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="quais">
+		<div class="container">
+			<h1>QUAIS AS DIFERENÇAS QUE A P4M PODE FAZER NA SUA ESTRATÉGIA DIGITAL? </h1>
+			<div class="col-md-2">
+				<img src="./exports/quais1.png" alt="">
+				<p>Ampla expertise no digital, indo muito além do universo de mídia</p>
+			</div>
+			<div class="col-md-2">
+				<img src="./exports/quais2.png" alt="">
+				<p>Cria e implementa estratégias eficazes para o seu negócio</p>
+			</div>
+			<div class="col-md-2">
+				<img src="./exports/quais3.png" alt="">
+				<p>Contribui com insights e oportunidades além da mídia digital, em disciplinas como redes sociais, CRM, UI/X, planejamento, desenvolvimento entre outras</p>
+			</div>
+			<div class="col-md-2">
+				<img src="./exports/quais4.png" alt="">
+				<p>Encontra o seu verdadeiro público-alvo, auditado pela Nielsen e ComScore</p>
+			</div>
+			<div class="col-md-2">
+				<img src="./exports/quais5.png" alt="">
+				<p>Cria uma parceria com uma empresa especialista em BI, data science e Inteligência Artificial e projetos digitais</p>
+			</div>
+			<div class="col-md-2">
+				<img src="./exports/quais6.png" alt="">
+				<p>Passa a fazer parte das marcas que utilizam a cultura de dados para se destacarem</p>
+			</div><s></s>
+		</div>
+	</section>
+
+	<img src="./exports/Intersect.png" style="margin-top: -400px">
+
+	<section id="blog">
+		<div class="col-md-2">
+
+		</div>
+		<div class="col-md-8">
+			<h1>#blog_</h1>
+
+			<div class="scroll">
+				<div class="post">
+					<div class="col-md-4">
+						<img src="./exports/blog1.png" alt="">
+					</div>
+					<div class="col-md-8">
+						<h2>Ganhos maiores que 20% sobre a mídia.</h2>
+						<p>A comissão de 20% também se aplica na mídia digital, mas é possível ir muito além desse comissionamento com a P4m. Tenha uma receita ainda maior com suas campanhas sem afetar o atendimento, a performance e os resultados da campanha.
+							Aumento de faturamento e compensação de despesas;
+							Transparência total na composição dos valores, plano a plano;</p>
+
+						<a href="#link">>> Leia mais</a>
+					</div>
+				</div>
+
+				<div class="post">
+					<div class="col-md-4">
+						<img src="./exports/blog1.png" alt="">
+					</div>
+					<div class="col-md-8">
+						<h2>Ganhos maiores que 20% sobre a mídia.</h2>
+						<p>A comissão de 20% também se aplica na mídia digital, mas é possível ir muito além desse comissionamento com a P4m. Tenha uma receita ainda maior com suas campanhas sem afetar o atendimento, a performance e os resultados da campanha.
+							Aumento de faturamento e compensação de despesas;
+							Transparência total na composição dos valores, plano a plano;</p>
+
+						<a href="#link">>> Leia mais</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="col-md-2"></div>
+	</section>
+
+	<div class="clear"></div>
+
+	<section id="interessou">
+		<div class="container">
+
+
+			<div class="col-md-3">
+				<p>Nosso time está pronto para oferecer a solução que casa resultados com receita da forma mais assertiva possível.</p>
+				<nav>
+					<a href="">
+						<img src="./exports/whatsapp.png" alt="whatsapp">
+					</a>
+					<a href="">
+						<img src="./exports/telefone.png" alt="whatsapp">
+					</a>
+					<a href="">
+						<img src="./exports/email.png" alt="whatsapp">
+					</a>
+				</nav>
+			</div>
+			<div class="col-md-9">
+				<img src="./exports/celular.png" alt="">
+			</div>
+
+			<div class="clear"></div>
+
+			<div class="col-md-5">
+				<h1>Interessou?</h1>
+				<h1>Fale conosco.</h1>
+			</div>
+			<div class="col-md-7"></div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="col-md-3">
+				<img src="./exports/logo_bottom.png" alt="">
+				<p id="copy">© 2021 Per4media. All rights reserved.</p>
+			</div>
+			<div class="col-md-9">
+				<div class="col-md-1"></div>
+				<div class="col-md-4">
+					<nav>
+						<a href="">Av. dos Ipês, 1470 - 3º andar <br>
+							Jaguariúna - SP</a>
+						<a href="tel: +55 19 99971-2651">+55 19 99971-2651</a>
+					</nav>
+				</div>
+				<div class="col-md-3"></div>
+				<div class="col-md-4">
+					<nav>
+						<a href="https://facebook.com">
+							<img src="./exports/facebook.png" alt="">
+						</a>
+
+						<a href="https://facebook.com">
+							<img src="./exports/instagram.png" alt="">
+						</a>
+
+						<a href="https://facebook.com">
+							<img src="./exports/insta.png" alt="">
+						</a>
+
+						<a href="https://facebook.com">
+							<img src="./exports/linkedin.png" alt="">
+						</a>
+
+					</nav>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>
