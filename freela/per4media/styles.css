@@ -167,12 +167,25 @@ navbar menu
 	color: #fff;
 	font-size: 21px;
 }
+#banner_mobile, #video-container-mobile{display: none;}
 
 
 @media (max-width: 767px) {
+
+	#video-container, #oque, #quem, #quais, #seja, #resultados, #blog, #interessou, .imagem-faixa, #banner{display: none;}
+
+	#banner_mobile img{
+		display: block;
+		margin: 0 auto;
+	}
+	
+	#banner_mobile, #video-container-mobile {display: block;}
+
+	.navbar-toggle {display: none;}
 	.bar-top {
 		display: none;
 	}
+	
 
 	.social-top {
 		display: none;
@@ -212,6 +225,7 @@ banner
 	background-size: cover;
 	height: 1125px;
 	/*    padding-left: 300px;*/
+	margin-top: -100px;
 }
 
 #quais h1 {
@@ -254,12 +268,17 @@ oque
 quem
 */
 #quem {
-	background-image: linear-gradient(90deg,
-		#fff 22%,
-		#F0F0F0 22%, #f0f0f0 40%,
-		#F0F0F0 40%, #F0F0F0 60%,
-		#fff 60%, #fff 80%,
-		#fff 80%);
+	/* background-image: linear-gradient(90deg,
+		transparent 15%,
+		#F0F0F0 22%, yellow 40%,
+		green 40%, red 60%,
+		#F0F0F0 60%, #fff 80%,
+		#fff 100%); */
+		/* background:-webkit-linear-gradient(360deg,transparent 22%,#f0f0f0 22%) */
+		background-image: url(./exports/background-video.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+	background-position: center 0;
 }
 
 #quem p {
@@ -303,6 +322,32 @@ video-container
 	width: 300px;
 	right: -30px;
 	float: right;
+}
+
+/* 
+resultados
+ */
+#resultados .col-md-5{
+	padding-top: 30px;
+}
+#resultados h1{
+	color: #F48923;
+	font-size: 50px;
+	text-align: right;
+}
+/* 
+seja
+ */
+#seja{
+	padding: 40px 0;
+}
+#seja .col-md-6:first-child{
+	padding: 100px 0;
+}
+#seja h1{
+	color: #F48923;
+	font-size: 50px;
+	text-align: right;
 }
 
 /*
