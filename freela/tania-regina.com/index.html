@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tânia Regina</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500|Barlow:300,300i,400,400i,500,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+    <!-- fontawesome v5 -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <!-- owl -->
+    <link rel="stylesheet" href="plugins/owl.carousel/owl.theme.css">
+    <link rel="stylesheet" href="plugins/owl.carousel/owl.carousel.css">
+
+    <!-- custom 4pme -->
+
+    <link rel="stylesheet" href="public/css/header.css">
+    <link rel="stylesheet" href="public/css/body.css">
+    <link rel="stylesheet" href="public/css/footer.css">
+    <link rel="stylesheet" href="public/css/mediaqueries.css">
+
+</head>
+
+<body>
+    <header>
+
+        <div id="main-navigation" class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-navigation">
+                        <span class="sr-only">
+                            <?php _e( 'Toggle navigation', 'odin' ); ?></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+                        <!-- <img src="public/images/Logo.png" alt=""> -->
+                        <h2 style="font-family: 'Hachi Maru Pop', cursive; color: #a90557; margin-top: -1px;">Tânia Regina</h2>
+                    </a>
+                </div>
+                <nav class="collapse navbar-collapse navbar-main-navigation" role="navigation">
+                    <ul class="nav navbar-nav navbar-right desktop">
+                        <li>
+                            <a href="">
+                                <button class="agende">Agende uma sessão</button>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav">
+                        <li><a href="#treinamentos">Treinamentos</a></li>
+                        <li><a href="#videos">Vídeos</a></li>
+                        <!-- <li><a href="#agende">Agende uma sessão</a></li> -->
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right mobile">
+                        <li>
+                            <a href="">
+                                <button class="agende">Agende uma sessão</button>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- 					<?php
+						wp_nav_menu(
+							array(
+								'theme_location' => 'main-menu',
+								'depth'          => 2,
+								'container'      => false,
+								'menu_class'     => 'nav navbar-nav',
+								'fallback_cb'    => 'Odin_Bootstrap_Nav_Walker::fallback',
+								'walker'         => new Odin_Bootstrap_Nav_Walker()
+							)
+						);
+					?> -->
+
+
+                </nav>
+                <!-- .navbar-collapse -->
+            </div>
+            <!-- #main-navigation-->
+
+        </div>
+        <!-- .container-->
+    </header>
+    <!-- #header -->
+
+    <!-- banner 
+    <section id="banner">
+        <div class="container">
+            <h1>life<span>coach</span></h1>
+            <p><span>relacionamento</span>-<span>Financeiro</span>-<span>Saúde</span>-<span>Espitirual</span></p>
+            <h4>Agende sua sessão</h4>
+            <img src="public/images/arrow.png" alt="">
+        </div>
+    </section>
+    <!-- banner END -->
+
+    <section id="slider" class="container" style="margin: 60px auto">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="https://images.pexels.com/photos/1311518/pexels-photo-1311518.jpeg?cs=srgb&dl=pexels-mentatdgt-1311518.jpg&fm=jpg" 
+        alt="Dia de consulta" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="https://images.pexels.com/photos/1181712/pexels-photo-1181712.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" 
+        alt="Ajuda em grupo" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="https://images.pexels.com/photos/4101143/pexels-photo-4101143.jpeg?cs=srgb&dl=pexels-cottonbro-4101143.jpg&fm=jpg" 
+        alt="Atendimento personalizado" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+    </section>
+
+    <!-- tabs -->
+    <div id="como">
+        <div class="container">
+            <div id="preTabs">
+                <h2>Como estão as 4 áreas da sua vida?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi incidunt rerum unde beatae saepe consequuntur culpa eaque consequatur repellat maiores dolores eligendi ut illum aspernatur esse, recusandae voluptatem reprehenderit voluptate enim. Minus molestiae magni.</p>
+            </div>
+            <ul class="nav nav-pills">
+                <li class="active"><a data-toggle="pill" href="#home">O que é life coaching?</a></li>
+                <li><a data-toggle="pill" href="#menu1">O que o coaching faz?</a></li>
+                <li><a data-toggle="pill" href="#menu2">Quais benefícios?</a></li>
+                <li><a data-toggle="pill" href="#menu3">Como funciona?</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                    <div class="col-md-6">
+                        <img src="public/images/tabImg.png" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <h3>O que é life coaching?</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                    <div class="col-md-6">
+                        <img src="public/images/tabImg.png" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <h3>O que o coaching faz?</h3>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                    <div class="col-md-6">
+                        <img src="public/images/tabImg.png" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Quais benefícios?</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                    </div>
+                </div>
+                <div id="menu3" class="tab-pane fade">
+                    <div class="col-md-6">
+                        <img src="public/images/tabImg.png" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Como funciona?</h3>
+                        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- tabs END -->
+
+    <!-- treinamentos -->
+    <section id="treinamentos">
+        <div class="container">
+            <h1>Treinamentos</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus illo culpa, in enim, quis ad atque, accusamus eius veniam commodi voluptatum consequatur fugit dignissimos quae ut architecto officiis veritatis adipisci.</p>
+            <div class="col-md-12">
+                <div class="col-md-4">
+                    <div class="item">
+                        <h1>Lider <br> Faixa Preta</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, amet nesciunt voluptas.</p>
+                        <a href="#">Conheça mais</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="item">
+                        <h1>Coaching <br> Day</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, amet nesciunt voluptas.</p>
+                        <a href="#">Conheça mais</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="item">
+                        <h1>Lider <br> Training</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, amet nesciunt voluptas.</p>
+                        <a href="#">Conheça mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- treinamentos END -->
+
+    <!-- videos -->
+    <section id="videos">
+        <div class="container">
+            <h1>videos</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus illo culpa, in enim, quis ad atque, accusamus eius veniam commodi voluptatum consequatur fugit dignissimos quae ut architecto officiis veritatis adipisci.</p>
+            <div class="col-md-12">
+                <div class="col-md-2">
+                    <!-- <div class="item">
+                        <h1>Palestra <br> Lorem</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, amet nesciunt voluptas.</p>
+                        <h4>Data: 16/01</h4>
+                        <a href="#"><button>Comprar</button></a>
+                    </div> -->
+                </div>
+                <div class="col-md-4">
+                    <div class="item">
+                        <h1>Palestra <br> Lorem</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, amet nesciunt voluptas.</p>
+                        <h4>Data: 16/01</h4>
+                        <a href="#"><button>Assistir</button></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="item">
+                        <!--  -->
+                        <h1>Video de Natal</h1>
+                        <br>
+                        <video width="100%" controls>
+                            <source src="http://www.taniaregina.com.br/feliznatal/gratidao.mp4" type="video/mp4">
+                            Seu navegador não suporta tag de vídeo.
+                          </video>
+                          <a target="_blanks" href="http://www.taniaregina.com.br/feliznatal/gratidao.mp4"><button>Assistir</button></a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <!-- <div class="item">
+                        <h1>Palestra <br> Lorem</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, amet nesciunt voluptas.</p>
+                        <h4>Data: 16/01</h4>
+                        <a href="#"><button>Comprar</button></a>
+                    </div> -->
+                </div>
+            </div>
+            <div class="clear"></div>
+            <h5>Aceitamos</h5>
+            <img src="public/images/cards.png" alt="">
+        </div>
+    </section>
+    <!-- videos END -->
+
+    <!-- depoimentos -->
+    <section id="depoimentos">
+        <div class="container">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h1>Depoimentos</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus illo culpa, in enim, quis ad atque, accusamus eius veniam commodi voluptatum consequatur fugit dignissimos quae ut architecto officiis veritatis adipisci.</p>
+                <div class="col-md-12" id="clientes">
+                    <div class="item">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati deleniti, nisi distinctio incidunt at. Ratione placeat facere maiores iure cumque blanditiis aut. Exercitationem deserunt tempore, quam provident reiciendis, sint ullam dolores molestiae, unde id ab. Deserunt facere, laboriosam. Sed nobis consequatur aspernatur neque libero eius at? Mollitia laudantium expedita libero!</p>
+                        <h5>João da Silva</h5>
+                    </div>
+                    <div class="item">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati deleniti, nisi distinctio incidunt at. Ratione placeat facere maiores iure cumque blanditiis aut. Exercitationem deserunt tempore, quam provident reiciendis, sint ullam dolores molestiae, unde id ab. Deserunt facere, laboriosam. Sed nobis consequatur aspernatur neque libero eius at? Mollitia laudantium expedita libero!</p>
+                        <h5>João da Silva</h5>
+                    </div>
+                    <div class="item">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati deleniti, nisi distinctio incidunt at. Ratione placeat facere maiores iure cumque blanditiis aut. Exercitationem deserunt tempore, quam provident reiciendis, sint ullam dolores molestiae, unde id ab. Deserunt facere, laboriosam. Sed nobis consequatur aspernatur neque libero eius at? Mollitia laudantium expedita libero!</p>
+                        <h5>João da Silva</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </section>
+    <!-- depoimentos END -->
+
+    <!-- agende -->
+    <section id="agende">
+        <div class="container">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h1>Agende uma sessão</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus illo culpa, in enim, quis ad atque, accusamus eius veniam commodi voluptatum consequatur fugit dignissimos quae ut architecto officiis veritatis adipisci.</p>
+                <div class="col-md-12">
+                    <a href=""><button>Quero transformar minha vida</button></a>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </section>
+    <!-- agende END -->
+
+    <!-- footer -->
+    <footer>
+        <div class="col-md-12">
+            <h5>Onde estamos</h5>
+            <p>Rua Almirante Barroso, 221 - VIla Ciade JardimLimeira, SP</p>
+        </div>
+        <div class="col-md-12" id="copy">
+            <p>
+                © 2021 - Lotus Flower- All Rights Reserved
+            </p>
+            <a href="https://raviga.com.br" target="_blank" style="color: #fdcc52">Raviga</a>
+        </div>
+    </footer>
+    <!-- footer END-->
+
+
+    <!-- owl carousel -->
+    <script src="plugins/owl.carousel/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#clientes").owlCarousel({
+                autoPlay: 3000, //Set AutoPlay to 3 seconds
+                items: 1,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [979, 1]
+            });
+
+            $("#owl-example2").owlCarousel({
+                autoPlay: 3000, //Set AutoPlay to 3 seconds
+                items: 2,
+                itemsDesktop: [1199, 2],
+                itemsDesktopSmall: [979, 1]
+            });
+
+        });
+    </script>
+
+    <script>
+        $('.navbar-toggle').click(function() {
+            $(".navbar-default").toggleClass('toggled');
+        });
+    </script>
+</body>
+
+</html>

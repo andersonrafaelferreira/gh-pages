@@ -320,9 +320,15 @@ quem
 		background-image: url(./exports/background-video.png);
 		background-repeat: no-repeat;
 		background-size: contain;
-	background-position: center 0;
+		background-position: center 0;
+		margin-top: -16px;
+}	
+/* #quem .col-md-1{
+	margin-top: 10px;
+} */
+#quem .col-md-6{
+	margin-top: -16px;
 }
-
 #quem p {
 	margin-top: 40px;
 }

@@ -1,0 +1,59 @@
+@media (max-width: 767px) {
+    .mobile {
+        display: block !important;
+    }
+
+    .desktop {
+        display: none !important;
+    }
+
+    #banner {
+        margin-top: -80px;
+    }
+
+    #banner h1 {
+        font-family: 'Barlow', sans-serif;
+        color: #e60d61;
+        font-size: 90px;
+        font-weight: 300;
+        font-style: italic;
+        margin-bottom: 40px;
+    }
+
+    #banner h1 span {
+        font-family: 'Barlow', sans-serif;
+        color: #e60d61;
+        font-size: 50px;
+        font-weight: 300;
+        font-style: italic;
+    }
+
+    #agende button {
+        max-width: 90%;
+    }
+
+    #como .nav {
+        margin-left: 0px;
+    }
+
+    .tab-content img {
+        max-width: 100%;
+    }
+
+    /* test */
+    .toggled {
+        background-color: #e60d61 !important;
+    }
+
+    .navbar-brand img {
+        margin-top: -6px !important;
+        width: 130px !important;
+    }
+
+    .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        border-color: transparent !important;
+        border: none !important;
+    }
+
+}

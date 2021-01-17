@@ -1,0 +1,52 @@
+/* 
+footer
+*/
+
+footer {
+    background-color: #2b2734;
+    position: absolute;
+    width: 100%;
+
+}
+
+/*
+footer .col-md-6 {
+    padding: 0px auto;
+}
+*/
+
+footer .col-md-12:last-child {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+footer .col-md-12 {
+    margin: 40px 0;
+    text-align: center;
+}
+
+
+footer h5 {
+    font-family: 'Barlow', sans-serif;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+footer p {
+    font-family: 'Barlow', sans-serif;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#copy p {
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 500;
+}
